@@ -1,4 +1,16 @@
 # Recurrent Model-Free RL Can Be a Strong Baseline for Many POMDPs
+
+## ALR Adaptions
+Based on [this repository](https://github.com/twni2016/pomdp-baselines)
+- moved to python 3.10 and new gym interface (mostly, not fully tested)
+- Integrated some of our stuff: in `experiments` there is now functionality to run experiments from the [mbrl_envs](https://github.com/ALRhub/mbrl_envs) (also with [cw2](https://github.com/ALRhub/cw2))
+- cleaned up folder structure, the main part is now in `pomdp_baselines`, the original experiments in `original experiments`
+
+
+# Original Readme
+
+
+
 Welcome to the POMDP world! 
 
 This repository provides some simple baselines for POMDPs, specifically the **recurrent model-free RL**, on the benchmarks in **several subareas of POMDPs** (including meta RL, robust RL, generalization in RL, temporal credit assignment) for the following paper accepted to **ICML 2022**: 
@@ -37,7 +49,7 @@ Simply open the Jupyter Notebook [example.ipynb](example.ipynb) and it contains 
 First download this repository into your local directory (preferably on a cluster or a server) to <local_path>. Then we recommend using a virtual env to install all the dependencies. We provide the yaml file to install using miniconda:
 
 ```bash
-conda env create -f environments.yml
+conda env create -f original_environments.yml
 conda activate pomdp
 ```
 
