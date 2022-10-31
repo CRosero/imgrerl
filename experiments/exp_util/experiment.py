@@ -5,6 +5,8 @@ import mbrl_envs
 
 import pomdp_baselines.torchkit.pytorch_utils as ptu
 from pomdp_baselines.policies.models.policy_rnn import ModelFreeOffPolicy_Separate_RNN as Policy_RNN
+from pomdp_baselines.policies.models.policy_mlp import ModelFreeOffPolicy_MLP as Policy_MLP
+from pomdp_baselines.policies.models import AGENT_ARCHS
 from pomdp_baselines.buffers.seq_replay_buffer_vanilla import SeqReplayBuffer
 from pomdp_baselines.utils import helpers as utl
 
@@ -21,7 +23,7 @@ class Experiment:
         config.cuda_id = 0
 
         config.add_subconf("env", ConfigDict())
-        config.env.env = "robodesk/push_green"
+        config.env.env = "cheetah-run"
 
         config.add_subconf("agent", ConfigDict())
         config.agent.algo_name = "sac"
@@ -59,33 +61,47 @@ class Experiment:
         cuda_id = config.cuda_id  # -1 if using cpu
         ptu.set_gpu_mode(torch.cuda.is_available() and cuda_id >= 0, cuda_id)
 
-        domain_name, task_name = config.env.env.split("/")
+        domain_name, task_name = config.env.env.split("-")
         self.env = mbrl_envs.make(domain_name=domain_name,
                                   task_name=task_name,
                                   seed=config.seed,
                                   action_repeat=-1,  # env default
                                   obs_type=mbrl_envs.ObsTypes.STATE,
                                   no_lists=True,
-                                  old_gym_return_type=True)
+                                  old_gym_return_type=False)
         self._action_repeat = self.env.action_repeat
         self._max_trajectory_len = self.env.max_seq_length
         act_dim = self.env.action_space.shape[0]
         obs_dim = self.env.observation_space.shape[0]
-
-        self.agent = Policy_RNN(obs_dim=obs_dim,
-                                action_dim=act_dim,
-                                encoder=config.agent.encoder,
-                                algo_name=config.agent.algo_name,
-                                action_embedding_size=config.agent.action_embedding_size,
-                                observ_embedding_size=config.agent.observ_embedding_size,
-                                reward_embedding_size=config.agent.reward_embedding_size,
-                                rnn_hidden_size=config.agent.rnn_hidden_size,
-                                dqn_layers=config.agent.dqn_layers,
-                                policy_layers=config.agent.policy_layers,
-                                lr=config.agent.lr,
-                                gamma=config.agent.gamma,
-                                tau=config.agent.tau,
-                                sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
+        if config.agent.encoder == "mlp":
+            self.agent = Policy_MLP(obs_dim=obs_dim,
+                                    action_dim=act_dim,
+                                    algo_name=config.agent.algo_name,
+                                    action_embedding_size=config.agent.action_embedding_size,
+                                    observ_embedding_size=config.agent.observ_embedding_size,
+                                    reward_embedding_size=config.agent.reward_embedding_size,
+                                    rnn_hidden_size=config.agent.rnn_hidden_size,
+                                    dqn_layers=config.agent.dqn_layers,
+                                    policy_layers=config.agent.policy_layers,
+                                    lr=config.agent.lr,
+                                    gamma=config.agent.gamma,
+                                    tau=config.agent.tau,
+                                    sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
+        else:
+            self.agent = Policy_RNN(obs_dim=obs_dim,
+                                    action_dim=act_dim,
+                                    encoder=config.agent.encoder,
+                                    algo_name=config.agent.algo_name,
+                                    action_embedding_size=config.agent.action_embedding_size,
+                                    observ_embedding_size=config.agent.observ_embedding_size,
+                                    reward_embedding_size=config.agent.reward_embedding_size,
+                                    rnn_hidden_size=config.agent.rnn_hidden_size,
+                                    dqn_layers=config.agent.dqn_layers,
+                                    policy_layers=config.agent.policy_layers,
+                                    lr=config.agent.lr,
+                                    gamma=config.agent.gamma,
+                                    tau=config.agent.tau,
+                                    sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
 
         self._num_updates_per_iter = config.rl.num_updates_per_iter
         sampled_seq_len = config.rl.sampled_seq_len
@@ -135,7 +151,11 @@ class Experiment:
             done_rollout = False
 
             # get hidden state at timestep=0, None for mlp
-            action, reward, internal_state = self.agent.get_initial_info()
+
+            if self.agent.ARCH == AGENT_ARCHS.Memory:
+                # get hidden state at timestep=0, None for markov
+                # NOTE: assume initial reward = 0.0 (no need to clip)
+                action, reward, internal_state = self.agent.get_initial_info()
 
             if train_mode:
                 # temporary storage
@@ -143,16 +163,23 @@ class Experiment:
 
             while not done_rollout:
                 if random_actions:
-                    action = ptu.FloatTensor([self.env.action_space.sample()])  # (1, A)
+                    action = ptu.FloatTensor(
+                        [self.env.action_space.sample()]
+                    )  # (1, A) for continuous action, (1) for discrete action
                 else:
-                    # policy takes hidden state as input for rnn, while takes obs for mlp
-                    (action, _, _, _), internal_state = self.agent.act(
-                        prev_internal_state=internal_state,
-                        prev_action=action,
-                        reward=reward,
-                        obs=obs,
-                        deterministic=deterministic,
-                    )
+                    # policy takes hidden state as input for memory-based actor,
+                    # while takes obs for markov actor
+                    if self.agent.ARCH == AGENT_ARCHS.Memory:
+                        (action, _, _, _), internal_state = self.agent.act(
+                            prev_internal_state=internal_state,
+                            prev_action=action,
+                            reward=reward,
+                            obs=obs,
+                            deterministic=False,
+                        )
+                    else:
+                        action, _, _, _ = self.agent.act(obs, deterministic=False)
+
                 # observe reward and next obs (B=1, dim)
                 next_obs, reward, done, info = utl.env_step(self.env, action.squeeze(dim=0))
                 done_rollout = False if ptu.get_numpy(done[0][0]) == 0.0 else True

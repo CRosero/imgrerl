@@ -48,7 +48,7 @@ reps_per_job: 1
 reps_in_parallel: 1
 list:
   env:
-    env: ["walker_walk", "cartpole_swingup", "reacher_easy", "ball_in_cup_catch", "finger_spin"]
+    env: ["cheetah_run", "walker_walk", "cartpole_swingup", "reacher_easy", "ball_in_cup_catch", "finger_spin"]
 wandb:
   project: "rec_sac"
   group: "test1"

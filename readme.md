@@ -5,7 +5,7 @@ Based on [this repository](https://github.com/twni2016/pomdp-baselines)
 - moved to python 3.10 and new gym interface (mostly, not fully tested)
 - Integrated some of our stuff: in `experiments` there is now functionality to run experiments from the [mbrl_envs](https://github.com/ALRhub/mbrl_envs) (also with [cw2](https://github.com/ALRhub/cw2))
 - cleaned up folder structure, the main part is now in `pomdp_baselines`, the original experiments in `original experiments`
-
+- to get started see  `experiments/run_exp.py`
 
 # Original Readme
 

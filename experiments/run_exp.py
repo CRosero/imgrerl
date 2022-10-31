@@ -1,7 +1,7 @@
 from exp_util.experiment import Experiment
 from exp_util.logging import print_log
 config = Experiment.get_default_config()
-config.env.env = "robodesk/flat_block_in_bin"
+config.env.env = "cheetah-run"
 print(config)
 
 experiment = Experiment(config)

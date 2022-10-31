@@ -21,7 +21,7 @@ class _Cw2Experiment(Cw2Experiment):
                 config = Experiment.get_default_config()
                 config.seed = seed
 
-                config.agent.encoder = "gru"
+                config.agent.encoder = "mlp"
 
                 return config
 
