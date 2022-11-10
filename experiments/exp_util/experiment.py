@@ -24,6 +24,7 @@ class Experiment:
 
         config.add_subconf("env", ConfigDict())
         config.env.env = "cheetah-run"
+        config.env.obs_type = "state"
 
         config.add_subconf("agent", ConfigDict())
         config.agent.algo_name = "sac"
@@ -38,7 +39,7 @@ class Experiment:
         config.agent.gamma = 0.99
         config.agent.tau = 0.005
 
-        config.agent.entropy_alpha = 0.1
+        config.agent.entropy_alpha = 1.0
 
         config.add_subconf("rl", ConfigDict())
         config.rl.sampled_seq_len = 64
@@ -62,11 +63,17 @@ class Experiment:
         ptu.set_gpu_mode(torch.cuda.is_available() and cuda_id >= 0, cuda_id)
 
         domain_name, task_name = config.env.env.split("-")
+        if config.env.obs_type == "state":
+            obs_type = mbrl_envs.ObsTypes.STATE
+        elif config.env.obs_type == "position":
+            obs_type = mbrl_envs.ObsTypes.POSITION
+        else:
+            raise ValueError("Unknown obs_type: {}".format(config.env.obs_type))
         self.env = mbrl_envs.make(domain_name=domain_name,
                                   task_name=task_name,
                                   seed=config.seed,
                                   action_repeat=-1,  # env default
-                                  obs_type=mbrl_envs.ObsTypes.STATE,
+                                  obs_type=obs_type,
                                   no_lists=True,
                                   old_gym_return_type=False)
         self._action_repeat = self.env.action_repeat

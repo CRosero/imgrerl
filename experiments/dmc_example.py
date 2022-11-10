@@ -13,17 +13,16 @@ from pomdp_baselines.utils import helpers as utl
 cuda_id = 0  # -1 if using cpu
 ptu.set_gpu_mode(torch.cuda.is_available() and cuda_id >= 0, cuda_id)
 
-env_name = "Pendulum-V-v0"
 #env = gym.make(env_name)
 #
 #env = OldGymInterfaceWrapper(env)
-env = mbrl_envs.make(domain_name="robodesk",
+env = mbrl_envs.make(domain_name="cartpole",
                      task_name="swingup",
                      seed=0,
                      action_repeat=2,
                      obs_type=mbrl_envs.ObsTypes.POSITION,
                      no_lists=True,
-                     old_gym_return_type=True)
+                     old_gym_return_type=False)
 max_trajectory_len = 500
 act_dim = env.action_space.shape[0]
 obs_dim = env.observation_space.shape[0]
@@ -31,7 +30,7 @@ print(env, obs_dim, act_dim, max_trajectory_len)
 
 agent = Policy_RNN(obs_dim=obs_dim,
                    action_dim=act_dim,
-                   encoder="lstm",
+                   encoder="gru",
                    algo_name="sac",
                    action_embedding_size=32,
                    observ_embedding_size=128,
