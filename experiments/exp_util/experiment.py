@@ -8,9 +8,13 @@ from pomdp_baselines.policies.models.policy_rnn import ModelFreeOffPolicy_Separa
 from pomdp_baselines.policies.models.policy_mlp import ModelFreeOffPolicy_MLP as Policy_MLP
 from pomdp_baselines.policies.models import AGENT_ARCHS
 from pomdp_baselines.buffers.seq_replay_buffer_vanilla import SeqReplayBuffer
+from pomdp_baselines.buffers.seq_replay_buffer_efficient import RAMEfficient_SeqReplayBuffer
+from pomdp_baselines.torchkit.networks import ImageEncoder
 from pomdp_baselines.utils import helpers as utl
 
 from experiments.exp_util.config_dict import ConfigDict
+
+from torch.nn import functional as F
 
 from torchsummary import summary
 
@@ -90,7 +94,8 @@ class Experiment:
         
         # TODO: Magic Number
         if config.env.obs_type == "image":
-            obs_dim = 64*64*3
+            #obs_dim = self.env.observation_space.shape
+            obs_dim = self.env.observation_space.shape[0]*self.env.observation_space.shape[1]*self.env.observation_space.shape[2]
         else: 
             obs_dim = self.env.observation_space.shape[0]
 
@@ -119,12 +124,23 @@ class Experiment:
             # add image encoder when taking image as input
             image_enc = lambda: None
             if obs_type == mbrl_envs.ObsTypes.IMAGE:
+                image_enc = lambda: ImageEncoder(
+                    self.env.observation_space.shape,
+                    embed_size=100, # Ouptut length after linear layer
+                    depths=[8, 16], # Channels of Layers?
+                    kernel_size=2,
+                    stride=1,
+                    activation="relu",
+                    from_flattened=True,
+                    normalize_pixel=True,
+                )
+                """
                 model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)
                 cnn_no_fc = torch.nn.Sequential(*(list(model.children())[:-1]))
                 cnn_no_fc.embed_size = 2048
                 image_enc = lambda: cnn_no_fc
                 #image_enc = cnn_no_fc
-
+                """
 
 
             self.agent = Policy_RNN(obs_dim=obs_dim,
@@ -152,11 +168,12 @@ class Experiment:
         self._num_rollouts_per_iter = config.rl.rollouts_per_iter
         self._n_env_steps_total = 0
 
-        self.replay_buffer = SeqReplayBuffer(max_replay_buffer_size=int(buffer_size),
+        self.replay_buffer = RAMEfficient_SeqReplayBuffer(max_replay_buffer_size=int(buffer_size),
                                              observation_dim=obs_dim,
                                              action_dim=act_dim,
                                              sampled_seq_len=sampled_seq_len,
-                                             sample_weight_baseline=0.0)
+                                             sample_weight_baseline=0.0,
+                                             observation_type=np.uint8) # TODO: Adaptable?
 
         avg_rewards, env_steps = self._collect_rollouts(
             num_rollouts=num_init_rollouts_pool, random_actions=True, train_mode=True
@@ -186,20 +203,8 @@ class Experiment:
             steps = 0
             rewards = 0.0
             obs, info = self.env.reset()
-            obs = ptu.from_numpy_fixed(obs)
-            
-            
-            
-            
-            # TODO: Remove unsqueeze
-            # Reshape to show that batch size is 1 (?)
-            # obs = obs.reshape(1, obs.shape[-1]) # ORIGNIAL
-            #obs = torch.unsqueeze(obs, 0) # KEEP DIMS -> aber es werden 2 gewollt
-            obs = torch.unsqueeze(torch.flatten(obs), 0)
-
-
-
-
+            obs = ptu.from_numpy(obs) 
+            obs = obs.reshape(1, obs.shape[-1])
             done_rollout = False
 
             # get hidden state at timestep=0, None for mlp

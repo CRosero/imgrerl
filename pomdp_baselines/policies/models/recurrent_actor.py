@@ -99,42 +99,19 @@ class Actor_RNN(nn.Module):
         if self.image_encoder is None:  # vector obs
             print(observs.shape)
             return self.observ_embedder(observs)
-        else:  # pixel obs
-
-            # TODO: Remove reshape
-            #print(observs.shape)
-
-
-            observs_reshaped = torch.reshape(observs, (observs.shape[0], observs.shape[1], 64, 64, 3)) # TODO: Magic numbers
-            observs_reshaped = torch.transpose(observs_reshaped, -2, -1)
-            observs_reshaped = torch.transpose(observs_reshaped, -3, -2)
-
-
+        else:  
             # NOTE: Good images 
             #transform = T.ToPILImage() 
             #img = transform(observs_reshaped[0][0])
             #img.save(f"images/image_test_{datetime.now()}.png")
-
-
-            T_dim, B, C, H, W = observs_reshaped.shape
-            observs_reshaped = observs_reshaped.view(-1, C, H, W)
-            pixel_obs = self.image_encoder(observs_reshaped)
             
-            
-            #pixel_obs = pixel_obs[0]
-            #pixel_obs = torch.transpose(pixel_obs, 0, 2)
-            pixel_obs = pixel_obs.view((T_dim, B, -1))
-
-            
-            
-            return pixel_obs
+            return self.image_encoder(observs)
 
     def _get_shortcut_obs_embedding(self, observs):
         if self.image_encoder is None:  # vector obs
             return self.current_observ_embedder(observs)
         else:  # pixel obs
-            return self._get_obs_embedding(observs)
-            #return self.image_encoder(observs)
+            return self.image_encoder(observs)
 
     def get_hidden_states(
         self, prev_actions, rewards, observs, initial_internal_state=None

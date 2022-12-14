@@ -102,22 +102,7 @@ class Critic_RNN(nn.Module):
         if self.image_encoder is None:  # vector obs
             return self.observ_embedder(observs)
         else:  # pixel obs
-            # TODO: Remove reshape
-            observs_reshaped = torch.reshape(observs, (observs.shape[0], observs.shape[1], 64, 64, 3)) # TODO: Magic numbers
-            observs_reshaped = torch.transpose(observs_reshaped, -2, -1)
-            observs_reshaped = torch.transpose(observs_reshaped, -3, -2)
-
-            T, B, C, H, W = observs_reshaped.shape
-            observs_reshaped = observs_reshaped.view(-1, C, H, W)
-            pixel_obs = self.image_encoder(observs_reshaped)
-            
-            
-            #pixel_obs = pixel_obs[0]
-            #pixel_obs = torch.transpose(pixel_obs, 0, 2)
-            pixel_obs = pixel_obs.view((T, B, -1))
-
-            return pixel_obs
-            #return self.image_encoder(observs)
+            return self.image_encoder(observs)
 
 
 
@@ -133,8 +118,7 @@ class Critic_RNN(nn.Module):
             # for image-based continuous action problems
             return torch.cat(
                 [
-                    #self.image_encoder(observs),
-                    self._get_obs_embedding(observs),
+                    self.image_encoder(observs),
                     self.current_shortcut_embedder(current_actions),
                 ],
                 dim=-1,
