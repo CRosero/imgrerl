@@ -128,7 +128,7 @@ class Critic_RNN(nn.Module):
             return self.current_shortcut_embedder(observs)
         elif not self.algo.continuous_action and self.image_encoder is not None:
             # for image-based discrete action problems (not using actions)
-            return self._get_obs_embedding(observs)
+            return self.image_encoder(observs)
             #return self.image_encoder(observs)
 
     def get_hidden_states(self, prev_actions, rewards, observs):
