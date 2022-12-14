@@ -12,6 +12,12 @@ from pomdp_baselines.utils import helpers as utl
 
 from experiments.exp_util.config_dict import ConfigDict
 
+from torchsummary import summary
+
+import torchvision.transforms as T
+from PIL import Image
+from datetime import datetime
+
 
 class Experiment:
 
@@ -24,7 +30,7 @@ class Experiment:
 
         config.add_subconf("env", ConfigDict())
         config.env.env = "cheetah-run"
-        config.env.obs_type = "state"
+        config.env.obs_type = "image"
 
         config.add_subconf("agent", ConfigDict())
         config.agent.algo_name = "sac"
@@ -67,6 +73,8 @@ class Experiment:
             obs_type = mbrl_envs.ObsTypes.STATE
         elif config.env.obs_type == "position":
             obs_type = mbrl_envs.ObsTypes.POSITION
+        elif config.env.obs_type == "image":
+            obs_type = mbrl_envs.ObsTypes.IMAGE
         else:
             raise ValueError("Unknown obs_type: {}".format(config.env.obs_type))
         self.env = mbrl_envs.make(domain_name=domain_name,
@@ -79,7 +87,16 @@ class Experiment:
         self._action_repeat = self.env.action_repeat
         self._max_trajectory_len = self.env.max_seq_length
         act_dim = self.env.action_space.shape[0]
-        obs_dim = self.env.observation_space.shape[0]
+        
+        # TODO: Magic Number
+        if config.env.obs_type == "image":
+            obs_dim = 64*64*3
+        else: 
+            obs_dim = self.env.observation_space.shape[0]
+
+        
+        
+        
         if config.agent.encoder == "mlp":
             self.agent = Policy_MLP(obs_dim=obs_dim,
                                     action_dim=act_dim,
@@ -95,6 +112,21 @@ class Experiment:
                                     tau=config.agent.tau,
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
         else:
+            #cnn_no_fc.input_size
+            #summary(model=cnn_no_fc, input_size = (3, 32, 32))
+
+            # TODO: Do not use resnet; Magic number?
+            # add image encoder when taking image as input
+            image_enc = lambda: None
+            if obs_type == mbrl_envs.ObsTypes.IMAGE:
+                model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)
+                cnn_no_fc = torch.nn.Sequential(*(list(model.children())[:-1]))
+                cnn_no_fc.embed_size = 2048
+                image_enc = lambda: cnn_no_fc
+                #image_enc = cnn_no_fc
+
+
+
             self.agent = Policy_RNN(obs_dim=obs_dim,
                                     action_dim=act_dim,
                                     encoder=config.agent.encoder,
@@ -108,6 +140,7 @@ class Experiment:
                                     lr=config.agent.lr,
                                     gamma=config.agent.gamma,
                                     tau=config.agent.tau,
+                                    image_encoder_fn=image_enc,
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
 
         self._num_updates_per_iter = config.rl.num_updates_per_iter
@@ -153,8 +186,20 @@ class Experiment:
             steps = 0
             rewards = 0.0
             obs, info = self.env.reset()
-            obs = ptu.from_numpy(obs)
-            obs = obs.reshape(1, obs.shape[-1])
+            obs = ptu.from_numpy_fixed(obs)
+            
+            
+            
+            
+            # TODO: Remove unsqueeze
+            # Reshape to show that batch size is 1 (?)
+            # obs = obs.reshape(1, obs.shape[-1]) # ORIGNIAL
+            #obs = torch.unsqueeze(obs, 0) # KEEP DIMS -> aber es werden 2 gewollt
+            obs = torch.unsqueeze(torch.flatten(obs), 0)
+
+
+
+
             done_rollout = False
 
             # get hidden state at timestep=0, None for mlp
@@ -177,6 +222,7 @@ class Experiment:
                     # policy takes hidden state as input for memory-based actor,
                     # while takes obs for markov actor
                     if self.agent.ARCH == AGENT_ARCHS.Memory:
+                        # print("\n mem-based actor exp obs =", obs)
                         (action, _, _, _), internal_state = self.agent.act(
                             prev_internal_state=internal_state,
                             prev_action=action,
@@ -185,11 +231,30 @@ class Experiment:
                             deterministic=False,
                         )
                     else:
+                        # print("\n markov exp obs =", obs)
                         action, _, _, _ = self.agent.act(obs, deterministic=False)
+
+
+
+
+
+
+
 
                 # observe reward and next obs (B=1, dim)
                 next_obs, reward, done, info = utl.env_step(self.env, action.squeeze(dim=0))
+                
+                # NOTE: Weird images
+                #transform = T.ToPILImage() # [1, 3, 64, 64]
+                #img = transform(next_obs.view((3, 64, 64)))
+                #img.save(f"images/image_test_{datetime.now()}.png")
+
+                # print("exp next_obs =", next_obs)
                 done_rollout = False if ptu.get_numpy(done[0][0]) == 0.0 else True
+
+
+
+
 
                 # update statistics
                 steps += 1
@@ -260,6 +325,8 @@ class Experiment:
         log_dict["collect/steps"] = avg_steps
         log_dict["collect/total_steps"] = self._n_env_steps_total
 
+
+        print("Collecting train stats")
         train_stats = self._update(int(self._num_updates_per_iter))
         log_dict.update({f"train/{k}": v for k, v in train_stats.items()})
         if iteration % self._log_interval == 0:

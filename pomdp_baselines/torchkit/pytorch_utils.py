@@ -113,6 +113,9 @@ def gpu_enabled():
 def FloatTensor(*args, **kwargs):
     return torch.FloatTensor(*args, **kwargs).to(device)
 
+def from_numpy_fixed(*args, **kwargs):
+    return torch.from_numpy(args[0].copy(), **kwargs).float().to(device)
+
 
 def from_numpy(*args, **kwargs):
     return torch.from_numpy(*args, **kwargs).float().to(device)

@@ -44,16 +44,36 @@ def get_dim(space):
 def env_step(env, action):
     # action: (A)
     # return: all 2D tensor shape (B=1, dim)
+    #print("\nenv type =", type(env))
+    #print("env =", env)
     action = ptu.get_numpy(action)
     if env.action_space.__class__.__name__ == "Discrete":
         action = np.argmax(action)  # one-hot to int
     next_obs, reward, truncated, terminated, info = env.step(action)
+    #print("next_obs = ", next_obs)
     done = truncated or terminated
 
+
+
+
+
+
+    # TODO: remove unsqueeze
     # move to torch
-    next_obs = ptu.from_numpy(next_obs).view(-1, next_obs.shape[0])
+    # next_obs = ptu.from_numpy_fixed(next_obs).view(-1, next_obs.shape[0]) # ORIGINAL -> not working with 2D Input
+    next_obs = ptu.from_numpy_fixed(next_obs)
+    #next_obs = torch.unsqueeze(next_obs, 0) # Keeps N dims -> should reduce to 2 dims
+    next_obs = torch.unsqueeze(torch.flatten(next_obs), 0) # Makes to 2 dims, needs to be unflattened later
+
     reward = ptu.FloatTensor([reward]).view(-1, 1)
     done = ptu.from_numpy(np.array(done, dtype=int)).view(-1, 1)
+
+
+
+
+
+
+
 
     return next_obs, reward, done, info
 
@@ -213,6 +233,7 @@ class FeatureExtractor(nn.Module):
 
     def __init__(self, input_size, output_size, activation_function):
         super(FeatureExtractor, self).__init__()
+        print("Init feature extractor: ", input_size, "; ", output_size, "; ", activation_function)
         self.output_size = output_size
         self.activation_function = activation_function
         if self.output_size != 0:
@@ -221,6 +242,7 @@ class FeatureExtractor(nn.Module):
             self.fc = None
 
     def forward(self, inputs):
+        #print("linear: ", inputs.shape)
         if self.output_size != 0:
             return self.activation_function(self.fc(inputs))
         else:

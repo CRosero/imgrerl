@@ -27,7 +27,7 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
     ARCH = "memory"
     Markov_Actor = False
     Markov_Critic = False
-
+    
     def __init__(
         self,
         obs_dim,
