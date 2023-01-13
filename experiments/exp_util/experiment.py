@@ -11,6 +11,7 @@ from pomdp_baselines.buffers.seq_replay_buffer_vanilla import SeqReplayBuffer
 from pomdp_baselines.buffers.seq_replay_buffer_efficient import RAMEfficient_SeqReplayBuffer
 from pomdp_baselines.torchkit.networks import ImageEncoder
 from pomdp_baselines.utils import helpers as utl
+from pomdp_baselines.utils import augmentation
 
 from experiments.exp_util.config_dict import ConfigDict
 
@@ -62,6 +63,9 @@ class Experiment:
         config.add_subconf("eval", ConfigDict())
         config.eval.interval = 20
         config.eval.num_rollouts = 20
+
+        # additional config values
+        config.agent.image_augmentation_type = augmentation.AugmentationType.NONE;
 
         config.finalize_adding()
         return config
@@ -115,6 +119,7 @@ class Experiment:
                                     lr=config.agent.lr,
                                     gamma=config.agent.gamma,
                                     tau=config.agent.tau,
+                                    image_augmentation_type=config.agent.image_augmentation_type, # .TODO: Does this make sense here?
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
         else:
             #cnn_no_fc.input_size
@@ -124,11 +129,12 @@ class Experiment:
             # add image encoder when taking image as input
             image_enc = lambda: None
             if obs_type == mbrl_envs.ObsTypes.IMAGE:
+                obs_shape = (self.env.observation_space.shape[2],self.env.observation_space.shape[0],self.env.observation_space.shape[1]) # env uses (W,H,C)
                 image_enc = lambda: ImageEncoder(
-                    self.env.observation_space.shape,
-                    embed_size=100, # Ouptut length after linear layer
+                    obs_shape,
+                    embed_size=100, # Output length after linear layer
                     depths=[8, 16], # Channels of Layers?
-                    kernel_size=2,
+                    kernel_size=3,
                     stride=1,
                     activation="relu",
                     from_flattened=True,
@@ -157,6 +163,7 @@ class Experiment:
                                     gamma=config.agent.gamma,
                                     tau=config.agent.tau,
                                     image_encoder_fn=image_enc,
+                                    image_augmentation_type=config.agent.image_augmentation_type,
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
 
         self._num_updates_per_iter = config.rl.num_updates_per_iter
@@ -168,12 +175,14 @@ class Experiment:
         self._num_rollouts_per_iter = config.rl.rollouts_per_iter
         self._n_env_steps_total = 0
 
+
+        buffer_observation_type = np.uint8 if config.env.obs_type == "image" else np.float32
         self.replay_buffer = RAMEfficient_SeqReplayBuffer(max_replay_buffer_size=int(buffer_size),
                                              observation_dim=obs_dim,
                                              action_dim=act_dim,
                                              sampled_seq_len=sampled_seq_len,
                                              sample_weight_baseline=0.0,
-                                             observation_type=np.uint8) # TODO: Adaptable?
+                                             observation_type=buffer_observation_type) 
 
         avg_rewards, env_steps = self._collect_rollouts(
             num_rollouts=num_init_rollouts_pool, random_actions=True, train_mode=True

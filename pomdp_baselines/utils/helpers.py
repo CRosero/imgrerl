@@ -9,6 +9,48 @@ import torch.nn as nn
 import pomdp_baselines.torchkit.pytorch_utils as ptu
 from gym.spaces import Box, Discrete, Tuple
 from itertools import product
+import torchvision.transforms as T
+from PIL import Image
+from datetime import datetime
+
+def save_image(img, subfolder, name=""):
+    transform = T.ToPILImage() 
+    img = transform(img)
+    img.save("images/"+subfolder+"/"+name+f"_{datetime.now()}.png")
+    
+
+def unflatten_images(
+    images, 
+    shape, 
+    normalize_pixels=True,
+    collapse_first_two_dims=False):
+    """
+    Usage:
+        Unsqueezes third dimension of images from a flat tensor to a 3D tensor. Therefore input dimensions are
+        3D, output dimensions are 5D. First 2 dimensions in the context of the used replay buffer are time step
+        and batch size.
+    Input:
+        images: Of shape (T, B, C*H*W)
+        shape: Of shape (C, H, W)
+        normalize_pixels: Whether the values of the images should be divided by 255. Used to go from [0,255] to [0,1]
+        collapse_first_two_dims: Whether the first two dims should be collapsed
+    Output:
+        if collapse_first_two_dims==True: tensor of shape (T*B, C, H, W)
+        else: tensor of shape (T, B, C, H, W)
+    """
+    # image of size (T, B, C*H*W)
+    batch_size = images.shape[:-1] # (T, B)
+    if collapse_first_two_dims:
+        img_shape = [np.prod(batch_size)] + list(shape)  # (T*B, C, H, W)
+    else:
+        img_shape = list(batch_size) + list(shape)
+        
+    images = torch.reshape(images, img_shape)
+
+    if normalize_pixels:
+        images = images / 255.0
+
+    return images
 
 
 def get_grad_norm(model):
@@ -222,7 +264,6 @@ class FeatureExtractor(nn.Module):
             self.fc = None
 
     def forward(self, inputs):
-        #print("linear: ", inputs.shape)
         if self.output_size != 0:
             return self.activation_function(self.fc(inputs))
         else:

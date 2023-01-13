@@ -97,7 +97,6 @@ class Actor_RNN(nn.Module):
 
     def _get_obs_embedding(self, observs):
         if self.image_encoder is None:  # vector obs
-            print(observs.shape)
             return self.observ_embedder(observs)
         else:  
             # NOTE: Good images 

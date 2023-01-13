@@ -12,6 +12,11 @@ from pomdp_baselines.torchkit import pytorch_utils as ptu
 from pomdp_baselines.torchkit.core import PyTorchModule
 from pomdp_baselines.torchkit.modules import LayerNorm
 
+
+import torchvision.transforms as T
+from PIL import Image
+from datetime import datetime
+
 relu_name = "relu"
 elu_name = "elu"
 ACTIVATIONS = {
@@ -148,6 +153,12 @@ class ImageEncoder(nn.Module):
         self.normalize_pixel = normalize_pixel
         self.embed_size = embed_size
 
+    def set_from_flattened(self, val):
+        self.from_flattened = val
+    
+    def set_normalize_pixel(self, val):
+        self.normalize_pixel = val
+
     def forward(self, image):
         # return embedding of shape [N, embed_size]
         if self.from_flattened:
@@ -160,6 +171,13 @@ class ImageEncoder(nn.Module):
 
         if self.normalize_pixel:
             image = image / 255.0
+
+        """
+        transform = T.ToPILImage() 
+        img = transform(image[0])
+        img.save(f"images/image_test_{datetime.now()}.png")
+        """
+
 
         embed = self.cnn(image)  # (T*B, C, H, W)
 

@@ -38,6 +38,7 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         observ_embedding_size,
         reward_embedding_size,
         rnn_hidden_size,
+        image_augmentation_type,
         dqn_layers,
         policy_layers,
         rnn_num_layers=1,
@@ -54,6 +55,7 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         self.action_dim = action_dim
         self.gamma = gamma
         self.tau = tau
+        self.image_augmentation_type = image_augmentation_type
 
         self.algo = RL_ALGORITHMS[algo_name](**kwargs.get(algo_name, {}), action_dim=action_dim)
 
@@ -71,6 +73,8 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             rnn_num_layers,
             image_encoder=image_encoder_fn(),  # separate weight
         )
+        print("Critic: ")
+        print(self.critic)
         self.critic_optimizer = Adam(self.critic.parameters(), lr=lr)
         # target networks
         self.critic_target = deepcopy(self.critic)
@@ -88,7 +92,9 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             policy_layers,
             rnn_num_layers,
             image_encoder=image_encoder_fn(),  # separate weight
-        )
+        )        
+        print("Actor: ")
+        print(self.actor)
         self.actor_optimizer = Adam(self.actor.parameters(), lr=lr)
         # target networks
         self.actor_target = deepcopy(self.actor)
@@ -162,6 +168,7 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             rewards=rewards,
             dones=dones,
             gamma=self.gamma,
+            image_augmentation_type = self.image_augmentation_type,
         )
 
         # masked Bellman error: masks (T,B,1) ignore the invalid error
@@ -169,6 +176,7 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         # 	should depend on masks > 0.0, not a constant B*T
         q1_pred, q2_pred = q1_pred * masks, q2_pred * masks
         q_target = q_target * masks
+        # .TODO: Comparable to MSE? 
         qf1_loss = ((q1_pred - q_target) ** 2).sum() / num_valid  # TD error
         qf2_loss = ((q2_pred - q_target) ** 2).sum() / num_valid  # TD error
 
@@ -183,10 +191,11 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             actor=self.actor,
             actor_target=self.actor_target,
             critic=self.critic,
-            critic_target=self.critic_target,
+            critic_target=self.critic_target,            
             observs=observs,
             actions=actions,
             rewards=rewards,
+            image_augmentation_type = self.image_augmentation_type,
         )
         # masked policy_loss
         policy_loss = (policy_loss * masks).sum() / num_valid
