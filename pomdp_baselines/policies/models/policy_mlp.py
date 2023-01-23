@@ -30,6 +30,9 @@ class ModelFreeOffPolicy_MLP(nn.Module):
         dqn_layers,
         policy_layers,
         image_augmentation_type,
+        image_augmentation_K,
+        image_augmentation_M,
+        image_augmentation_actor_critic_same_aug,
         lr=3e-4,
         gamma=0.99,
         tau=5e-3,
@@ -42,6 +45,9 @@ class ModelFreeOffPolicy_MLP(nn.Module):
         self.gamma = gamma
         self.tau = tau
         self.image_augmentation_type = image_augmentation_type
+        self.image_augmentation_K = image_augmentation_K
+        self.image_augmentation_M = image_augmentation_M
+        self.image_augmentation_actor_critic_same_aug = image_augmentation_actor_critic_same_aug
 
         self.algo = RL_ALGORITHMS[algo_name](**kwargs[algo_name], action_dim=action_dim)
 
@@ -95,6 +101,9 @@ class ModelFreeOffPolicy_MLP(nn.Module):
             gamma=self.gamma,
             next_observs=next_observs,            
             image_augmentation_type = self.image_augmentation_type,
+            image_augmentation_K = self.image_augmentation_K,
+            image_augmentation_M = self.image_augmentation_M,
+            image_augmentation_actor_critic_same_aug = self.image_augmentation_actor_critic_same_aug,
         )
 
         qf1_loss = F.mse_loss(q1_pred, q_target)  # TD error
@@ -121,6 +130,9 @@ class ModelFreeOffPolicy_MLP(nn.Module):
             critic_target=(self.qf1_target, self.qf2_target),
             observs=observs,
             image_augmentation_type = self.image_augmentation_type,
+            image_augmentation_K = self.image_augmentation_K,
+            image_augmentaion_M = self.image_augmentation_M,
+            image_augmentation_actor_critic_same_aug = self.image_augmentation_actor_critic_same_aug,
         )
         policy_loss = policy_loss.mean()
 

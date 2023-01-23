@@ -19,10 +19,14 @@ if use_image:
     config.env.obs_type = "image"
     config.agent.observ_embedding_size = 0
     config.rl.buffer_size = 100000 # 1e6
-    config.rl.batch_size = 16 # 32
+    config.rl.batch_size = 4 # 32
     config.rl.sampled_seq_len = 64 # 64
     
     config.agent.image_augmentation_type = augmentation.AugmentationType.SAME_OVER_TIME;
+    config.agent.image_augmentation_K = 3;
+    config.agent.image_augmentation_M = 2;
+    config.agent.image_augmentation_actor_critic_same_aug = False;
+    
 else: 
     config.env.obs_type = "state"
 

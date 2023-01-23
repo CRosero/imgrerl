@@ -17,7 +17,7 @@ class AugmentationType(Enum):
     DIFFERENT_OVER_TIME = 3
 
 
-def augment_observs(observs, image_augmentation_type, single_image_shape):
+def augment_observs(observs, image_augmentation_type, single_image_shape, times):
 
     with torch.no_grad():
         T_plus_one, B, _ = observs.shape
@@ -29,10 +29,13 @@ def augment_observs(observs, image_augmentation_type, single_image_shape):
             observs = utl.unflatten_images(observs, single_image_shape, normalize_pixels=True, collapse_first_two_dims=True) # ((T+1)*B, C, H, W)
             aug = RandomShiftsAug(pad=4)
         
-        observs = aug(observs) # ((T+1)*B, C, H, W)
-        observs = torch.reshape(observs, (T_plus_one, B, observs.shape[1]*observs.shape[2]*observs.shape[3])) # ((T+1), B, C*H*W)
+        observs_new = []
+        for i in range(0, times):
+            observs_aug = aug(torch.clone(observs)) # ((T+1)*B, C, H, W)
+            observs_aug = torch.reshape(observs_aug, (T_plus_one, B, observs_aug.shape[1]*observs_aug.shape[2]*observs_aug.shape[3]))
+            observs_new.append(observs_aug) # ((T+1), B, C*H*W)
     
-    return observs
+    return observs_new
         
 
 

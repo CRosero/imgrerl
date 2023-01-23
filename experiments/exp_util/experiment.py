@@ -65,7 +65,10 @@ class Experiment:
         config.eval.num_rollouts = 20
 
         # additional config values
-        config.agent.image_augmentation_type = augmentation.AugmentationType.NONE;
+        config.agent.image_augmentation_type = augmentation.AugmentationType.NONE
+        config.agent.image_augmentation_K = 2
+        config.agent.image_augmentation_M = 2
+        config.agent.image_augmentation_actor_critic_same_aug = True
 
         config.finalize_adding()
         return config
@@ -120,6 +123,9 @@ class Experiment:
                                     gamma=config.agent.gamma,
                                     tau=config.agent.tau,
                                     image_augmentation_type=config.agent.image_augmentation_type, # .TODO: Does this make sense here?
+                                    image_augmentation_K = config.agent.image_augmentation_K,
+                                    image_augmentation_M = config.agent.image_augmentation_M,
+                                    image_augmentation_actor_critic_same_aug = config.agent.image_augmentation_actor_critic_same_aug,
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
         else:
             #cnn_no_fc.input_size
@@ -164,6 +170,9 @@ class Experiment:
                                     tau=config.agent.tau,
                                     image_encoder_fn=image_enc,
                                     image_augmentation_type=config.agent.image_augmentation_type,
+                                    image_augmentation_K=config.agent.image_augmentation_K,
+                                    image_augmentation_M=config.agent.image_augmentation_M,
+                                    image_augmentation_actor_critic_same_aug = config.agent.image_augmentation_actor_critic_same_aug,
                                     sac={"entropy_alpha": config.agent.entropy_alpha}).to(ptu.device)
 
         self._num_updates_per_iter = config.rl.num_updates_per_iter

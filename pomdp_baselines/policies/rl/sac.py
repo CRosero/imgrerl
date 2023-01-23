@@ -90,12 +90,15 @@ class SAC(RLAlgorithmBase):
         actor_target,
         critic,
         critic_target,
-        observs, # (T+1, B, C*H*W)
+        observs_t, # (T+1, B, C*H*W)
+        observs_t_n,
         actions,
         rewards,
         dones,
         gamma,
         image_augmentation_type,
+        image_augmentation_K,
+        image_augmentation_M,
         next_observs=None,  # used in markov_critic
     ):
         # Q^tar(h(t+1), pi(h(t+1))) + H[pi(h(t+1))]
@@ -105,94 +108,121 @@ class SAC(RLAlgorithmBase):
         # .TODO: Does backward work if values are copied?
         # .TODO: torch.nograd used when augmenting -> correct?
 
-        # .TODO: Make adaptive
-        # save states
-        actor_normalize_pixel = actor.image_encoder.normalize_pixel
-        critic_normalize_pixel = critic.image_encoder.normalize_pixel
-        critic_target_normalize_pixel = critic_target.image_encoder.normalize_pixel
+
+        observing_image = image_augmentation_type != augmentation.AugmentationType.NONE
 
 
-
-        if image_augmentation_type != augmentation.AugmentationType.NONE:
-            # set states for this method
-            actor.image_encoder.normalize_pixel = False
-            critic.image_encoder.normalize_pixel = False
-            critic_target.image_encoder.normalize_pixel =  False
-            
-            observs = augmentation.augment_observs(observs, image_augmentation_type, critic.image_encoder.shape)
 
 
 
         with torch.no_grad():
 
-            # get actions from actor, TODO: Add noise?
-            # first next_actions from current policy,
-            if markov_actor:
-                # TODO: Not implemented
-                new_actions, new_log_probs = self.forward_actor(
-                    actor, next_observs if markov_critic else observs
-                )
-            else:
-                # (T+1, B, dim) including reaction to last obs
-                new_actions, new_log_probs = actor(
-                    prev_actions=actions,
-                    rewards=rewards,
-                    observs=next_observs if markov_critic else observs, 
-                )
+            # .TODO: Refactor
+            if observing_image:
+                assert not markov_actor
+                assert not markov_critic
 
+                min_next_q_target_sum = 0
 
+                for k in range(0,image_augmentation_K):
+                    curr_new_actions, curr_new_log_probs = actor(
+                        prev_actions=actions,
+                        rewards=rewards,
+                        observs=observs_t_n[k], 
+                    )             
+                    curr_next_q1, curr_next_q2 = critic_target( 
+                        prev_actions=actions,
+                        rewards=rewards,
+                        observs=observs_t_n[k], 
+                        current_actions=curr_new_actions,
+                    )  # (T+1, B, 1)
+                    curr_min_next_q_target = torch.min(curr_next_q1, curr_next_q2) + self.alpha_entropy * (-curr_new_log_probs)
+                    min_next_q_target_sum += curr_min_next_q_target
 
-            # calculate q values of critic
-            if markov_critic:  # (B, 1) 
-                # .TODO: Not implemented
-                next_q1 = critic_target[0](next_observs, new_actions)
-                next_q2 = critic_target[1](next_observs, new_actions)
-            else:
-                next_q1, next_q2 = critic_target( 
-                    prev_actions=actions,
-                    rewards=rewards,
-                    observs=observs, 
-                    current_actions=new_actions,
-                )  # (T+1, B, 1)
-            
+                min_next_q_target /= image_augmentation_K # (T+1, B, 1)
 
-            min_next_q_target = torch.min(next_q1, next_q2)
-            min_next_q_target += self.alpha_entropy * (-new_log_probs)  # (T+1, B, 1)
-
-
-
-
-            # q_target: (T, B, 1)
-            q_target = rewards + (1.0 - dones) * gamma * min_next_q_target  # next q
-            if not markov_critic:
+                q_target = rewards + (1.0 - dones) * gamma * min_next_q_target  # next q
                 q_target = q_target[1:]  # (T, B, 1)
+
+            else:
+
+                # get actions from actor, TODO: Add noise?
+                # first next_actions from current policy,
+                if markov_actor:
+                    # .TODO: Not implemented
+                    new_actions, new_log_probs = self.forward_actor(
+                        actor, next_observs if markov_critic else observs
+                    )
+                else:
+                    # (T+1, B, dim) including reaction to last obs
+                    new_actions, new_log_probs = actor(
+                        prev_actions=actions,
+                        rewards=rewards,
+                        observs=next_observs if markov_critic else observs_t_n, 
+                    )
+                
+                # calculate q values of critic
+                if markov_critic:  # (B, 1) 
+                    # .TODO: Not implemented
+                    next_q1 = critic_target[0](next_observs, new_actions)
+                    next_q2 = critic_target[1](next_observs, new_actions)
+                else:
+                    next_q1, next_q2 = critic_target( 
+                        prev_actions=actions,
+                        rewards=rewards,
+                        observs=observs_t_n, 
+                        current_actions=new_actions,
+                    )  # (T+1, B, 1)    
+
+                min_next_q_target = torch.min(next_q1, next_q2)
+                min_next_q_target += self.alpha_entropy * (-new_log_probs)  # (T+1, B, 1)
+
+
+                # q_target: (T, B, 1)
+                q_target = rewards + (1.0 - dones) * gamma * min_next_q_target  # next q
+                if not markov_critic:
+                    q_target = q_target[1:]  # (T, B, 1)
+
+
+
+
+
 
 
 
 
 
         if markov_critic:
-            # TODO: Not implemented
+            # .TODO: Not implemented
             q1_pred = critic[0](observs, actions)
             q2_pred = critic[1](observs, actions)
         else:
-            # Q(h(t), a(t)) (T, B, 1)
-            q1_pred, q2_pred = critic(
-                prev_actions=actions,
-                rewards=rewards,
-                observs=observs,
-                current_actions=actions[1:],
-            )  # (T, B, 1)
+            if observing_image:
+                q1_pred_list = []
+                q2_pred_list = []
+                for m in range(0, image_augmentation_M):
+                    # Q(h(t), a(t)) (T, B, 1)
+                    curr_q1_pred, curr_q2_pred = critic(
+                        prev_actions=actions,
+                        rewards=rewards,
+                        observs=observs_t[m],
+                        current_actions=actions[1:],
+                    )  # (T, B, 1)
+                    q1_pred_list.append(curr_q1_pred)
+                    q2_pred_list.append(curr_q2_pred)
+            else: 
+                # Q(h(t), a(t)) (T, B, 1)
+                q1_pred_list, q2_pred_list = critic(
+                    prev_actions=actions,
+                    rewards=rewards,
+                    observs=observs_t,
+                    current_actions=actions[1:],
+                )  # (T, B, 1)
+                q1_pred = [q1_pred]
+                q2_pred = [q2_pred]
 
 
-
-        # recover states
-        if image_augmentation_type != augmentation.AugmentationType.NONE:
-            actor.image_encoder.normalize_pixel = actor_normalize_pixel
-            critic.image_encoder.normalize_pixel = critic_normalize_pixel
-            critic_target.image_encoder.normalize_pixel = critic_target_normalize_pixel
-
-        return (q1_pred, q2_pred), q_target
+        return (q1_pred_list, q2_pred_list), q_target
 
 
 
@@ -204,24 +234,10 @@ class SAC(RLAlgorithmBase):
         actor_target,
         critic,
         critic_target,
-        image_augmentation_type,
         observs,
         actions=None,
         rewards=None,
     ):
-
-        # save states
-        actor_normalize_pixel = actor.image_encoder.normalize_pixel
-        critic_normalize_pixel = critic.image_encoder.normalize_pixel
-
-        if image_augmentation_type != augmentation.AugmentationType.NONE:
-            # set states for this method
-            actor.image_encoder.normalize_pixel = False
-            critic.image_encoder.normalize_pixel =  False
-            
-            observs = augmentation.augment_observs(observs, image_augmentation_type, critic.image_encoder.shape)
-
-
 
         if markov_actor:
             new_actions, log_probs = self.forward_actor(actor, observs)
@@ -240,19 +256,17 @@ class SAC(RLAlgorithmBase):
                 observs=observs,
                 current_actions=new_actions,
             )  # (T+1, B, 1)
+
         min_q_new_actions = torch.min(q1, q2)  # (T+1,B,1)
 
         policy_loss = -min_q_new_actions
         policy_loss += self.alpha_entropy * log_probs
+
         if not markov_critic:
             policy_loss = policy_loss[:-1]  # (T,B,1) remove the last obs
 
-        # recover states
-        if image_augmentation_type != augmentation.AugmentationType.NONE:
-            actor.image_encoder.normalize_pixel = actor_normalize_pixel
-            critic.image_encoder.normalize_pixel = critic_normalize_pixel
         
-        return policy_loss, log_probs
+        return policy_loss, log_probs 
 
     #### Below are used in shared RNN setting
     def forward_actor_in_target(self, actor, actor_target, next_observ):

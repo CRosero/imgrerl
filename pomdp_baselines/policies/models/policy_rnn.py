@@ -17,6 +17,7 @@ from pomdp_baselines.policies.rl import RL_ALGORITHMS
 import pomdp_baselines.torchkit.pytorch_utils as ptu
 from pomdp_baselines.policies.models.recurrent_critic import Critic_RNN
 from pomdp_baselines.policies.models.recurrent_actor import Actor_RNN
+from pomdp_baselines.utils import augmentation
 
 
 class ModelFreeOffPolicy_Separate_RNN(nn.Module):
@@ -39,6 +40,9 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         reward_embedding_size,
         rnn_hidden_size,
         image_augmentation_type,
+        image_augmentation_K,
+        image_augmentation_M,
+        image_augmentation_actor_critic_same_aug,
         dqn_layers,
         policy_layers,
         rnn_num_layers=1,
@@ -56,6 +60,9 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         self.gamma = gamma
         self.tau = tau
         self.image_augmentation_type = image_augmentation_type
+        self.image_augmentation_K = image_augmentation_K
+        self.image_augmentation_M = image_augmentation_M
+        self.image_augmentation_actor_critic_same_aug = image_augmentation_actor_critic_same_aug
 
         self.algo = RL_ALGORITHMS[algo_name](**kwargs.get(algo_name, {}), action_dim=action_dim)
 
@@ -155,30 +162,94 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         )
         num_valid = torch.clamp(masks.sum(), min=1.0)  # as denominator of loss
 
+
+        actor_normalize_pixel = self.actor.image_encoder.normalize_pixel
+        critic_normalize_pixel = self.critic.image_encoder.normalize_pixel
+        critic_target_normalize_pixel = self.critic_target.image_encoder.normalize_pixel
+
+        """
+        Critic_loss: 
+            - Actor: observs_t_n
+            - Critic_target: observs_t_n
+            - Critic: observs_t
+        Actor_loss:
+            - observs_actor: observs_t of size 1
+
+        K: Size of observs_t_n in Critic_loss
+        M: Size of observs_t in Critic_loss -> observs_t size 1 in Actor_loss      
+        """
+        # Augment observations
+        if self.image_augmentation_type != augmentation.AugmentationType.NONE:
+            # set states for this method
+            self.actor.image_encoder.normalize_pixel = False
+            self.critic.image_encoder.normalize_pixel = False
+            self.critic_target.image_encoder.normalize_pixel =  False
+            
+            # Calculate how many different augmentations are needed
+            if self.image_augmentation_type == augmentation.AugmentationType.DIFFERENT_OVER_TIME:
+                needed_augs = max(self.image_augmentation_K,self.image_augmentation_M)
+            else:
+                needed_augs = self.image_augmentation_K+self.image_augmentation_M
+            if not self.image_augmentation_actor_critic_same_aug: # Add another aug if aug should be different for actor/critic
+                needed_augs += 1;
+
+            # Get augmented observations
+            observs_new = augmentation.augment_observs(observs, self.image_augmentation_type, self.critic.image_encoder.shape, needed_augs)
+
+            if self.image_augmentation_type == augmentation.AugmentationType.DIFFERENT_OVER_TIME:
+                if self.image_augmentation_M >= self.image_augmentation_K:
+                    observs_t = observs_new[:self.image_augmentation_M]
+                    observs_t_n = observs_t[:self.image_augmentation_K]
+                else:
+                    observs_t_n = observs_new[:self.image_augmentation_K]
+                    observs_t = observs_t_n[:self.image_augmentation_M]
+            else:                
+                observs_t_n = observs_new[:self.image_augmentation_K]
+                observs_t = observs_new[self.image_augmentation_K:self.image_augmentation_K+self.image_augmentation_M]
+
+            observs_actor = observs_t[0] if self.image_augmentation_actor_critic_same_aug else observs_new[-1] # important to use observs_t, not observs_t_n
+        else:
+            observs_t_n = observs
+            observs_actor = observs
+            observs_t = observs
+
+
+
+
+
+
+
+
         ### 1. Critic loss
-        (q1_pred, q2_pred), q_target = self.algo.critic_loss(
+        (q1_pred_list, q2_pred_list), q_target = self.algo.critic_loss(
             markov_actor=self.Markov_Actor,
             markov_critic=self.Markov_Critic,
             actor=self.actor,
             actor_target=self.actor_target,
             critic=self.critic,
             critic_target=self.critic_target,
-            observs=observs,
+            observs_t=observs_t,
+            observs_t_n=observs_t_n,
             actions=actions,
             rewards=rewards,
             dones=dones,
             gamma=self.gamma,
             image_augmentation_type = self.image_augmentation_type,
+            image_augmentation_K = self.image_augmentation_K,
+            image_augmentation_M = self.image_augmentation_M,
         )
 
-        # masked Bellman error: masks (T,B,1) ignore the invalid error
-        # this is not equal to masks * q1_pred, cuz the denominator in mean()
-        # 	should depend on masks > 0.0, not a constant B*T
-        q1_pred, q2_pred = q1_pred * masks, q2_pred * masks
-        q_target = q_target * masks
-        # .TODO: Comparable to MSE? 
-        qf1_loss = ((q1_pred - q_target) ** 2).sum() / num_valid  # TD error
-        qf2_loss = ((q2_pred - q_target) ** 2).sum() / num_valid  # TD error
+        qf1_loss = 0
+        qf2_loss = 0
+        for q1_pred, q2_pred in zip(q1_pred_list, q2_pred_list):
+            # masked Bellman error: masks (T,B,1) ignore the invalid error
+            # this is not equal to masks * q1_pred, cuz the denominator in mean()
+            # 	should depend on masks > 0.0, not a constant B*T
+            q1_pred, q2_pred = q1_pred * masks, q2_pred * masks
+            q_target = q_target * masks
+            # .TODO: Comparable to MSE? 
+            qf1_loss += ((q1_pred - q_target) ** 2).sum() / num_valid  # TD error
+            qf2_loss += ((q2_pred - q_target) ** 2).sum() / num_valid  # TD error
 
         self.critic_optimizer.zero_grad()
         (qf1_loss + qf2_loss).backward()
@@ -192,11 +263,18 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             actor_target=self.actor_target,
             critic=self.critic,
             critic_target=self.critic_target,            
-            observs=observs,
+            observs=observs_actor,
             actions=actions,
             rewards=rewards,
-            image_augmentation_type = self.image_augmentation_type,
         )
+
+        # recover states
+        if self.image_augmentation_type != augmentation.AugmentationType.NONE:
+            self.actor.image_encoder.normalize_pixel = actor_normalize_pixel
+            self.critic.image_encoder.normalize_pixel = critic_normalize_pixel
+            self.critic_target.image_encoder.normalize_pixel = critic_target_normalize_pixel
+
+
         # masked policy_loss
         policy_loss = (policy_loss * masks).sum() / num_valid
 
