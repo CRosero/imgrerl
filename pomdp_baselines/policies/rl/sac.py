@@ -139,7 +139,7 @@ class SAC(RLAlgorithmBase):
                     curr_min_next_q_target = torch.min(curr_next_q1, curr_next_q2) + self.alpha_entropy * (-curr_new_log_probs)
                     min_next_q_target_sum += curr_min_next_q_target
 
-                min_next_q_target /= image_augmentation_K # (T+1, B, 1)
+                min_next_q_target = min_next_q_target_sum / image_augmentation_K # (T+1, B, 1)
 
                 q_target = rewards + (1.0 - dones) * gamma * min_next_q_target  # next q
                 q_target = q_target[1:]  # (T, B, 1)

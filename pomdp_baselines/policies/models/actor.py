@@ -29,6 +29,7 @@ class MarkovPolicyBase(Mlp):
         if image_encoder is None:
             self.input_size = obs_dim
         else:
+            assert 0 == -1 # Not implemented
             self.input_size = image_encoder.embed_size
 
         # first register MLP

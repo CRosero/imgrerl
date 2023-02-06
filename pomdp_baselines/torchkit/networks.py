@@ -144,14 +144,17 @@ class ImageEncoder(nn.Module):
             h_w = conv_output_shape(h_w, kernel_size, stride)
 
         self.cnn = nn.Sequential(*layers)
+        self.cnn_layer_count = len(layers)
 
+        """
         self.linear = nn.Linear(
             h_w[0] * h_w[1] * self.depths[-1], embed_size
         )  # dreamer does not use it
-
+        """
+        
         self.from_flattened = from_flattened
         self.normalize_pixel = normalize_pixel
-        self.embed_size = embed_size
+        #self.embed_size = embed_size
 
     def set_from_flattened(self, val):
         self.from_flattened = val
@@ -182,5 +185,36 @@ class ImageEncoder(nn.Module):
         embed = self.cnn(image)  # (T*B, C, H, W)
 
         embed = torch.reshape(embed, list(batch_size) + [-1])  # (T, B, C*H*W)
-        embed = self.linear(embed)  # (T, B, embed_size)
+        # embed = self.linear(embed)  # (T, B, embed_size)
+        return embed
+
+
+
+class ImageEncoder_Embedder(nn.Module):
+
+    def __init__(
+        self,
+        input_shape,
+        layer_shapes=[100, 100], # Size of arrays describes amount of layers where each element defines the output size
+        activation=relu_name,
+    ):
+        super(ImageEncoder_Embedder, self).__init__()
+        # .TODO: List pass by reference? -> Probably not
+        layer_shapes.insert(0,input_shape)
+        layers = []
+        for i in range(0, len(layer_shapes)-1):
+            layers.append(
+                nn.Linear(
+                    layer_shapes[i], layer_shapes[i+1]
+                )  
+            )
+            layers.append(ACTIVATIONS[activation]())
+
+        self.linear = nn.Sequential(*layers)
+        self.embed_size = layer_shapes[len(layer_shapes)-1]
+
+
+    def forward(self, features):
+
+        embed = self.linear(features)  # (T, B, embed_size)
         return embed

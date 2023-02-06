@@ -10,6 +10,8 @@ from pomdp_baselines.policies.models import AGENT_ARCHS
 from pomdp_baselines.buffers.seq_replay_buffer_vanilla import SeqReplayBuffer
 from pomdp_baselines.buffers.seq_replay_buffer_efficient import RAMEfficient_SeqReplayBuffer
 from pomdp_baselines.torchkit.networks import ImageEncoder
+from pomdp_baselines.torchkit.networks import ImageEncoder_Embedder
+from pomdp_baselines.torchkit.networks import conv_output_shape
 from pomdp_baselines.utils import helpers as utl
 from pomdp_baselines.utils import augmentation
 
@@ -110,6 +112,7 @@ class Experiment:
         
         
         if config.agent.encoder == "mlp":
+            assert 0==-1 # Not supported right now
             self.agent = Policy_MLP(obs_dim=obs_dim,
                                     action_dim=act_dim,
                                     algo_name=config.agent.algo_name,
@@ -131,20 +134,33 @@ class Experiment:
             #cnn_no_fc.input_size
             #summary(model=cnn_no_fc, input_size = (3, 32, 32))
 
-            # TODO: Do not use resnet; Magic number?
             # add image encoder when taking image as input
             image_enc = lambda: None
+            image_enc_embedder = lambda: None
             if obs_type == mbrl_envs.ObsTypes.IMAGE:
+                
+                kernel_size=3
+                stride=1
                 obs_shape = (self.env.observation_space.shape[2],self.env.observation_space.shape[0],self.env.observation_space.shape[1]) # env uses (W,H,C)
+                depths = [8, 16]
                 image_enc = lambda: ImageEncoder(
                     obs_shape,
                     embed_size=100, # Output length after linear layer
-                    depths=[8, 16], # Channels of Layers?
-                    kernel_size=3,
-                    stride=1,
+                    depths=depths, # Channels of Layers?
+                    kernel_size=kernel_size,
+                    stride=stride,
                     activation="relu",
                     from_flattened=True,
                     normalize_pixel=True,
+                )
+
+                # Create image encoder embedder
+                embed_in_size = 57600 # .TODO: Remove magic number
+                embed_out_size = 100 # .TODO: Read from config
+                image_enc_embedder = lambda: ImageEncoder_Embedder(
+                    embed_in_size,
+                    layer_shapes=[embed_out_size*2, embed_out_size], # Size of arrays describes amount of layers where each element defines the output size
+                    activation="relu",
                 )
                 """
                 model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)
@@ -169,6 +185,8 @@ class Experiment:
                                     gamma=config.agent.gamma,
                                     tau=config.agent.tau,
                                     image_encoder_fn=image_enc,
+                                    image_encoder_embedder_fn=image_enc_embedder,
+                                    image_encoder_embed_size=embed_out_size,
                                     image_augmentation_type=config.agent.image_augmentation_type,
                                     image_augmentation_K=config.agent.image_augmentation_K,
                                     image_augmentation_M=config.agent.image_augmentation_M,
