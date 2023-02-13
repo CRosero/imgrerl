@@ -51,6 +51,8 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         tau=5e-3,
         # pixel obs
         image_encoder_fn=lambda: None,
+        image_encoder_embedder_fn=lambda: None,
+        image_encoder_embed_size=-1,
         **kwargs
     ):
         super().__init__()
@@ -66,6 +68,10 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
 
         self.algo = RL_ALGORITHMS[algo_name](**kwargs.get(algo_name, {}), action_dim=action_dim)
 
+        # Create image encoder
+        image_encoder = image_encoder_fn()
+
+
         # Critics
         self.critic = Critic_RNN(
             obs_dim,
@@ -78,7 +84,10 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             rnn_hidden_size,
             dqn_layers,
             rnn_num_layers,
-            image_encoder=image_encoder_fn(),  # separate weight
+            image_encoder=image_encoder,  # same weight
+            image_encoder_embedder_A=image_encoder_embedder_fn(), # different weight
+            image_encoder_embedder_B=image_encoder_embedder_fn(), # different weight
+            image_encoder_embed_size=image_encoder_embed_size,
         )
         print("Critic: ")
         print(self.critic)
@@ -98,7 +107,10 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             rnn_hidden_size,
             policy_layers,
             rnn_num_layers,
-            image_encoder=image_encoder_fn(),  # separate weight
+            image_encoder=image_encoder,  # same weight
+            image_encoder_embedder_A=image_encoder_embedder_fn(), # different weight
+            image_encoder_embedder_B=image_encoder_embedder_fn(), # different weight
+            image_encoder_embed_size=image_encoder_embed_size,
         )        
         print("Actor: ")
         print(self.actor)
@@ -251,9 +263,24 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
             qf1_loss += ((q1_pred - q_target) ** 2).sum() / num_valid  # TD error
             qf2_loss += ((q2_pred - q_target) ** 2).sum() / num_valid  # TD error
 
+
+        show_cnn_weights = False;
+        if show_cnn_weights:
+            print("Critic CNN parameters before update:")
+            for param in self.critic.image_encoder.cnn[0].parameters():
+                print(param)
+            
+        
         self.critic_optimizer.zero_grad()
         (qf1_loss + qf2_loss).backward()
         self.critic_optimizer.step()
+        
+        if show_cnn_weights:
+            print("Critic CNN parameters after update:")
+            for param in self.critic.image_encoder.cnn[0].parameters():
+                print(param)
+        
+            
 
         ### 2. Actor loss
         policy_loss, log_probs = self.algo.actor_loss(
@@ -278,10 +305,38 @@ class ModelFreeOffPolicy_Separate_RNN(nn.Module):
         # masked policy_loss
         policy_loss = (policy_loss * masks).sum() / num_valid
 
+        if show_cnn_weights:
+            print("Actor CNN parameters before update:")
+            for param in self.actor.image_encoder.cnn[0].parameters():
+                print(param)
+        
+
+
+
+        for i in range(0, self.actor.image_encoder.cnn_layer_count):   
+                for param in self.actor.image_encoder.cnn[i].parameters():
+                    #param.detach()
+                    param.requires_grad = False
+
         self.actor_optimizer.zero_grad()
         policy_loss.backward()
         self.actor_optimizer.step()
 
+        for i in range(0, self.actor.image_encoder.cnn_layer_count):   
+                for param in self.actor.image_encoder.cnn[i].parameters():
+                    #param.detach()
+                    param.requires_grad = True
+
+
+
+
+
+        if show_cnn_weights:
+            print("Actor CNN parameters after update:")
+            for param in self.actor.image_encoder.cnn[0].parameters():
+                print(param)
+        
+            
         outputs = {
             "qf1_loss": qf1_loss.item(),
             "qf2_loss": qf2_loss.item(),

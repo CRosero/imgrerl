@@ -26,6 +26,9 @@ class Actor_RNN(nn.Module):
         policy_layers,
         rnn_num_layers,
         image_encoder=None,
+        image_encoder_embedder_A=None,
+        image_encoder_embedder_B=None,
+        image_encoder_embed_size=-1,
         **kwargs
     ):
         super().__init__()
@@ -37,15 +40,24 @@ class Actor_RNN(nn.Module):
         ### Build Model
         ## 1. embed action, state, reward (Feed-forward layers first)
 
+        assert (image_encoder == None) or (image_encoder_embedder_A != None and image_encoder_embedder_B != None and image_encoder_embed_size>0) 
         self.image_encoder = image_encoder
+        self.image_encoder_embedder_A = image_encoder_embedder_A
+        self.image_encoder_embedder_B = image_encoder_embedder_B
         if self.image_encoder is None:
             self.observ_embedder = utl.FeatureExtractor(
                 obs_dim, observ_embedding_size, F.relu
             )
         else:  # for pixel observation, use external encoder
             assert observ_embedding_size == 0
-            observ_embedding_size = self.image_encoder.embed_size  # reset it
-
+            observ_embedding_size = image_encoder_embed_size  # reset it
+            """
+            for i in range(0, image_encoder.cnn_layer_count):   
+                for param in image_encoder.cnn[i].parameters():
+                    #param.detach()
+                    param.requires_grad = False
+            """
+                
         self.action_embedder = utl.FeatureExtractor(
             action_dim, action_embedding_size, F.relu
         )
@@ -93,7 +105,17 @@ class Actor_RNN(nn.Module):
         )
 
 
-
+    def forward_image_encoder_A(self, observs):
+        with torch.no_grad():
+            embed = self.image_encoder(observs)
+        ret = self.image_encoder_embedder_A(embed)
+        return ret
+    
+    def forward_image_encoder_B(self, observs):
+        with torch.no_grad():
+            embed = self.image_encoder(observs)
+        ret = self.image_encoder_embedder_B(embed)
+        return ret
 
     def _get_obs_embedding(self, observs):
         if self.image_encoder is None:  # vector obs
@@ -104,13 +126,14 @@ class Actor_RNN(nn.Module):
             #img = transform(observs_reshaped[0][0])
             #img.save(f"images/image_test_{datetime.now()}.png")
             
-            return self.image_encoder(observs)
+            
+            return self.forward_image_encoder_A(observs)
 
     def _get_shortcut_obs_embedding(self, observs):
         if self.image_encoder is None:  # vector obs
             return self.current_observ_embedder(observs)
         else:  # pixel obs
-            return self.image_encoder(observs)
+            return self.forward_image_encoder_B(observs)
 
     def get_hidden_states(
         self, prev_actions, rewards, observs, initial_internal_state=None

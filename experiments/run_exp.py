@@ -23,8 +23,8 @@ if use_image:
     config.rl.sampled_seq_len = 64 # 64
     
     config.agent.image_augmentation_type = augmentation.AugmentationType.SAME_OVER_TIME;
-    config.agent.image_augmentation_K = 3;
-    config.agent.image_augmentation_M = 2;
+    config.agent.image_augmentation_K = 1;
+    config.agent.image_augmentation_M = 1;
     config.agent.image_augmentation_actor_critic_same_aug = False;
     
 else: 
