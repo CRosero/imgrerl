@@ -1,4 +1,14 @@
 import os
+import sys
+myDir = os.getcwd()
+sys.path.append(myDir)
+
+from pathlib import Path
+path = Path(myDir)
+a = str(path.parent.absolute())
+
+sys.path.append(a)
+
 from cw2.experiment import AbstractIterativeExperiment
 from cw2.cw_data import cw_logging
 from cw2.cw_data.cw_wandb_logger import WandBLogger
@@ -54,7 +64,8 @@ class Cw2Experiment(AbstractIterativeExperiment):
             if isinstance(l, WandBLogger):
                 if l.run is not None:
                     l.run.config.update(conf_dict.get_raw_dict(), allow_val_change=True)
-
+        print("params: \n", params, "\n")
+        # print("conf_dict: ", conf_dict)
         self._experiment = self._experiment_cls(conf_dict)
 
     def iterate(self, config: dict, rep: int, n: int) -> dict:
