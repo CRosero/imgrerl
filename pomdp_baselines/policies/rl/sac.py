@@ -108,8 +108,8 @@ class SAC(RLAlgorithmBase):
         # .TODO: Does backward work if values are copied?
         # .TODO: torch.nograd used when augmenting -> correct?
 
-
-        observing_image = image_augmentation_type != augmentation.AugmentationType.NONE
+        assert image_augmentation_type != augmentation.AugmentationType.NONE or (image_augmentation_K == 1 and image_augmentation_M==1)
+        augmenting_image = image_augmentation_type != augmentation.AugmentationType.NONE
 
 
 
@@ -118,7 +118,7 @@ class SAC(RLAlgorithmBase):
         with torch.no_grad():
 
             # .TODO: Refactor
-            if observing_image:
+            if augmenting_image:
                 assert not markov_actor
                 assert not markov_critic
 
@@ -197,7 +197,7 @@ class SAC(RLAlgorithmBase):
             q1_pred = critic[0](observs, actions)
             q2_pred = critic[1](observs, actions)
         else:
-            if observing_image:
+            if augmenting_image:
                 q1_pred_list = []
                 q2_pred_list = []
                 for m in range(0, image_augmentation_M):
@@ -218,8 +218,8 @@ class SAC(RLAlgorithmBase):
                     observs=observs_t,
                     current_actions=actions[1:],
                 )  # (T, B, 1)
-                q1_pred = [q1_pred]
-                q2_pred = [q2_pred]
+                q1_pred_list = [q1_pred_list]
+                q2_pred_list = [q2_pred_list]
 
 
         return (q1_pred_list, q2_pred_list), q_target
