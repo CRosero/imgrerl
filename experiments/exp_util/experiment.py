@@ -25,6 +25,8 @@ import torchvision.transforms as T
 from PIL import Image
 from datetime import datetime
 
+import wandb
+
 
 class Experiment:
 
@@ -379,5 +381,7 @@ class Experiment:
             )
             log_dict["eval/return"] = avg_returns
             log_dict["eval/steps"] = avg_steps
+        
+        wandb.log(log_dict)
 
         return log_dict
