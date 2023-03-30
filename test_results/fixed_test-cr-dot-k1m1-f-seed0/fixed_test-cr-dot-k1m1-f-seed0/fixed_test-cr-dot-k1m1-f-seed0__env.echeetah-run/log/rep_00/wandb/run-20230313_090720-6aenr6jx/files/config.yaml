@@ -1,0 +1,80 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.9
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.9
+    start_time: 1678694840.397113
+    t:
+      1:
+      - 1
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 41
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      4: 3.10.9
+      5: 0.13.9
+      8:
+      - 8
+agent:
+  desc: null
+  value:
+    action_embedding_size: 32
+    algo_name: sac
+    dqn_layers:
+    - 512
+    - 512
+    - 512
+    encoder: lstm
+    entropy_alpha: 1.0
+    gamma: 0.99
+    image_augmentation_K: 1
+    image_augmentation_M: 1
+    image_augmentation_actor_critic_same_aug: false
+    image_augmentation_type: AugmentationType.DIFFERENT_OVER_TIME
+    lr: 0.0003
+    observ_embedding_size: 0
+    policy_layers:
+    - 512
+    - 512
+    - 512
+    reward_embedding_size: 32
+    rnn_hidden_size: 512
+    tau: 0.005
+cuda_id:
+  desc: null
+  value: 0
+env:
+  desc: null
+  value:
+    env: cheetah-run
+    obs_type: image
+eval:
+  desc: null
+  value:
+    interval: 20
+    num_rollouts: 20
+rl:
+  desc: null
+  value:
+    batch_size: 32
+    buffer_size: 1000000.0
+    num_init_rollouts: 5
+    num_updates_per_iter: 100
+    rollouts_per_iter: 1
+    sampled_seq_len: 64
+seed:
+  desc: null
+  value: 0

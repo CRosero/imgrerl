@@ -1,0 +1,21 @@
+Hostname: uc2n910.localdomain
+Found slurm config: SLURM
+Seeting default slurm config
+/home/kit/stud/uprnr/imgrerl/test_results/fixed_test-wr-dot-k1m1-t-seed2/fixed_test-wr-dot-k1m1-t-seed2/fixed_test-wr-dot-k1m1-t-seed2__env.ewalker-run/log/rep_00
+[cw2] [WARNING] Skipping run, as /home/kit/stud/uprnr/imgrerl/test_results/fixed_test-wr-dot-k1m1-t-seed2/fixed_test-wr-dot-k1m1-t-seed2/fixed_test-wr-dot-k1m1-t-seed2__env.ewalker-run/log/rep_00 is not empty. Use -o to overwrite.
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n910
+Job ID: 21915500
+Array Job ID: 21915500_0
+Cluster: uc2
+User/Group: uprnr/stud
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:04
+CPU Efficiency: 1.20% of 00:05:32 core-walltime
+Job Wall-clock time: 00:01:23
+Memory Utilized: 319.85 MB
+Memory Efficiency: 0.53% of 58.59 GB

@@ -1,0 +1,2020 @@
+[CW] ------------------------------------------
+[CW] Starting Repetition 000
+[CW] ------------------------------------------
+[CW] ---- Iteration:     0 ----
+[CW] collect: return: 22.39338, steps: 1000.00000, total_steps: 6000.00000
+[CW] train: qf1_loss: 3.32208, qf2_loss: 3.30939, policy_loss: -7.83435, policy_entropy: 4.09781, alpha: 0.98504, time: 78.06548
+[CW] eval: return: 11.14737, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:     1 ----
+[CW] collect: return: 18.50282, steps: 1000.00000, total_steps: 7000.00000
+[CW] train: qf1_loss: 0.10647, qf2_loss: 0.10622, policy_loss: -8.51960, policy_entropy: 4.10160, alpha: 0.95626, time: 68.50199
+[CW] ---------------------------
+[CW] ---- Iteration:     2 ----
+[CW] collect: return: 11.92890, steps: 1000.00000, total_steps: 8000.00000
+[CW] train: qf1_loss: 0.10032, qf2_loss: 0.10018, policy_loss: -9.21680, policy_entropy: 4.10032, alpha: 0.92871, time: 68.52375
+[CW] ---------------------------
+[CW] ---- Iteration:     3 ----
+[CW] collect: return: 13.46982, steps: 1000.00000, total_steps: 9000.00000
+[CW] train: qf1_loss: 0.09246, qf2_loss: 0.09215, policy_loss: -10.15849, policy_entropy: 4.10125, alpha: 0.90231, time: 68.43209
+[CW] ---------------------------
+[CW] ---- Iteration:     4 ----
+[CW] collect: return: 10.73573, steps: 1000.00000, total_steps: 10000.00000
+[CW] train: qf1_loss: 0.08563, qf2_loss: 0.08526, policy_loss: -11.19397, policy_entropy: 4.10210, alpha: 0.87698, time: 68.58322
+[CW] ---------------------------
+[CW] ---- Iteration:     5 ----
+[CW] collect: return: 9.15100, steps: 1000.00000, total_steps: 11000.00000
+[CW] train: qf1_loss: 0.08530, qf2_loss: 0.08427, policy_loss: -12.27327, policy_entropy: 4.10114, alpha: 0.85267, time: 68.60778
+[CW] ---------------------------
+[CW] ---- Iteration:     6 ----
+[CW] collect: return: 17.40241, steps: 1000.00000, total_steps: 12000.00000
+[CW] train: qf1_loss: 0.10336, qf2_loss: 0.10153, policy_loss: -13.41360, policy_entropy: 4.10159, alpha: 0.82930, time: 68.63501
+[CW] ---------------------------
+[CW] ---- Iteration:     7 ----
+[CW] collect: return: 14.92506, steps: 1000.00000, total_steps: 13000.00000
+[CW] train: qf1_loss: 0.11621, qf2_loss: 0.11536, policy_loss: -14.59744, policy_entropy: 4.10067, alpha: 0.80683, time: 68.66441
+[CW] ---------------------------
+[CW] ---- Iteration:     8 ----
+[CW] collect: return: 12.14804, steps: 1000.00000, total_steps: 14000.00000
+[CW] train: qf1_loss: 0.14337, qf2_loss: 0.14317, policy_loss: -15.80601, policy_entropy: 4.10071, alpha: 0.78520, time: 68.71433
+[CW] ---------------------------
+[CW] ---- Iteration:     9 ----
+[CW] collect: return: 23.49766, steps: 1000.00000, total_steps: 15000.00000
+[CW] train: qf1_loss: 0.11317, qf2_loss: 0.11329, policy_loss: -17.01791, policy_entropy: 4.10131, alpha: 0.76436, time: 68.77172
+[CW] ---------------------------
+[CW] ---- Iteration:    10 ----
+[CW] collect: return: 16.10587, steps: 1000.00000, total_steps: 16000.00000
+[CW] train: qf1_loss: 0.16525, qf2_loss: 0.16529, policy_loss: -18.21130, policy_entropy: 4.10087, alpha: 0.74426, time: 68.77580
+[CW] ---------------------------
+[CW] ---- Iteration:    11 ----
+[CW] collect: return: 14.60117, steps: 1000.00000, total_steps: 17000.00000
+[CW] train: qf1_loss: 0.11959, qf2_loss: 0.11953, policy_loss: -19.38936, policy_entropy: 4.10140, alpha: 0.72488, time: 68.76202
+[CW] ---------------------------
+[CW] ---- Iteration:    12 ----
+[CW] collect: return: 18.55557, steps: 1000.00000, total_steps: 18000.00000
+[CW] train: qf1_loss: 0.26039, qf2_loss: 0.26055, policy_loss: -20.53321, policy_entropy: 4.10091, alpha: 0.70617, time: 68.68838
+[CW] ---------------------------
+[CW] ---- Iteration:    13 ----
+[CW] collect: return: 15.46854, steps: 1000.00000, total_steps: 19000.00000
+[CW] train: qf1_loss: 0.06949, qf2_loss: 0.06972, policy_loss: -21.65197, policy_entropy: 4.10081, alpha: 0.68809, time: 68.64567
+[CW] ---------------------------
+[CW] ---- Iteration:    14 ----
+[CW] collect: return: 18.38202, steps: 1000.00000, total_steps: 20000.00000
+[CW] train: qf1_loss: 0.13334, qf2_loss: 0.13354, policy_loss: -22.74048, policy_entropy: 4.10058, alpha: 0.67062, time: 68.61865
+[CW] ---------------------------
+[CW] ---- Iteration:    15 ----
+[CW] collect: return: 13.07154, steps: 1000.00000, total_steps: 21000.00000
+[CW] train: qf1_loss: 0.14046, qf2_loss: 0.14062, policy_loss: -23.80577, policy_entropy: 4.09974, alpha: 0.65372, time: 68.59784
+[CW] ---------------------------
+[CW] ---- Iteration:    16 ----
+[CW] collect: return: 6.81445, steps: 1000.00000, total_steps: 22000.00000
+[CW] train: qf1_loss: 0.16342, qf2_loss: 0.16369, policy_loss: -24.83889, policy_entropy: 4.10045, alpha: 0.63737, time: 68.64195
+[CW] ---------------------------
+[CW] ---- Iteration:    17 ----
+[CW] collect: return: 7.33488, steps: 1000.00000, total_steps: 23000.00000
+[CW] train: qf1_loss: 0.18708, qf2_loss: 0.18730, policy_loss: -25.84855, policy_entropy: 4.10002, alpha: 0.62153, time: 68.65287
+[CW] ---------------------------
+[CW] ---- Iteration:    18 ----
+[CW] collect: return: 17.61751, steps: 1000.00000, total_steps: 24000.00000
+[CW] train: qf1_loss: 0.20899, qf2_loss: 0.20921, policy_loss: -26.82850, policy_entropy: 4.09802, alpha: 0.60619, time: 68.70577
+[CW] ---------------------------
+[CW] ---- Iteration:    19 ----
+[CW] collect: return: 16.83792, steps: 1000.00000, total_steps: 25000.00000
+[CW] train: qf1_loss: 0.14752, qf2_loss: 0.14769, policy_loss: -27.78845, policy_entropy: 4.09867, alpha: 0.59133, time: 68.65605
+[CW] ---------------------------
+[CW] ---- Iteration:    20 ----
+[CW] collect: return: 5.84141, steps: 1000.00000, total_steps: 26000.00000
+[CW] train: qf1_loss: 0.17065, qf2_loss: 0.17091, policy_loss: -28.70900, policy_entropy: 4.09745, alpha: 0.57691, time: 68.69680
+[CW] eval: return: 16.00010, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:    21 ----
+[CW] collect: return: 9.29267, steps: 1000.00000, total_steps: 27000.00000
+[CW] train: qf1_loss: 0.18095, qf2_loss: 0.18118, policy_loss: -29.60814, policy_entropy: 4.09726, alpha: 0.56293, time: 68.74740
+[CW] ---------------------------
+[CW] ---- Iteration:    22 ----
+[CW] collect: return: 11.09920, steps: 1000.00000, total_steps: 28000.00000
+[CW] train: qf1_loss: 0.26809, qf2_loss: 0.26859, policy_loss: -30.48240, policy_entropy: 4.09554, alpha: 0.54935, time: 68.79647
+[CW] ---------------------------
+[CW] ---- Iteration:    23 ----
+[CW] collect: return: 14.26136, steps: 1000.00000, total_steps: 29000.00000
+[CW] train: qf1_loss: 0.15386, qf2_loss: 0.15425, policy_loss: -31.33521, policy_entropy: 4.09425, alpha: 0.53618, time: 68.86817
+[CW] ---------------------------
+[CW] ---- Iteration:    24 ----
+[CW] collect: return: 12.92589, steps: 1000.00000, total_steps: 30000.00000
+[CW] train: qf1_loss: 0.20017, qf2_loss: 0.20048, policy_loss: -32.15357, policy_entropy: 4.09526, alpha: 0.52338, time: 68.83142
+[CW] ---------------------------
+[CW] ---- Iteration:    25 ----
+[CW] collect: return: 14.94148, steps: 1000.00000, total_steps: 31000.00000
+[CW] train: qf1_loss: 0.23970, qf2_loss: 0.24020, policy_loss: -32.95170, policy_entropy: 4.09283, alpha: 0.51094, time: 68.80811
+[CW] ---------------------------
+[CW] ---- Iteration:    26 ----
+[CW] collect: return: 15.27006, steps: 1000.00000, total_steps: 32000.00000
+[CW] train: qf1_loss: 0.20688, qf2_loss: 0.20731, policy_loss: -33.71930, policy_entropy: 4.09320, alpha: 0.49885, time: 68.77834
+[CW] ---------------------------
+[CW] ---- Iteration:    27 ----
+[CW] collect: return: 12.13471, steps: 1000.00000, total_steps: 33000.00000
+[CW] train: qf1_loss: 0.22837, qf2_loss: 0.22883, policy_loss: -34.47686, policy_entropy: 4.09133, alpha: 0.48709, time: 68.73005
+[CW] ---------------------------
+[CW] ---- Iteration:    28 ----
+[CW] collect: return: 12.08487, steps: 1000.00000, total_steps: 34000.00000
+[CW] train: qf1_loss: 0.23410, qf2_loss: 0.23455, policy_loss: -35.20401, policy_entropy: 4.09099, alpha: 0.47566, time: 68.81639
+[CW] ---------------------------
+[CW] ---- Iteration:    29 ----
+[CW] collect: return: 18.60432, steps: 1000.00000, total_steps: 35000.00000
+[CW] train: qf1_loss: 0.26102, qf2_loss: 0.26175, policy_loss: -35.90584, policy_entropy: 4.09005, alpha: 0.46454, time: 68.76878
+[CW] ---------------------------
+[CW] ---- Iteration:    30 ----
+[CW] collect: return: 7.22769, steps: 1000.00000, total_steps: 36000.00000
+[CW] train: qf1_loss: 0.22848, qf2_loss: 0.22884, policy_loss: -36.59057, policy_entropy: 4.08983, alpha: 0.45371, time: 68.62760
+[CW] ---------------------------
+[CW] ---- Iteration:    31 ----
+[CW] collect: return: 19.13136, steps: 1000.00000, total_steps: 37000.00000
+[CW] train: qf1_loss: 0.24579, qf2_loss: 0.24626, policy_loss: -37.25195, policy_entropy: 4.08718, alpha: 0.44317, time: 68.68519
+[CW] ---------------------------
+[CW] ---- Iteration:    32 ----
+[CW] collect: return: 10.34452, steps: 1000.00000, total_steps: 38000.00000
+[CW] train: qf1_loss: 0.27401, qf2_loss: 0.27473, policy_loss: -37.87875, policy_entropy: 4.08651, alpha: 0.43291, time: 68.67012
+[CW] ---------------------------
+[CW] ---- Iteration:    33 ----
+[CW] collect: return: 18.74182, steps: 1000.00000, total_steps: 39000.00000
+[CW] train: qf1_loss: 0.21583, qf2_loss: 0.21617, policy_loss: -38.50805, policy_entropy: 4.08508, alpha: 0.42292, time: 68.79601
+[CW] ---------------------------
+[CW] ---- Iteration:    34 ----
+[CW] collect: return: 13.10123, steps: 1000.00000, total_steps: 40000.00000
+[CW] train: qf1_loss: 0.27856, qf2_loss: 0.27903, policy_loss: -39.10163, policy_entropy: 4.08331, alpha: 0.41318, time: 68.70027
+[CW] ---------------------------
+[CW] ---- Iteration:    35 ----
+[CW] collect: return: 13.52067, steps: 1000.00000, total_steps: 41000.00000
+[CW] train: qf1_loss: 0.36182, qf2_loss: 0.36263, policy_loss: -39.67981, policy_entropy: 4.08177, alpha: 0.40369, time: 68.72250
+[CW] ---------------------------
+[CW] ---- Iteration:    36 ----
+[CW] collect: return: 31.52650, steps: 1000.00000, total_steps: 42000.00000
+[CW] train: qf1_loss: 0.19134, qf2_loss: 0.19155, policy_loss: -40.24715, policy_entropy: 4.07906, alpha: 0.39445, time: 68.71603
+[CW] ---------------------------
+[CW] ---- Iteration:    37 ----
+[CW] collect: return: 23.01178, steps: 1000.00000, total_steps: 43000.00000
+[CW] train: qf1_loss: 0.30163, qf2_loss: 0.30233, policy_loss: -40.79592, policy_entropy: 4.07759, alpha: 0.38543, time: 68.64278
+[CW] ---------------------------
+[CW] ---- Iteration:    38 ----
+[CW] collect: return: 15.36386, steps: 1000.00000, total_steps: 44000.00000
+[CW] train: qf1_loss: 0.22219, qf2_loss: 0.22283, policy_loss: -41.31930, policy_entropy: 4.07465, alpha: 0.37665, time: 68.66329
+[CW] ---------------------------
+[CW] ---- Iteration:    39 ----
+[CW] collect: return: 23.14409, steps: 1000.00000, total_steps: 45000.00000
+[CW] train: qf1_loss: 0.34864, qf2_loss: 0.34893, policy_loss: -41.82405, policy_entropy: 4.07221, alpha: 0.36808, time: 68.70947
+[CW] ---------------------------
+[CW] ---- Iteration:    40 ----
+[CW] collect: return: 12.28103, steps: 1000.00000, total_steps: 46000.00000
+[CW] train: qf1_loss: 0.29709, qf2_loss: 0.29821, policy_loss: -42.30442, policy_entropy: 4.07260, alpha: 0.35972, time: 68.76533
+[CW] eval: return: 17.20715, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:    41 ----
+[CW] collect: return: 17.73568, steps: 1000.00000, total_steps: 47000.00000
+[CW] train: qf1_loss: 0.30281, qf2_loss: 0.30322, policy_loss: -42.77190, policy_entropy: 4.06615, alpha: 0.35157, time: 68.79036
+[CW] ---------------------------
+[CW] ---- Iteration:    42 ----
+[CW] collect: return: 9.71031, steps: 1000.00000, total_steps: 48000.00000
+[CW] train: qf1_loss: 0.23845, qf2_loss: 0.23883, policy_loss: -43.21058, policy_entropy: 4.06348, alpha: 0.34362, time: 68.72307
+[CW] ---------------------------
+[CW] ---- Iteration:    43 ----
+[CW] collect: return: 18.42975, steps: 1000.00000, total_steps: 49000.00000
+[CW] train: qf1_loss: 0.30110, qf2_loss: 0.30197, policy_loss: -43.64670, policy_entropy: 4.06029, alpha: 0.33586, time: 68.67444
+[CW] ---------------------------
+[CW] ---- Iteration:    44 ----
+[CW] collect: return: 16.34966, steps: 1000.00000, total_steps: 50000.00000
+[CW] train: qf1_loss: 0.30505, qf2_loss: 0.30593, policy_loss: -44.07349, policy_entropy: 4.05639, alpha: 0.32829, time: 68.72093
+[CW] ---------------------------
+[CW] ---- Iteration:    45 ----
+[CW] collect: return: 22.48401, steps: 1000.00000, total_steps: 51000.00000
+[CW] train: qf1_loss: 0.33115, qf2_loss: 0.33106, policy_loss: -44.48245, policy_entropy: 4.05231, alpha: 0.32090, time: 68.69294
+[CW] ---------------------------
+[CW] ---- Iteration:    46 ----
+[CW] collect: return: 13.14953, steps: 1000.00000, total_steps: 52000.00000
+[CW] train: qf1_loss: 0.29466, qf2_loss: 0.29422, policy_loss: -44.85638, policy_entropy: 4.04778, alpha: 0.31369, time: 68.67626
+[CW] ---------------------------
+[CW] ---- Iteration:    47 ----
+[CW] collect: return: 7.40510, steps: 1000.00000, total_steps: 53000.00000
+[CW] train: qf1_loss: 0.29966, qf2_loss: 0.29698, policy_loss: -45.22941, policy_entropy: 4.04471, alpha: 0.30666, time: 68.71622
+[CW] ---------------------------
+[CW] ---- Iteration:    48 ----
+[CW] collect: return: 19.18123, steps: 1000.00000, total_steps: 54000.00000
+[CW] train: qf1_loss: 0.30491, qf2_loss: 0.30325, policy_loss: -45.58851, policy_entropy: 4.04351, alpha: 0.29978, time: 68.75083
+[CW] ---------------------------
+[CW] ---- Iteration:    49 ----
+[CW] collect: return: 13.55279, steps: 1000.00000, total_steps: 55000.00000
+[CW] train: qf1_loss: 0.27537, qf2_loss: 0.26911, policy_loss: -45.92579, policy_entropy: 4.04031, alpha: 0.29307, time: 68.70898
+[CW] ---------------------------
+[CW] ---- Iteration:    50 ----
+[CW] collect: return: 18.48030, steps: 1000.00000, total_steps: 56000.00000
+[CW] train: qf1_loss: 0.29082, qf2_loss: 0.28636, policy_loss: -46.24265, policy_entropy: 4.03847, alpha: 0.28652, time: 68.70309
+[CW] ---------------------------
+[CW] ---- Iteration:    51 ----
+[CW] collect: return: 12.06367, steps: 1000.00000, total_steps: 57000.00000
+[CW] train: qf1_loss: 0.33951, qf2_loss: 0.33514, policy_loss: -46.56367, policy_entropy: 4.03745, alpha: 0.28012, time: 68.63176
+[CW] ---------------------------
+[CW] ---- Iteration:    52 ----
+[CW] collect: return: 25.20563, steps: 1000.00000, total_steps: 58000.00000
+[CW] train: qf1_loss: 0.23440, qf2_loss: 0.23024, policy_loss: -46.86198, policy_entropy: 4.03580, alpha: 0.27386, time: 68.68901
+[CW] ---------------------------
+[CW] ---- Iteration:    53 ----
+[CW] collect: return: 22.19930, steps: 1000.00000, total_steps: 59000.00000
+[CW] train: qf1_loss: 0.34047, qf2_loss: 0.33773, policy_loss: -47.15192, policy_entropy: 4.03485, alpha: 0.26775, time: 68.83395
+[CW] ---------------------------
+[CW] ---- Iteration:    54 ----
+[CW] collect: return: 13.25725, steps: 1000.00000, total_steps: 60000.00000
+[CW] train: qf1_loss: 0.27399, qf2_loss: 0.27105, policy_loss: -47.43845, policy_entropy: 4.03020, alpha: 0.26178, time: 68.73795
+[CW] ---------------------------
+[CW] ---- Iteration:    55 ----
+[CW] collect: return: 16.90802, steps: 1000.00000, total_steps: 61000.00000
+[CW] train: qf1_loss: 0.36860, qf2_loss: 0.36708, policy_loss: -47.71424, policy_entropy: 4.02511, alpha: 0.25595, time: 68.81234
+[CW] ---------------------------
+[CW] ---- Iteration:    56 ----
+[CW] collect: return: 22.95026, steps: 1000.00000, total_steps: 62000.00000
+[CW] train: qf1_loss: 0.22555, qf2_loss: 0.22470, policy_loss: -47.97762, policy_entropy: 4.02257, alpha: 0.25026, time: 68.77965
+[CW] ---------------------------
+[CW] ---- Iteration:    57 ----
+[CW] collect: return: 18.99195, steps: 1000.00000, total_steps: 63000.00000
+[CW] train: qf1_loss: 0.31184, qf2_loss: 0.31089, policy_loss: -48.21999, policy_entropy: 4.02677, alpha: 0.24469, time: 68.78776
+[CW] ---------------------------
+[CW] ---- Iteration:    58 ----
+[CW] collect: return: 7.52667, steps: 1000.00000, total_steps: 64000.00000
+[CW] train: qf1_loss: 0.28060, qf2_loss: 0.28069, policy_loss: -48.44081, policy_entropy: 4.02627, alpha: 0.23925, time: 68.73932
+[CW] ---------------------------
+[CW] ---- Iteration:    59 ----
+[CW] collect: return: 15.18172, steps: 1000.00000, total_steps: 65000.00000
+[CW] train: qf1_loss: 0.26738, qf2_loss: 0.26737, policy_loss: -48.66927, policy_entropy: 4.02339, alpha: 0.23393, time: 75.75285
+[CW] ---------------------------
+[CW] ---- Iteration:    60 ----
+[CW] collect: return: 29.71827, steps: 1000.00000, total_steps: 66000.00000
+[CW] train: qf1_loss: 0.32760, qf2_loss: 0.32882, policy_loss: -48.86699, policy_entropy: 4.02440, alpha: 0.22873, time: 70.96503
+[CW] eval: return: 18.24517, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:    61 ----
+[CW] collect: return: 21.79765, steps: 1000.00000, total_steps: 67000.00000
+[CW] train: qf1_loss: 0.27521, qf2_loss: 0.27537, policy_loss: -49.08083, policy_entropy: 4.01850, alpha: 0.22365, time: 69.50169
+[CW] ---------------------------
+[CW] ---- Iteration:    62 ----
+[CW] collect: return: 13.26275, steps: 1000.00000, total_steps: 68000.00000
+[CW] train: qf1_loss: 0.36297, qf2_loss: 0.36417, policy_loss: -49.24928, policy_entropy: 4.03857, alpha: 0.21869, time: 69.25046
+[CW] ---------------------------
+[CW] ---- Iteration:    63 ----
+[CW] collect: return: 11.52414, steps: 1000.00000, total_steps: 69000.00000
+[CW] train: qf1_loss: 0.21820, qf2_loss: 0.21821, policy_loss: -49.40879, policy_entropy: 4.04295, alpha: 0.21382, time: 69.26889
+[CW] ---------------------------
+[CW] ---- Iteration:    64 ----
+[CW] collect: return: 11.96874, steps: 1000.00000, total_steps: 70000.00000
+[CW] train: qf1_loss: 0.29705, qf2_loss: 0.29767, policy_loss: -49.57184, policy_entropy: 4.04179, alpha: 0.20907, time: 69.34367
+[CW] ---------------------------
+[CW] ---- Iteration:    65 ----
+[CW] collect: return: 9.42753, steps: 1000.00000, total_steps: 71000.00000
+[CW] train: qf1_loss: 0.24058, qf2_loss: 0.24153, policy_loss: -49.72482, policy_entropy: 4.03214, alpha: 0.20443, time: 69.39142
+[CW] ---------------------------
+[CW] ---- Iteration:    66 ----
+[CW] collect: return: 15.29248, steps: 1000.00000, total_steps: 72000.00000
+[CW] train: qf1_loss: 0.26122, qf2_loss: 0.26210, policy_loss: -49.88044, policy_entropy: 4.02507, alpha: 0.19989, time: 69.29152
+[CW] ---------------------------
+[CW] ---- Iteration:    67 ----
+[CW] collect: return: 18.55233, steps: 1000.00000, total_steps: 73000.00000
+[CW] train: qf1_loss: 0.31191, qf2_loss: 0.31527, policy_loss: -50.01509, policy_entropy: 4.01163, alpha: 0.19546, time: 69.30365
+[CW] ---------------------------
+[CW] ---- Iteration:    68 ----
+[CW] collect: return: 17.58310, steps: 1000.00000, total_steps: 74000.00000
+[CW] train: qf1_loss: 0.22074, qf2_loss: 0.22219, policy_loss: -50.14276, policy_entropy: 4.00657, alpha: 0.19114, time: 69.38724
+[CW] ---------------------------
+[CW] ---- Iteration:    69 ----
+[CW] collect: return: 38.25628, steps: 1000.00000, total_steps: 75000.00000
+[CW] train: qf1_loss: 0.33689, qf2_loss: 0.33792, policy_loss: -50.27888, policy_entropy: 3.99810, alpha: 0.18691, time: 69.43963
+[CW] ---------------------------
+[CW] ---- Iteration:    70 ----
+[CW] collect: return: 20.58545, steps: 1000.00000, total_steps: 76000.00000
+[CW] train: qf1_loss: 0.24337, qf2_loss: 0.24485, policy_loss: -50.39079, policy_entropy: 3.98887, alpha: 0.18278, time: 69.54368
+[CW] ---------------------------
+[CW] ---- Iteration:    71 ----
+[CW] collect: return: 18.85982, steps: 1000.00000, total_steps: 77000.00000
+[CW] train: qf1_loss: 0.34985, qf2_loss: 0.35086, policy_loss: -50.50292, policy_entropy: 3.97375, alpha: 0.17874, time: 69.40292
+[CW] ---------------------------
+[CW] ---- Iteration:    72 ----
+[CW] collect: return: 16.39009, steps: 1000.00000, total_steps: 78000.00000
+[CW] train: qf1_loss: 0.24302, qf2_loss: 0.24398, policy_loss: -50.60217, policy_entropy: 3.97612, alpha: 0.17479, time: 69.30029
+[CW] ---------------------------
+[CW] ---- Iteration:    73 ----
+[CW] collect: return: 39.88107, steps: 1000.00000, total_steps: 79000.00000
+[CW] train: qf1_loss: 0.33416, qf2_loss: 0.33636, policy_loss: -50.71115, policy_entropy: 3.95274, alpha: 0.17094, time: 69.32606
+[CW] ---------------------------
+[CW] ---- Iteration:    74 ----
+[CW] collect: return: 21.88385, steps: 1000.00000, total_steps: 80000.00000
+[CW] train: qf1_loss: 0.29707, qf2_loss: 0.29941, policy_loss: -50.79200, policy_entropy: 3.92367, alpha: 0.16718, time: 69.32603
+[CW] ---------------------------
+[CW] ---- Iteration:    75 ----
+[CW] collect: return: 12.62042, steps: 1000.00000, total_steps: 81000.00000
+[CW] train: qf1_loss: 0.32751, qf2_loss: 0.33056, policy_loss: -50.88623, policy_entropy: 3.92295, alpha: 0.16351, time: 69.28902
+[CW] ---------------------------
+[CW] ---- Iteration:    76 ----
+[CW] collect: return: 37.57012, steps: 1000.00000, total_steps: 82000.00000
+[CW] train: qf1_loss: 0.31030, qf2_loss: 0.31238, policy_loss: -50.94172, policy_entropy: 3.92109, alpha: 0.15992, time: 69.35830
+[CW] ---------------------------
+[CW] ---- Iteration:    77 ----
+[CW] collect: return: 21.74689, steps: 1000.00000, total_steps: 83000.00000
+[CW] train: qf1_loss: 0.51148, qf2_loss: 0.51254, policy_loss: -51.01457, policy_entropy: 3.92010, alpha: 0.15640, time: 69.33219
+[CW] ---------------------------
+[CW] ---- Iteration:    78 ----
+[CW] collect: return: 26.15215, steps: 1000.00000, total_steps: 84000.00000
+[CW] train: qf1_loss: 0.28166, qf2_loss: 0.27966, policy_loss: -51.05955, policy_entropy: 3.90380, alpha: 0.15296, time: 69.27751
+[CW] ---------------------------
+[CW] ---- Iteration:    79 ----
+[CW] collect: return: 24.93699, steps: 1000.00000, total_steps: 85000.00000
+[CW] train: qf1_loss: 0.28593, qf2_loss: 0.28662, policy_loss: -51.12693, policy_entropy: 3.88553, alpha: 0.14960, time: 69.33302
+[CW] ---------------------------
+[CW] ---- Iteration:    80 ----
+[CW] collect: return: 30.95861, steps: 1000.00000, total_steps: 86000.00000
+[CW] train: qf1_loss: 0.34423, qf2_loss: 0.34827, policy_loss: -51.17933, policy_entropy: 3.87333, alpha: 0.14632, time: 69.30829
+[CW] eval: return: 32.97808, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:    81 ----
+[CW] collect: return: 37.65420, steps: 1000.00000, total_steps: 87000.00000
+[CW] train: qf1_loss: 0.36032, qf2_loss: 0.36162, policy_loss: -51.24089, policy_entropy: 3.85897, alpha: 0.14311, time: 69.24769
+[CW] ---------------------------
+[CW] ---- Iteration:    82 ----
+[CW] collect: return: 46.38310, steps: 1000.00000, total_steps: 88000.00000
+[CW] train: qf1_loss: 0.34469, qf2_loss: 0.34598, policy_loss: -51.29182, policy_entropy: 3.83054, alpha: 0.13998, time: 69.37289
+[CW] ---------------------------
+[CW] ---- Iteration:    83 ----
+[CW] collect: return: 42.13548, steps: 1000.00000, total_steps: 89000.00000
+[CW] train: qf1_loss: 0.37717, qf2_loss: 0.37816, policy_loss: -51.31709, policy_entropy: 3.80478, alpha: 0.13692, time: 69.30111
+[CW] ---------------------------
+[CW] ---- Iteration:    84 ----
+[CW] collect: return: 37.92020, steps: 1000.00000, total_steps: 90000.00000
+[CW] train: qf1_loss: 0.35941, qf2_loss: 0.36043, policy_loss: -51.35090, policy_entropy: 3.75161, alpha: 0.13394, time: 69.28686
+[CW] ---------------------------
+[CW] ---- Iteration:    85 ----
+[CW] collect: return: 53.50151, steps: 1000.00000, total_steps: 91000.00000
+[CW] train: qf1_loss: 0.40003, qf2_loss: 0.40072, policy_loss: -51.40416, policy_entropy: 3.66015, alpha: 0.13103, time: 69.23016
+[CW] ---------------------------
+[CW] ---- Iteration:    86 ----
+[CW] collect: return: 40.26293, steps: 1000.00000, total_steps: 92000.00000
+[CW] train: qf1_loss: 0.40098, qf2_loss: 0.40094, policy_loss: -51.43733, policy_entropy: 3.56036, alpha: 0.12822, time: 69.29283
+[CW] ---------------------------
+[CW] ---- Iteration:    87 ----
+[CW] collect: return: 59.94491, steps: 1000.00000, total_steps: 93000.00000
+[CW] train: qf1_loss: 0.37615, qf2_loss: 0.37408, policy_loss: -51.46753, policy_entropy: 3.37833, alpha: 0.12549, time: 69.28326
+[CW] ---------------------------
+[CW] ---- Iteration:    88 ----
+[CW] collect: return: 85.25828, steps: 1000.00000, total_steps: 94000.00000
+[CW] train: qf1_loss: 0.35761, qf2_loss: 0.35772, policy_loss: -51.53020, policy_entropy: 3.07133, alpha: 0.12287, time: 69.28300
+[CW] ---------------------------
+[CW] ---- Iteration:    89 ----
+[CW] collect: return: 82.42672, steps: 1000.00000, total_steps: 95000.00000
+[CW] train: qf1_loss: 0.44905, qf2_loss: 0.45004, policy_loss: -51.57653, policy_entropy: 2.74716, alpha: 0.12038, time: 69.29038
+[CW] ---------------------------
+[CW] ---- Iteration:    90 ----
+[CW] collect: return: 27.70241, steps: 1000.00000, total_steps: 96000.00000
+[CW] train: qf1_loss: 0.43553, qf2_loss: 0.43489, policy_loss: -51.64099, policy_entropy: 2.44762, alpha: 0.11802, time: 69.38075
+[CW] ---------------------------
+[CW] ---- Iteration:    91 ----
+[CW] collect: return: 63.55314, steps: 1000.00000, total_steps: 97000.00000
+[CW] train: qf1_loss: 0.38373, qf2_loss: 0.38521, policy_loss: -51.72032, policy_entropy: 2.05954, alpha: 0.11577, time: 69.37957
+[CW] ---------------------------
+[CW] ---- Iteration:    92 ----
+[CW] collect: return: 104.07759, steps: 1000.00000, total_steps: 98000.00000
+[CW] train: qf1_loss: 0.55710, qf2_loss: 0.55807, policy_loss: -51.82137, policy_entropy: 1.78960, alpha: 0.11363, time: 69.43828
+[CW] ---------------------------
+[CW] ---- Iteration:    93 ----
+[CW] collect: return: 63.13764, steps: 1000.00000, total_steps: 99000.00000
+[CW] train: qf1_loss: 0.41074, qf2_loss: 0.41731, policy_loss: -51.93213, policy_entropy: 1.52914, alpha: 0.11157, time: 69.50435
+[CW] ---------------------------
+[CW] ---- Iteration:    94 ----
+[CW] collect: return: 109.32607, steps: 1000.00000, total_steps: 100000.00000
+[CW] train: qf1_loss: 0.46295, qf2_loss: 0.46530, policy_loss: -52.09389, policy_entropy: 1.25121, alpha: 0.10960, time: 69.45037
+[CW] ---------------------------
+[CW] ---- Iteration:    95 ----
+[CW] collect: return: 43.63065, steps: 1000.00000, total_steps: 101000.00000
+[CW] train: qf1_loss: 0.49356, qf2_loss: 0.49326, policy_loss: -52.21092, policy_entropy: 1.31384, alpha: 0.10766, time: 69.29768
+[CW] ---------------------------
+[CW] ---- Iteration:    96 ----
+[CW] collect: return: 65.16727, steps: 1000.00000, total_steps: 102000.00000
+[CW] train: qf1_loss: 0.44159, qf2_loss: 0.43985, policy_loss: -52.35340, policy_entropy: 1.23318, alpha: 0.10574, time: 69.38265
+[CW] ---------------------------
+[CW] ---- Iteration:    97 ----
+[CW] collect: return: 104.39520, steps: 1000.00000, total_steps: 103000.00000
+[CW] train: qf1_loss: 0.38123, qf2_loss: 0.38106, policy_loss: -52.48879, policy_entropy: 1.16948, alpha: 0.10382, time: 69.36075
+[CW] ---------------------------
+[CW] ---- Iteration:    98 ----
+[CW] collect: return: 89.96476, steps: 1000.00000, total_steps: 104000.00000
+[CW] train: qf1_loss: 0.51696, qf2_loss: 0.51920, policy_loss: -52.60841, policy_entropy: 1.29491, alpha: 0.10193, time: 69.38151
+[CW] ---------------------------
+[CW] ---- Iteration:    99 ----
+[CW] collect: return: 44.62307, steps: 1000.00000, total_steps: 105000.00000
+[CW] train: qf1_loss: 0.42029, qf2_loss: 0.41924, policy_loss: -52.68161, policy_entropy: 1.39098, alpha: 0.10002, time: 69.39917
+[CW] ---------------------------
+[CW] ---- Iteration:   100 ----
+[CW] collect: return: 119.70266, steps: 1000.00000, total_steps: 106000.00000
+[CW] train: qf1_loss: 0.39190, qf2_loss: 0.39360, policy_loss: -52.78868, policy_entropy: 1.35153, alpha: 0.09811, time: 69.43408
+[CW] eval: return: 85.83156, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   101 ----
+[CW] collect: return: 54.78912, steps: 1000.00000, total_steps: 107000.00000
+[CW] train: qf1_loss: 0.40288, qf2_loss: 0.40088, policy_loss: -52.87992, policy_entropy: 1.46934, alpha: 0.09621, time: 69.39928
+[CW] ---------------------------
+[CW] ---- Iteration:   102 ----
+[CW] collect: return: 28.19153, steps: 1000.00000, total_steps: 108000.00000
+[CW] train: qf1_loss: 0.42583, qf2_loss: 0.42870, policy_loss: -52.94290, policy_entropy: 1.43323, alpha: 0.09432, time: 69.36270
+[CW] ---------------------------
+[CW] ---- Iteration:   103 ----
+[CW] collect: return: 106.18393, steps: 1000.00000, total_steps: 109000.00000
+[CW] train: qf1_loss: 0.53192, qf2_loss: 0.53317, policy_loss: -52.98330, policy_entropy: 1.45563, alpha: 0.09246, time: 69.36952
+[CW] ---------------------------
+[CW] ---- Iteration:   104 ----
+[CW] collect: return: 95.59777, steps: 1000.00000, total_steps: 110000.00000
+[CW] train: qf1_loss: 0.38358, qf2_loss: 0.38343, policy_loss: -53.11210, policy_entropy: 1.40533, alpha: 0.09062, time: 69.38510
+[CW] ---------------------------
+[CW] ---- Iteration:   105 ----
+[CW] collect: return: 105.39239, steps: 1000.00000, total_steps: 111000.00000
+[CW] train: qf1_loss: 0.36053, qf2_loss: 0.36158, policy_loss: -53.19598, policy_entropy: 1.18368, alpha: 0.08883, time: 69.46786
+[CW] ---------------------------
+[CW] ---- Iteration:   106 ----
+[CW] collect: return: 107.09209, steps: 1000.00000, total_steps: 112000.00000
+[CW] train: qf1_loss: 0.41851, qf2_loss: 0.41926, policy_loss: -53.24959, policy_entropy: 1.14458, alpha: 0.08710, time: 69.48318
+[CW] ---------------------------
+[CW] ---- Iteration:   107 ----
+[CW] collect: return: 113.20093, steps: 1000.00000, total_steps: 113000.00000
+[CW] train: qf1_loss: 0.46820, qf2_loss: 0.46975, policy_loss: -53.35809, policy_entropy: 1.10697, alpha: 0.08539, time: 69.41482
+[CW] ---------------------------
+[CW] ---- Iteration:   108 ----
+[CW] collect: return: 62.10881, steps: 1000.00000, total_steps: 114000.00000
+[CW] train: qf1_loss: 0.42573, qf2_loss: 0.42834, policy_loss: -53.42466, policy_entropy: 0.93535, alpha: 0.08372, time: 69.41998
+[CW] ---------------------------
+[CW] ---- Iteration:   109 ----
+[CW] collect: return: 95.22647, steps: 1000.00000, total_steps: 115000.00000
+[CW] train: qf1_loss: 0.43436, qf2_loss: 0.43427, policy_loss: -53.50350, policy_entropy: 0.86251, alpha: 0.08211, time: 69.40059
+[CW] ---------------------------
+[CW] ---- Iteration:   110 ----
+[CW] collect: return: 40.60104, steps: 1000.00000, total_steps: 116000.00000
+[CW] train: qf1_loss: 0.42840, qf2_loss: 0.42975, policy_loss: -53.57325, policy_entropy: 0.72160, alpha: 0.08053, time: 69.31948
+[CW] ---------------------------
+[CW] ---- Iteration:   111 ----
+[CW] collect: return: 41.09759, steps: 1000.00000, total_steps: 117000.00000
+[CW] train: qf1_loss: 0.42689, qf2_loss: 0.42710, policy_loss: -53.64171, policy_entropy: 0.66533, alpha: 0.07899, time: 69.29036
+[CW] ---------------------------
+[CW] ---- Iteration:   112 ----
+[CW] collect: return: 30.23580, steps: 1000.00000, total_steps: 118000.00000
+[CW] train: qf1_loss: 0.45378, qf2_loss: 0.45064, policy_loss: -53.70618, policy_entropy: 0.61730, alpha: 0.07749, time: 69.35600
+[CW] ---------------------------
+[CW] ---- Iteration:   113 ----
+[CW] collect: return: 32.22608, steps: 1000.00000, total_steps: 119000.00000
+[CW] train: qf1_loss: 0.50481, qf2_loss: 0.49918, policy_loss: -53.75704, policy_entropy: 0.73658, alpha: 0.07598, time: 69.64058
+[CW] ---------------------------
+[CW] ---- Iteration:   114 ----
+[CW] collect: return: 62.95378, steps: 1000.00000, total_steps: 120000.00000
+[CW] train: qf1_loss: 0.50330, qf2_loss: 0.50613, policy_loss: -53.80344, policy_entropy: 0.73610, alpha: 0.07448, time: 71.21842
+[CW] ---------------------------
+[CW] ---- Iteration:   115 ----
+[CW] collect: return: 26.12928, steps: 1000.00000, total_steps: 121000.00000
+[CW] train: qf1_loss: 0.40036, qf2_loss: 0.39613, policy_loss: -53.88642, policy_entropy: 0.60561, alpha: 0.07301, time: 72.60111
+[CW] ---------------------------
+[CW] ---- Iteration:   116 ----
+[CW] collect: return: 87.35566, steps: 1000.00000, total_steps: 122000.00000
+[CW] train: qf1_loss: 0.50872, qf2_loss: 0.50597, policy_loss: -53.95406, policy_entropy: 0.58919, alpha: 0.07157, time: 69.29100
+[CW] ---------------------------
+[CW] ---- Iteration:   117 ----
+[CW] collect: return: 98.00226, steps: 1000.00000, total_steps: 123000.00000
+[CW] train: qf1_loss: 0.40872, qf2_loss: 0.40961, policy_loss: -54.01201, policy_entropy: 0.53196, alpha: 0.07017, time: 69.32950
+[CW] ---------------------------
+[CW] ---- Iteration:   118 ----
+[CW] collect: return: 58.84534, steps: 1000.00000, total_steps: 124000.00000
+[CW] train: qf1_loss: 0.46595, qf2_loss: 0.46358, policy_loss: -54.04552, policy_entropy: 0.53837, alpha: 0.06877, time: 69.43126
+[CW] ---------------------------
+[CW] ---- Iteration:   119 ----
+[CW] collect: return: 95.57503, steps: 1000.00000, total_steps: 125000.00000
+[CW] train: qf1_loss: 0.45044, qf2_loss: 0.44878, policy_loss: -54.12972, policy_entropy: 0.50240, alpha: 0.06741, time: 69.38776
+[CW] ---------------------------
+[CW] ---- Iteration:   120 ----
+[CW] collect: return: 91.75794, steps: 1000.00000, total_steps: 126000.00000
+[CW] train: qf1_loss: 0.50201, qf2_loss: 0.49806, policy_loss: -54.15467, policy_entropy: 0.42533, alpha: 0.06606, time: 69.46918
+[CW] eval: return: 72.32732, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   121 ----
+[CW] collect: return: 79.02124, steps: 1000.00000, total_steps: 127000.00000
+[CW] train: qf1_loss: 0.57176, qf2_loss: 0.56187, policy_loss: -54.15938, policy_entropy: 0.28542, alpha: 0.06476, time: 69.35066
+[CW] ---------------------------
+[CW] ---- Iteration:   122 ----
+[CW] collect: return: 95.66521, steps: 1000.00000, total_steps: 128000.00000
+[CW] train: qf1_loss: 0.50558, qf2_loss: 0.50046, policy_loss: -54.25103, policy_entropy: -0.02341, alpha: 0.06351, time: 69.32141
+[CW] ---------------------------
+[CW] ---- Iteration:   123 ----
+[CW] collect: return: 59.23603, steps: 1000.00000, total_steps: 129000.00000
+[CW] train: qf1_loss: 0.51185, qf2_loss: 0.50463, policy_loss: -54.30019, policy_entropy: -0.18258, alpha: 0.06233, time: 69.29150
+[CW] ---------------------------
+[CW] ---- Iteration:   124 ----
+[CW] collect: return: 57.82198, steps: 1000.00000, total_steps: 130000.00000
+[CW] train: qf1_loss: 0.51923, qf2_loss: 0.50893, policy_loss: -54.34283, policy_entropy: -0.29723, alpha: 0.06117, time: 69.74173
+[CW] ---------------------------
+[CW] ---- Iteration:   125 ----
+[CW] collect: return: 99.83867, steps: 1000.00000, total_steps: 131000.00000
+[CW] train: qf1_loss: 0.57724, qf2_loss: 0.57297, policy_loss: -54.39117, policy_entropy: -0.42421, alpha: 0.06004, time: 69.63871
+[CW] ---------------------------
+[CW] ---- Iteration:   126 ----
+[CW] collect: return: 64.06667, steps: 1000.00000, total_steps: 132000.00000
+[CW] train: qf1_loss: 0.47070, qf2_loss: 0.46252, policy_loss: -54.42375, policy_entropy: -0.60113, alpha: 0.05897, time: 69.37218
+[CW] ---------------------------
+[CW] ---- Iteration:   127 ----
+[CW] collect: return: 109.15429, steps: 1000.00000, total_steps: 133000.00000
+[CW] train: qf1_loss: 0.65805, qf2_loss: 0.65137, policy_loss: -54.54536, policy_entropy: -0.60648, alpha: 0.05791, time: 69.58547
+[CW] ---------------------------
+[CW] ---- Iteration:   128 ----
+[CW] collect: return: 42.74726, steps: 1000.00000, total_steps: 134000.00000
+[CW] train: qf1_loss: 0.48585, qf2_loss: 0.47605, policy_loss: -54.54803, policy_entropy: -0.83539, alpha: 0.05687, time: 69.48436
+[CW] ---------------------------
+[CW] ---- Iteration:   129 ----
+[CW] collect: return: 79.54953, steps: 1000.00000, total_steps: 135000.00000
+[CW] train: qf1_loss: 0.52905, qf2_loss: 0.52198, policy_loss: -54.59942, policy_entropy: -0.93032, alpha: 0.05587, time: 69.44456
+[CW] ---------------------------
+[CW] ---- Iteration:   130 ----
+[CW] collect: return: 76.18264, steps: 1000.00000, total_steps: 136000.00000
+[CW] train: qf1_loss: 0.59972, qf2_loss: 0.58931, policy_loss: -54.57956, policy_entropy: -0.95506, alpha: 0.05489, time: 69.42920
+[CW] ---------------------------
+[CW] ---- Iteration:   131 ----
+[CW] collect: return: 75.99827, steps: 1000.00000, total_steps: 137000.00000
+[CW] train: qf1_loss: 0.63529, qf2_loss: 0.62471, policy_loss: -54.76172, policy_entropy: -1.26277, alpha: 0.05394, time: 69.52342
+[CW] ---------------------------
+[CW] ---- Iteration:   132 ----
+[CW] collect: return: 52.93122, steps: 1000.00000, total_steps: 138000.00000
+[CW] train: qf1_loss: 0.57443, qf2_loss: 0.56603, policy_loss: -54.76243, policy_entropy: -1.33194, alpha: 0.05303, time: 69.43665
+[CW] ---------------------------
+[CW] ---- Iteration:   133 ----
+[CW] collect: return: 125.83801, steps: 1000.00000, total_steps: 139000.00000
+[CW] train: qf1_loss: 0.56068, qf2_loss: 0.55214, policy_loss: -54.81535, policy_entropy: -1.36490, alpha: 0.05213, time: 69.47871
+[CW] ---------------------------
+[CW] ---- Iteration:   134 ----
+[CW] collect: return: 58.80686, steps: 1000.00000, total_steps: 140000.00000
+[CW] train: qf1_loss: 0.78416, qf2_loss: 0.76983, policy_loss: -54.88999, policy_entropy: -1.35846, alpha: 0.05123, time: 69.47405
+[CW] ---------------------------
+[CW] ---- Iteration:   135 ----
+[CW] collect: return: 62.13044, steps: 1000.00000, total_steps: 141000.00000
+[CW] train: qf1_loss: 0.60015, qf2_loss: 0.59396, policy_loss: -54.97193, policy_entropy: -1.46828, alpha: 0.05035, time: 69.49274
+[CW] ---------------------------
+[CW] ---- Iteration:   136 ----
+[CW] collect: return: 65.97669, steps: 1000.00000, total_steps: 142000.00000
+[CW] train: qf1_loss: 0.60780, qf2_loss: 0.59754, policy_loss: -55.01720, policy_entropy: -1.46416, alpha: 0.04947, time: 69.41322
+[CW] ---------------------------
+[CW] ---- Iteration:   137 ----
+[CW] collect: return: 98.27825, steps: 1000.00000, total_steps: 143000.00000
+[CW] train: qf1_loss: 0.61404, qf2_loss: 0.60731, policy_loss: -55.02055, policy_entropy: -1.39728, alpha: 0.04859, time: 69.39816
+[CW] ---------------------------
+[CW] ---- Iteration:   138 ----
+[CW] collect: return: 52.63006, steps: 1000.00000, total_steps: 144000.00000
+[CW] train: qf1_loss: 0.62832, qf2_loss: 0.61875, policy_loss: -55.09563, policy_entropy: -1.68069, alpha: 0.04773, time: 69.49437
+[CW] ---------------------------
+[CW] ---- Iteration:   139 ----
+[CW] collect: return: 61.24343, steps: 1000.00000, total_steps: 145000.00000
+[CW] train: qf1_loss: 0.68412, qf2_loss: 0.67453, policy_loss: -55.15785, policy_entropy: -1.77954, alpha: 0.04691, time: 69.43453
+[CW] ---------------------------
+[CW] ---- Iteration:   140 ----
+[CW] collect: return: 135.23726, steps: 1000.00000, total_steps: 146000.00000
+[CW] train: qf1_loss: 0.63968, qf2_loss: 0.63256, policy_loss: -55.12128, policy_entropy: -1.84293, alpha: 0.04612, time: 69.53090
+[CW] eval: return: 71.15990, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   141 ----
+[CW] collect: return: 72.10657, steps: 1000.00000, total_steps: 147000.00000
+[CW] train: qf1_loss: 0.70368, qf2_loss: 0.69006, policy_loss: -55.22244, policy_entropy: -1.93726, alpha: 0.04533, time: 69.39639
+[CW] ---------------------------
+[CW] ---- Iteration:   142 ----
+[CW] collect: return: 92.34778, steps: 1000.00000, total_steps: 148000.00000
+[CW] train: qf1_loss: 0.73530, qf2_loss: 0.73586, policy_loss: -55.37003, policy_entropy: -2.02048, alpha: 0.04456, time: 69.41624
+[CW] ---------------------------
+[CW] ---- Iteration:   143 ----
+[CW] collect: return: 91.43273, steps: 1000.00000, total_steps: 149000.00000
+[CW] train: qf1_loss: 0.78187, qf2_loss: 0.77364, policy_loss: -55.47678, policy_entropy: -2.07023, alpha: 0.04382, time: 69.32921
+[CW] ---------------------------
+[CW] ---- Iteration:   144 ----
+[CW] collect: return: 103.70834, steps: 1000.00000, total_steps: 150000.00000
+[CW] train: qf1_loss: 0.73502, qf2_loss: 0.72922, policy_loss: -55.57615, policy_entropy: -2.16036, alpha: 0.04307, time: 69.37034
+[CW] ---------------------------
+[CW] ---- Iteration:   145 ----
+[CW] collect: return: 71.03834, steps: 1000.00000, total_steps: 151000.00000
+[CW] train: qf1_loss: 0.79427, qf2_loss: 0.78737, policy_loss: -55.71954, policy_entropy: -2.46473, alpha: 0.04236, time: 69.39987
+[CW] ---------------------------
+[CW] ---- Iteration:   146 ----
+[CW] collect: return: 31.34270, steps: 1000.00000, total_steps: 152000.00000
+[CW] train: qf1_loss: 0.78423, qf2_loss: 0.77985, policy_loss: -55.62524, policy_entropy: -2.35022, alpha: 0.04168, time: 69.45198
+[CW] ---------------------------
+[CW] ---- Iteration:   147 ----
+[CW] collect: return: 109.01086, steps: 1000.00000, total_steps: 153000.00000
+[CW] train: qf1_loss: 0.73588, qf2_loss: 0.72790, policy_loss: -55.79611, policy_entropy: -2.57876, alpha: 0.04100, time: 69.48346
+[CW] ---------------------------
+[CW] ---- Iteration:   148 ----
+[CW] collect: return: 130.34664, steps: 1000.00000, total_steps: 154000.00000
+[CW] train: qf1_loss: 0.82788, qf2_loss: 0.83033, policy_loss: -55.94350, policy_entropy: -2.50236, alpha: 0.04033, time: 69.41539
+[CW] ---------------------------
+[CW] ---- Iteration:   149 ----
+[CW] collect: return: 100.24960, steps: 1000.00000, total_steps: 155000.00000
+[CW] train: qf1_loss: 0.80227, qf2_loss: 0.79145, policy_loss: -55.92495, policy_entropy: -2.44593, alpha: 0.03966, time: 69.38261
+[CW] ---------------------------
+[CW] ---- Iteration:   150 ----
+[CW] collect: return: 125.80900, steps: 1000.00000, total_steps: 156000.00000
+[CW] train: qf1_loss: 0.86125, qf2_loss: 0.85825, policy_loss: -55.94065, policy_entropy: -2.60691, alpha: 0.03899, time: 69.37654
+[CW] ---------------------------
+[CW] ---- Iteration:   151 ----
+[CW] collect: return: 63.73307, steps: 1000.00000, total_steps: 157000.00000
+[CW] train: qf1_loss: 1.05109, qf2_loss: 1.03939, policy_loss: -56.06073, policy_entropy: -2.69426, alpha: 0.03834, time: 69.39822
+[CW] ---------------------------
+[CW] ---- Iteration:   152 ----
+[CW] collect: return: 174.74157, steps: 1000.00000, total_steps: 158000.00000
+[CW] train: qf1_loss: 1.20405, qf2_loss: 1.20803, policy_loss: -56.14780, policy_entropy: -2.58235, alpha: 0.03769, time: 69.36759
+[CW] ---------------------------
+[CW] ---- Iteration:   153 ----
+[CW] collect: return: 104.84656, steps: 1000.00000, total_steps: 159000.00000
+[CW] train: qf1_loss: 0.77111, qf2_loss: 0.76534, policy_loss: -56.33713, policy_entropy: -2.76152, alpha: 0.03706, time: 69.37703
+[CW] ---------------------------
+[CW] ---- Iteration:   154 ----
+[CW] collect: return: 78.02610, steps: 1000.00000, total_steps: 160000.00000
+[CW] train: qf1_loss: 0.83315, qf2_loss: 0.83315, policy_loss: -56.50859, policy_entropy: -2.81113, alpha: 0.03644, time: 69.36064
+[CW] ---------------------------
+[CW] ---- Iteration:   155 ----
+[CW] collect: return: 223.36936, steps: 1000.00000, total_steps: 161000.00000
+[CW] train: qf1_loss: 0.89270, qf2_loss: 0.89029, policy_loss: -56.45758, policy_entropy: -2.97421, alpha: 0.03584, time: 72.26490
+[CW] ---------------------------
+[CW] ---- Iteration:   156 ----
+[CW] collect: return: 72.03960, steps: 1000.00000, total_steps: 162000.00000
+[CW] train: qf1_loss: 1.02612, qf2_loss: 1.02540, policy_loss: -56.74432, policy_entropy: -3.10829, alpha: 0.03527, time: 69.45074
+[CW] ---------------------------
+[CW] ---- Iteration:   157 ----
+[CW] collect: return: 192.16868, steps: 1000.00000, total_steps: 163000.00000
+[CW] train: qf1_loss: 0.90629, qf2_loss: 0.90541, policy_loss: -56.71258, policy_entropy: -3.04590, alpha: 0.03471, time: 69.56578
+[CW] ---------------------------
+[CW] ---- Iteration:   158 ----
+[CW] collect: return: 124.79141, steps: 1000.00000, total_steps: 164000.00000
+[CW] train: qf1_loss: 0.89579, qf2_loss: 0.90362, policy_loss: -56.85211, policy_entropy: -3.04772, alpha: 0.03413, time: 69.40506
+[CW] ---------------------------
+[CW] ---- Iteration:   159 ----
+[CW] collect: return: 80.11525, steps: 1000.00000, total_steps: 165000.00000
+[CW] train: qf1_loss: 1.04221, qf2_loss: 1.04413, policy_loss: -56.95895, policy_entropy: -3.19949, alpha: 0.03358, time: 69.44999
+[CW] ---------------------------
+[CW] ---- Iteration:   160 ----
+[CW] collect: return: 224.54798, steps: 1000.00000, total_steps: 166000.00000
+[CW] train: qf1_loss: 1.00702, qf2_loss: 1.01139, policy_loss: -56.93042, policy_entropy: -3.09196, alpha: 0.03303, time: 69.60029
+[CW] eval: return: 105.56093, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   161 ----
+[CW] collect: return: 63.27021, steps: 1000.00000, total_steps: 167000.00000
+[CW] train: qf1_loss: 1.16825, qf2_loss: 1.17129, policy_loss: -57.19725, policy_entropy: -3.15434, alpha: 0.03246, time: 69.52518
+[CW] ---------------------------
+[CW] ---- Iteration:   162 ----
+[CW] collect: return: 205.01674, steps: 1000.00000, total_steps: 168000.00000
+[CW] train: qf1_loss: 1.01206, qf2_loss: 1.02238, policy_loss: -57.20790, policy_entropy: -3.42320, alpha: 0.03193, time: 69.51686
+[CW] ---------------------------
+[CW] ---- Iteration:   163 ----
+[CW] collect: return: 132.70318, steps: 1000.00000, total_steps: 169000.00000
+[CW] train: qf1_loss: 1.01593, qf2_loss: 1.02128, policy_loss: -57.36286, policy_entropy: -3.38737, alpha: 0.03143, time: 69.54797
+[CW] ---------------------------
+[CW] ---- Iteration:   164 ----
+[CW] collect: return: 124.01842, steps: 1000.00000, total_steps: 170000.00000
+[CW] train: qf1_loss: 1.39415, qf2_loss: 1.39686, policy_loss: -57.56966, policy_entropy: -3.67148, alpha: 0.03094, time: 69.43205
+[CW] ---------------------------
+[CW] ---- Iteration:   165 ----
+[CW] collect: return: 152.83858, steps: 1000.00000, total_steps: 171000.00000
+[CW] train: qf1_loss: 1.13660, qf2_loss: 1.14451, policy_loss: -57.73999, policy_entropy: -3.73985, alpha: 0.03049, time: 69.50609
+[CW] ---------------------------
+[CW] ---- Iteration:   166 ----
+[CW] collect: return: 91.49303, steps: 1000.00000, total_steps: 172000.00000
+[CW] train: qf1_loss: 1.04462, qf2_loss: 1.05826, policy_loss: -57.88795, policy_entropy: -3.96092, alpha: 0.03006, time: 69.51158
+[CW] ---------------------------
+[CW] ---- Iteration:   167 ----
+[CW] collect: return: 40.67548, steps: 1000.00000, total_steps: 173000.00000
+[CW] train: qf1_loss: 1.22307, qf2_loss: 1.23076, policy_loss: -57.89427, policy_entropy: -3.89845, alpha: 0.02964, time: 70.82952
+[CW] ---------------------------
+[CW] ---- Iteration:   168 ----
+[CW] collect: return: 213.71617, steps: 1000.00000, total_steps: 174000.00000
+[CW] train: qf1_loss: 1.03853, qf2_loss: 1.05247, policy_loss: -57.95039, policy_entropy: -4.04277, alpha: 0.02923, time: 73.05876
+[CW] ---------------------------
+[CW] ---- Iteration:   169 ----
+[CW] collect: return: 62.47273, steps: 1000.00000, total_steps: 175000.00000
+[CW] train: qf1_loss: 1.54636, qf2_loss: 1.54365, policy_loss: -58.24215, policy_entropy: -4.07500, alpha: 0.02883, time: 69.46429
+[CW] ---------------------------
+[CW] ---- Iteration:   170 ----
+[CW] collect: return: 239.13065, steps: 1000.00000, total_steps: 176000.00000
+[CW] train: qf1_loss: 1.18672, qf2_loss: 1.19101, policy_loss: -58.34862, policy_entropy: -4.03332, alpha: 0.02842, time: 69.49662
+[CW] ---------------------------
+[CW] ---- Iteration:   171 ----
+[CW] collect: return: 145.10906, steps: 1000.00000, total_steps: 177000.00000
+[CW] train: qf1_loss: 1.09105, qf2_loss: 1.11117, policy_loss: -58.44240, policy_entropy: -4.18803, alpha: 0.02803, time: 69.40880
+[CW] ---------------------------
+[CW] ---- Iteration:   172 ----
+[CW] collect: return: 92.37136, steps: 1000.00000, total_steps: 178000.00000
+[CW] train: qf1_loss: 1.07876, qf2_loss: 1.09341, policy_loss: -58.40005, policy_entropy: -4.08035, alpha: 0.02764, time: 69.39439
+[CW] ---------------------------
+[CW] ---- Iteration:   173 ----
+[CW] collect: return: 157.91773, steps: 1000.00000, total_steps: 179000.00000
+[CW] train: qf1_loss: 1.38507, qf2_loss: 1.40135, policy_loss: -58.62523, policy_entropy: -4.08944, alpha: 0.02723, time: 69.41165
+[CW] ---------------------------
+[CW] ---- Iteration:   174 ----
+[CW] collect: return: 104.98743, steps: 1000.00000, total_steps: 180000.00000
+[CW] train: qf1_loss: 1.18050, qf2_loss: 1.18835, policy_loss: -58.77925, policy_entropy: -4.20217, alpha: 0.02683, time: 69.42315
+[CW] ---------------------------
+[CW] ---- Iteration:   175 ----
+[CW] collect: return: 69.75850, steps: 1000.00000, total_steps: 181000.00000
+[CW] train: qf1_loss: 1.16207, qf2_loss: 1.17721, policy_loss: -58.76740, policy_entropy: -4.16392, alpha: 0.02644, time: 69.42775
+[CW] ---------------------------
+[CW] ---- Iteration:   176 ----
+[CW] collect: return: 62.87084, steps: 1000.00000, total_steps: 182000.00000
+[CW] train: qf1_loss: 1.13967, qf2_loss: 1.15327, policy_loss: -59.12125, policy_entropy: -4.31910, alpha: 0.02604, time: 69.37415
+[CW] ---------------------------
+[CW] ---- Iteration:   177 ----
+[CW] collect: return: 58.88915, steps: 1000.00000, total_steps: 183000.00000
+[CW] train: qf1_loss: 1.33483, qf2_loss: 1.34827, policy_loss: -59.12496, policy_entropy: -4.40284, alpha: 0.02569, time: 69.52655
+[CW] ---------------------------
+[CW] ---- Iteration:   178 ----
+[CW] collect: return: 238.53011, steps: 1000.00000, total_steps: 184000.00000
+[CW] train: qf1_loss: 1.53143, qf2_loss: 1.53323, policy_loss: -58.99591, policy_entropy: -4.34809, alpha: 0.02532, time: 69.41908
+[CW] ---------------------------
+[CW] ---- Iteration:   179 ----
+[CW] collect: return: 198.34324, steps: 1000.00000, total_steps: 185000.00000
+[CW] train: qf1_loss: 1.34885, qf2_loss: 1.35572, policy_loss: -59.24322, policy_entropy: -4.41612, alpha: 0.02495, time: 69.62900
+[CW] ---------------------------
+[CW] ---- Iteration:   180 ----
+[CW] collect: return: 72.04121, steps: 1000.00000, total_steps: 186000.00000
+[CW] train: qf1_loss: 1.26431, qf2_loss: 1.27917, policy_loss: -59.22770, policy_entropy: -4.44738, alpha: 0.02460, time: 69.39815
+[CW] eval: return: 128.12120, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   181 ----
+[CW] collect: return: 244.32643, steps: 1000.00000, total_steps: 187000.00000
+[CW] train: qf1_loss: 1.56494, qf2_loss: 1.57805, policy_loss: -59.30552, policy_entropy: -4.47816, alpha: 0.02425, time: 69.45084
+[CW] ---------------------------
+[CW] ---- Iteration:   182 ----
+[CW] collect: return: 176.67524, steps: 1000.00000, total_steps: 188000.00000
+[CW] train: qf1_loss: 1.42986, qf2_loss: 1.43825, policy_loss: -59.73904, policy_entropy: -4.75053, alpha: 0.02392, time: 69.68030
+[CW] ---------------------------
+[CW] ---- Iteration:   183 ----
+[CW] collect: return: 138.84505, steps: 1000.00000, total_steps: 189000.00000
+[CW] train: qf1_loss: 1.35301, qf2_loss: 1.37040, policy_loss: -59.72567, policy_entropy: -4.68971, alpha: 0.02363, time: 69.46462
+[CW] ---------------------------
+[CW] ---- Iteration:   184 ----
+[CW] collect: return: 102.26083, steps: 1000.00000, total_steps: 190000.00000
+[CW] train: qf1_loss: 1.43148, qf2_loss: 1.44936, policy_loss: -60.16507, policy_entropy: -4.83028, alpha: 0.02334, time: 69.49555
+[CW] ---------------------------
+[CW] ---- Iteration:   185 ----
+[CW] collect: return: 226.44480, steps: 1000.00000, total_steps: 191000.00000
+[CW] train: qf1_loss: 1.52839, qf2_loss: 1.54279, policy_loss: -60.08997, policy_entropy: -4.72963, alpha: 0.02304, time: 69.52620
+[CW] ---------------------------
+[CW] ---- Iteration:   186 ----
+[CW] collect: return: 90.99592, steps: 1000.00000, total_steps: 192000.00000
+[CW] train: qf1_loss: 1.61985, qf2_loss: 1.62659, policy_loss: -60.15347, policy_entropy: -4.80144, alpha: 0.02274, time: 69.35454
+[CW] ---------------------------
+[CW] ---- Iteration:   187 ----
+[CW] collect: return: 223.42678, steps: 1000.00000, total_steps: 193000.00000
+[CW] train: qf1_loss: 1.44008, qf2_loss: 1.45441, policy_loss: -60.48976, policy_entropy: -4.90705, alpha: 0.02247, time: 69.47483
+[CW] ---------------------------
+[CW] ---- Iteration:   188 ----
+[CW] collect: return: 161.51425, steps: 1000.00000, total_steps: 194000.00000
+[CW] train: qf1_loss: 1.66981, qf2_loss: 1.68612, policy_loss: -60.54493, policy_entropy: -4.87374, alpha: 0.02217, time: 69.44417
+[CW] ---------------------------
+[CW] ---- Iteration:   189 ----
+[CW] collect: return: 91.01041, steps: 1000.00000, total_steps: 195000.00000
+[CW] train: qf1_loss: 1.48069, qf2_loss: 1.49488, policy_loss: -60.60566, policy_entropy: -4.93207, alpha: 0.02190, time: 69.42186
+[CW] ---------------------------
+[CW] ---- Iteration:   190 ----
+[CW] collect: return: 220.07553, steps: 1000.00000, total_steps: 196000.00000
+[CW] train: qf1_loss: 1.55890, qf2_loss: 1.58793, policy_loss: -60.90273, policy_entropy: -4.99423, alpha: 0.02163, time: 69.57027
+[CW] ---------------------------
+[CW] ---- Iteration:   191 ----
+[CW] collect: return: 69.51527, steps: 1000.00000, total_steps: 197000.00000
+[CW] train: qf1_loss: 1.59463, qf2_loss: 1.61907, policy_loss: -60.89719, policy_entropy: -4.81384, alpha: 0.02136, time: 69.49546
+[CW] ---------------------------
+[CW] ---- Iteration:   192 ----
+[CW] collect: return: 78.55516, steps: 1000.00000, total_steps: 198000.00000
+[CW] train: qf1_loss: 1.88641, qf2_loss: 1.90744, policy_loss: -61.02695, policy_entropy: -4.97889, alpha: 0.02106, time: 69.52264
+[CW] ---------------------------
+[CW] ---- Iteration:   193 ----
+[CW] collect: return: 184.76367, steps: 1000.00000, total_steps: 199000.00000
+[CW] train: qf1_loss: 1.57481, qf2_loss: 1.58789, policy_loss: -61.22490, policy_entropy: -5.15573, alpha: 0.02080, time: 69.55192
+[CW] ---------------------------
+[CW] ---- Iteration:   194 ----
+[CW] collect: return: 205.71077, steps: 1000.00000, total_steps: 200000.00000
+[CW] train: qf1_loss: 2.22626, qf2_loss: 2.24771, policy_loss: -61.31013, policy_entropy: -5.16530, alpha: 0.02057, time: 69.49708
+[CW] ---------------------------
+[CW] ---- Iteration:   195 ----
+[CW] collect: return: 265.72187, steps: 1000.00000, total_steps: 201000.00000
+[CW] train: qf1_loss: 1.56316, qf2_loss: 1.58917, policy_loss: -61.70618, policy_entropy: -5.46155, alpha: 0.02038, time: 69.56244
+[CW] ---------------------------
+[CW] ---- Iteration:   196 ----
+[CW] collect: return: 87.27466, steps: 1000.00000, total_steps: 202000.00000
+[CW] train: qf1_loss: 1.54757, qf2_loss: 1.57282, policy_loss: -61.59095, policy_entropy: -5.32693, alpha: 0.02023, time: 69.45013
+[CW] ---------------------------
+[CW] ---- Iteration:   197 ----
+[CW] collect: return: 113.58121, steps: 1000.00000, total_steps: 203000.00000
+[CW] train: qf1_loss: 1.81282, qf2_loss: 1.82341, policy_loss: -61.43890, policy_entropy: -5.40824, alpha: 0.02003, time: 69.45568
+[CW] ---------------------------
+[CW] ---- Iteration:   198 ----
+[CW] collect: return: 182.82722, steps: 1000.00000, total_steps: 204000.00000
+[CW] train: qf1_loss: 1.93769, qf2_loss: 1.97344, policy_loss: -61.45271, policy_entropy: -5.39947, alpha: 0.01985, time: 69.42576
+[CW] ---------------------------
+[CW] ---- Iteration:   199 ----
+[CW] collect: return: 230.19595, steps: 1000.00000, total_steps: 205000.00000
+[CW] train: qf1_loss: 1.85182, qf2_loss: 1.87124, policy_loss: -61.77901, policy_entropy: -5.51484, alpha: 0.01967, time: 69.55741
+[CW] ---------------------------
+[CW] ---- Iteration:   200 ----
+[CW] collect: return: 122.80135, steps: 1000.00000, total_steps: 206000.00000
+[CW] train: qf1_loss: 1.64643, qf2_loss: 1.68090, policy_loss: -62.12316, policy_entropy: -5.80790, alpha: 0.01956, time: 70.86262
+[CW] eval: return: 176.77262, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   201 ----
+[CW] collect: return: 263.24131, steps: 1000.00000, total_steps: 207000.00000
+[CW] train: qf1_loss: 1.89498, qf2_loss: 1.92293, policy_loss: -62.59114, policy_entropy: -6.05785, alpha: 0.01953, time: 69.44676
+[CW] ---------------------------
+[CW] ---- Iteration:   202 ----
+[CW] collect: return: 141.28803, steps: 1000.00000, total_steps: 208000.00000
+[CW] train: qf1_loss: 1.89873, qf2_loss: 1.93204, policy_loss: -62.47284, policy_entropy: -6.37734, alpha: 0.01959, time: 69.48770
+[CW] ---------------------------
+[CW] ---- Iteration:   203 ----
+[CW] collect: return: 139.22627, steps: 1000.00000, total_steps: 209000.00000
+[CW] train: qf1_loss: 1.78730, qf2_loss: 1.81578, policy_loss: -62.57815, policy_entropy: -6.22658, alpha: 0.01973, time: 69.51184
+[CW] ---------------------------
+[CW] ---- Iteration:   204 ----
+[CW] collect: return: 187.18079, steps: 1000.00000, total_steps: 210000.00000
+[CW] train: qf1_loss: 1.77137, qf2_loss: 1.80316, policy_loss: -62.50306, policy_entropy: -6.38499, alpha: 0.01982, time: 69.43781
+[CW] ---------------------------
+[CW] ---- Iteration:   205 ----
+[CW] collect: return: 280.26852, steps: 1000.00000, total_steps: 211000.00000
+[CW] train: qf1_loss: 1.73671, qf2_loss: 1.76470, policy_loss: -63.19124, policy_entropy: -6.04293, alpha: 0.01995, time: 69.40354
+[CW] ---------------------------
+[CW] ---- Iteration:   206 ----
+[CW] collect: return: 104.66035, steps: 1000.00000, total_steps: 212000.00000
+[CW] train: qf1_loss: 1.82376, qf2_loss: 1.85383, policy_loss: -63.29206, policy_entropy: -5.80964, alpha: 0.01990, time: 69.46136
+[CW] ---------------------------
+[CW] ---- Iteration:   207 ----
+[CW] collect: return: 118.50731, steps: 1000.00000, total_steps: 213000.00000
+[CW] train: qf1_loss: 1.88613, qf2_loss: 1.91187, policy_loss: -63.12737, policy_entropy: -5.82685, alpha: 0.01981, time: 69.44189
+[CW] ---------------------------
+[CW] ---- Iteration:   208 ----
+[CW] collect: return: 216.84295, steps: 1000.00000, total_steps: 214000.00000
+[CW] train: qf1_loss: 1.90615, qf2_loss: 1.93566, policy_loss: -63.31933, policy_entropy: -5.84868, alpha: 0.01976, time: 69.38396
+[CW] ---------------------------
+[CW] ---- Iteration:   209 ----
+[CW] collect: return: 101.95124, steps: 1000.00000, total_steps: 215000.00000
+[CW] train: qf1_loss: 2.46087, qf2_loss: 2.48808, policy_loss: -63.40505, policy_entropy: -5.80894, alpha: 0.01963, time: 69.37146
+[CW] ---------------------------
+[CW] ---- Iteration:   210 ----
+[CW] collect: return: 77.45508, steps: 1000.00000, total_steps: 216000.00000
+[CW] train: qf1_loss: 2.04679, qf2_loss: 2.08668, policy_loss: -63.41027, policy_entropy: -5.84920, alpha: 0.01958, time: 69.42016
+[CW] ---------------------------
+[CW] ---- Iteration:   211 ----
+[CW] collect: return: 175.25064, steps: 1000.00000, total_steps: 217000.00000
+[CW] train: qf1_loss: 2.15604, qf2_loss: 2.18767, policy_loss: -63.77219, policy_entropy: -5.80639, alpha: 0.01951, time: 69.43785
+[CW] ---------------------------
+[CW] ---- Iteration:   212 ----
+[CW] collect: return: 261.25154, steps: 1000.00000, total_steps: 218000.00000
+[CW] train: qf1_loss: 1.98169, qf2_loss: 2.01163, policy_loss: -63.83665, policy_entropy: -5.81332, alpha: 0.01942, time: 69.37734
+[CW] ---------------------------
+[CW] ---- Iteration:   213 ----
+[CW] collect: return: 132.26793, steps: 1000.00000, total_steps: 219000.00000
+[CW] train: qf1_loss: 2.23110, qf2_loss: 2.25324, policy_loss: -64.13263, policy_entropy: -5.92165, alpha: 0.01935, time: 69.54135
+[CW] ---------------------------
+[CW] ---- Iteration:   214 ----
+[CW] collect: return: 311.90521, steps: 1000.00000, total_steps: 220000.00000
+[CW] train: qf1_loss: 1.96373, qf2_loss: 1.99968, policy_loss: -64.27407, policy_entropy: -6.13179, alpha: 0.01933, time: 69.43246
+[CW] ---------------------------
+[CW] ---- Iteration:   215 ----
+[CW] collect: return: 118.69503, steps: 1000.00000, total_steps: 221000.00000
+[CW] train: qf1_loss: 2.79872, qf2_loss: 2.83368, policy_loss: -63.79389, policy_entropy: -5.87974, alpha: 0.01938, time: 69.44216
+[CW] ---------------------------
+[CW] ---- Iteration:   216 ----
+[CW] collect: return: 98.16392, steps: 1000.00000, total_steps: 222000.00000
+[CW] train: qf1_loss: 2.06242, qf2_loss: 2.10241, policy_loss: -64.00931, policy_entropy: -5.91813, alpha: 0.01929, time: 69.40516
+[CW] ---------------------------
+[CW] ---- Iteration:   217 ----
+[CW] collect: return: 172.69880, steps: 1000.00000, total_steps: 223000.00000
+[CW] train: qf1_loss: 2.00165, qf2_loss: 2.04035, policy_loss: -64.64740, policy_entropy: -5.91038, alpha: 0.01925, time: 69.35669
+[CW] ---------------------------
+[CW] ---- Iteration:   218 ----
+[CW] collect: return: 155.28008, steps: 1000.00000, total_steps: 224000.00000
+[CW] train: qf1_loss: 2.32146, qf2_loss: 2.37087, policy_loss: -64.54739, policy_entropy: -5.68695, alpha: 0.01913, time: 69.32238
+[CW] ---------------------------
+[CW] ---- Iteration:   219 ----
+[CW] collect: return: 132.08314, steps: 1000.00000, total_steps: 225000.00000
+[CW] train: qf1_loss: 2.54371, qf2_loss: 2.57656, policy_loss: -64.99305, policy_entropy: -5.87133, alpha: 0.01901, time: 69.35714
+[CW] ---------------------------
+[CW] ---- Iteration:   220 ----
+[CW] collect: return: 139.94706, steps: 1000.00000, total_steps: 226000.00000
+[CW] train: qf1_loss: 2.22284, qf2_loss: 2.26164, policy_loss: -64.79460, policy_entropy: -5.95518, alpha: 0.01892, time: 69.58030
+[CW] eval: return: 180.72796, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   221 ----
+[CW] collect: return: 134.93958, steps: 1000.00000, total_steps: 227000.00000
+[CW] train: qf1_loss: 2.39995, qf2_loss: 2.44164, policy_loss: -65.17067, policy_entropy: -6.02150, alpha: 0.01893, time: 73.33053
+[CW] ---------------------------
+[CW] ---- Iteration:   222 ----
+[CW] collect: return: 83.43216, steps: 1000.00000, total_steps: 228000.00000
+[CW] train: qf1_loss: 2.36421, qf2_loss: 2.41129, policy_loss: -64.97851, policy_entropy: -5.86980, alpha: 0.01890, time: 69.43519
+[CW] ---------------------------
+[CW] ---- Iteration:   223 ----
+[CW] collect: return: 223.27125, steps: 1000.00000, total_steps: 229000.00000
+[CW] train: qf1_loss: 2.48566, qf2_loss: 2.52935, policy_loss: -65.27809, policy_entropy: -5.77171, alpha: 0.01879, time: 69.57737
+[CW] ---------------------------
+[CW] ---- Iteration:   224 ----
+[CW] collect: return: 143.13540, steps: 1000.00000, total_steps: 230000.00000
+[CW] train: qf1_loss: 2.43432, qf2_loss: 2.47567, policy_loss: -65.31378, policy_entropy: -5.84604, alpha: 0.01865, time: 69.56929
+[CW] ---------------------------
+[CW] ---- Iteration:   225 ----
+[CW] collect: return: 47.12688, steps: 1000.00000, total_steps: 231000.00000
+[CW] train: qf1_loss: 2.72598, qf2_loss: 2.76314, policy_loss: -65.03074, policy_entropy: -5.53131, alpha: 0.01846, time: 69.43030
+[CW] ---------------------------
+[CW] ---- Iteration:   226 ----
+[CW] collect: return: 104.77555, steps: 1000.00000, total_steps: 232000.00000
+[CW] train: qf1_loss: 2.31736, qf2_loss: 2.36196, policy_loss: -65.73347, policy_entropy: -5.48850, alpha: 0.01815, time: 69.43624
+[CW] ---------------------------
+[CW] ---- Iteration:   227 ----
+[CW] collect: return: 273.85683, steps: 1000.00000, total_steps: 233000.00000
+[CW] train: qf1_loss: 2.22539, qf2_loss: 2.25884, policy_loss: -65.30976, policy_entropy: -6.20087, alpha: 0.01789, time: 69.26445
+[CW] ---------------------------
+[CW] ---- Iteration:   228 ----
+[CW] collect: return: 138.95459, steps: 1000.00000, total_steps: 234000.00000
+[CW] train: qf1_loss: 2.37432, qf2_loss: 2.40900, policy_loss: -65.96846, policy_entropy: -6.65711, alpha: 0.01827, time: 69.34701
+[CW] ---------------------------
+[CW] ---- Iteration:   229 ----
+[CW] collect: return: 47.40074, steps: 1000.00000, total_steps: 235000.00000
+[CW] train: qf1_loss: 2.45539, qf2_loss: 2.50714, policy_loss: -65.67236, policy_entropy: -6.35403, alpha: 0.01865, time: 69.32376
+[CW] ---------------------------
+[CW] ---- Iteration:   230 ----
+[CW] collect: return: 228.08127, steps: 1000.00000, total_steps: 236000.00000
+[CW] train: qf1_loss: 2.40307, qf2_loss: 2.45511, policy_loss: -65.26193, policy_entropy: -5.30282, alpha: 0.01852, time: 69.79235
+[CW] ---------------------------
+[CW] ---- Iteration:   231 ----
+[CW] collect: return: 290.95476, steps: 1000.00000, total_steps: 237000.00000
+[CW] train: qf1_loss: 2.55671, qf2_loss: 2.60987, policy_loss: -66.13012, policy_entropy: -5.47985, alpha: 0.01814, time: 69.30144
+[CW] ---------------------------
+[CW] ---- Iteration:   232 ----
+[CW] collect: return: 238.38708, steps: 1000.00000, total_steps: 238000.00000
+[CW] train: qf1_loss: 2.38302, qf2_loss: 2.41629, policy_loss: -66.35363, policy_entropy: -5.52073, alpha: 0.01778, time: 69.31659
+[CW] ---------------------------
+[CW] ---- Iteration:   233 ----
+[CW] collect: return: 152.04615, steps: 1000.00000, total_steps: 239000.00000
+[CW] train: qf1_loss: 2.74171, qf2_loss: 2.77843, policy_loss: -66.55881, policy_entropy: -5.55290, alpha: 0.01749, time: 69.35061
+[CW] ---------------------------
+[CW] ---- Iteration:   234 ----
+[CW] collect: return: 98.07285, steps: 1000.00000, total_steps: 240000.00000
+[CW] train: qf1_loss: 3.17386, qf2_loss: 3.19918, policy_loss: -66.70695, policy_entropy: -5.75978, alpha: 0.01722, time: 69.38392
+[CW] ---------------------------
+[CW] ---- Iteration:   235 ----
+[CW] collect: return: 326.10892, steps: 1000.00000, total_steps: 241000.00000
+[CW] train: qf1_loss: 2.46642, qf2_loss: 2.50629, policy_loss: -67.05949, policy_entropy: -5.83732, alpha: 0.01716, time: 69.37986
+[CW] ---------------------------
+[CW] ---- Iteration:   236 ----
+[CW] collect: return: 115.94493, steps: 1000.00000, total_steps: 242000.00000
+[CW] train: qf1_loss: 2.45710, qf2_loss: 2.48741, policy_loss: -66.58217, policy_entropy: -5.72190, alpha: 0.01700, time: 69.44142
+[CW] ---------------------------
+[CW] ---- Iteration:   237 ----
+[CW] collect: return: 117.80901, steps: 1000.00000, total_steps: 243000.00000
+[CW] train: qf1_loss: 2.82031, qf2_loss: 2.86440, policy_loss: -66.85602, policy_entropy: -5.76245, alpha: 0.01685, time: 69.33537
+[CW] ---------------------------
+[CW] ---- Iteration:   238 ----
+[CW] collect: return: 178.34926, steps: 1000.00000, total_steps: 244000.00000
+[CW] train: qf1_loss: 2.53464, qf2_loss: 2.58131, policy_loss: -67.41402, policy_entropy: -5.84287, alpha: 0.01672, time: 69.44044
+[CW] ---------------------------
+[CW] ---- Iteration:   239 ----
+[CW] collect: return: 150.60585, steps: 1000.00000, total_steps: 245000.00000
+[CW] train: qf1_loss: 3.38264, qf2_loss: 3.39764, policy_loss: -67.21882, policy_entropy: -6.11774, alpha: 0.01668, time: 69.32346
+[CW] ---------------------------
+[CW] ---- Iteration:   240 ----
+[CW] collect: return: 90.86315, steps: 1000.00000, total_steps: 246000.00000
+[CW] train: qf1_loss: 2.99759, qf2_loss: 3.03795, policy_loss: -67.20065, policy_entropy: -5.91250, alpha: 0.01669, time: 69.33328
+[CW] eval: return: 139.37622, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   241 ----
+[CW] collect: return: 82.86485, steps: 1000.00000, total_steps: 247000.00000
+[CW] train: qf1_loss: 2.73350, qf2_loss: 2.77022, policy_loss: -67.09155, policy_entropy: -5.83991, alpha: 0.01663, time: 69.38856
+[CW] ---------------------------
+[CW] ---- Iteration:   242 ----
+[CW] collect: return: 97.14614, steps: 1000.00000, total_steps: 248000.00000
+[CW] train: qf1_loss: 2.85313, qf2_loss: 2.90062, policy_loss: -67.22142, policy_entropy: -6.04023, alpha: 0.01657, time: 69.40589
+[CW] ---------------------------
+[CW] ---- Iteration:   243 ----
+[CW] collect: return: 208.02444, steps: 1000.00000, total_steps: 249000.00000
+[CW] train: qf1_loss: 2.57771, qf2_loss: 2.61620, policy_loss: -67.29675, policy_entropy: -6.15615, alpha: 0.01666, time: 69.46925
+[CW] ---------------------------
+[CW] ---- Iteration:   244 ----
+[CW] collect: return: 47.46319, steps: 1000.00000, total_steps: 250000.00000
+[CW] train: qf1_loss: 3.01712, qf2_loss: 3.07117, policy_loss: -67.79247, policy_entropy: -6.10488, alpha: 0.01675, time: 69.47739
+[CW] ---------------------------
+[CW] ---- Iteration:   245 ----
+[CW] collect: return: 92.38473, steps: 1000.00000, total_steps: 251000.00000
+[CW] train: qf1_loss: 3.37381, qf2_loss: 3.41805, policy_loss: -67.22649, policy_entropy: -6.06194, alpha: 0.01679, time: 69.45835
+[CW] ---------------------------
+[CW] ---- Iteration:   246 ----
+[CW] collect: return: 249.67633, steps: 1000.00000, total_steps: 252000.00000
+[CW] train: qf1_loss: 2.59995, qf2_loss: 2.62196, policy_loss: -68.13000, policy_entropy: -6.12860, alpha: 0.01684, time: 69.34554
+[CW] ---------------------------
+[CW] ---- Iteration:   247 ----
+[CW] collect: return: 194.55672, steps: 1000.00000, total_steps: 253000.00000
+[CW] train: qf1_loss: 3.07215, qf2_loss: 3.10523, policy_loss: -67.79586, policy_entropy: -6.09637, alpha: 0.01692, time: 69.75909
+[CW] ---------------------------
+[CW] ---- Iteration:   248 ----
+[CW] collect: return: 147.75093, steps: 1000.00000, total_steps: 254000.00000
+[CW] train: qf1_loss: 2.67453, qf2_loss: 2.72785, policy_loss: -68.43828, policy_entropy: -5.98798, alpha: 0.01696, time: 69.29975
+[CW] ---------------------------
+[CW] ---- Iteration:   249 ----
+[CW] collect: return: 183.62519, steps: 1000.00000, total_steps: 255000.00000
+[CW] train: qf1_loss: 2.71043, qf2_loss: 2.74003, policy_loss: -68.55475, policy_entropy: -6.26596, alpha: 0.01704, time: 69.49586
+[CW] ---------------------------
+[CW] ---- Iteration:   250 ----
+[CW] collect: return: 272.18874, steps: 1000.00000, total_steps: 256000.00000
+[CW] train: qf1_loss: 2.83135, qf2_loss: 2.85372, policy_loss: -68.10522, policy_entropy: -6.14807, alpha: 0.01722, time: 69.40366
+[CW] ---------------------------
+[CW] ---- Iteration:   251 ----
+[CW] collect: return: 51.99036, steps: 1000.00000, total_steps: 257000.00000
+[CW] train: qf1_loss: 3.18992, qf2_loss: 3.23400, policy_loss: -68.31227, policy_entropy: -6.29830, alpha: 0.01738, time: 69.41496
+[CW] ---------------------------
+[CW] ---- Iteration:   252 ----
+[CW] collect: return: 57.84445, steps: 1000.00000, total_steps: 258000.00000
+[CW] train: qf1_loss: 2.92198, qf2_loss: 2.96675, policy_loss: -68.23189, policy_entropy: -6.10535, alpha: 0.01759, time: 69.36273
+[CW] ---------------------------
+[CW] ---- Iteration:   253 ----
+[CW] collect: return: 200.55610, steps: 1000.00000, total_steps: 259000.00000
+[CW] train: qf1_loss: 3.22079, qf2_loss: 3.24648, policy_loss: -68.71745, policy_entropy: -6.09246, alpha: 0.01769, time: 69.32146
+[CW] ---------------------------
+[CW] ---- Iteration:   254 ----
+[CW] collect: return: 109.56975, steps: 1000.00000, total_steps: 260000.00000
+[CW] train: qf1_loss: 2.90281, qf2_loss: 2.94797, policy_loss: -68.78988, policy_entropy: -5.95716, alpha: 0.01770, time: 71.18772
+[CW] ---------------------------
+[CW] ---- Iteration:   255 ----
+[CW] collect: return: 231.32398, steps: 1000.00000, total_steps: 261000.00000
+[CW] train: qf1_loss: 3.11502, qf2_loss: 3.13303, policy_loss: -69.19603, policy_entropy: -6.03598, alpha: 0.01765, time: 69.51420
+[CW] ---------------------------
+[CW] ---- Iteration:   256 ----
+[CW] collect: return: 97.27173, steps: 1000.00000, total_steps: 262000.00000
+[CW] train: qf1_loss: 4.00441, qf2_loss: 4.09046, policy_loss: -68.49305, policy_entropy: -6.11353, alpha: 0.01769, time: 69.39611
+[CW] ---------------------------
+[CW] ---- Iteration:   257 ----
+[CW] collect: return: 277.98432, steps: 1000.00000, total_steps: 263000.00000
+[CW] train: qf1_loss: 4.59646, qf2_loss: 4.63065, policy_loss: -69.31547, policy_entropy: -6.26668, alpha: 0.01788, time: 69.34091
+[CW] ---------------------------
+[CW] ---- Iteration:   258 ----
+[CW] collect: return: 299.35965, steps: 1000.00000, total_steps: 264000.00000
+[CW] train: qf1_loss: 3.31114, qf2_loss: 3.32176, policy_loss: -68.99632, policy_entropy: -6.00267, alpha: 0.01798, time: 69.31954
+[CW] ---------------------------
+[CW] ---- Iteration:   259 ----
+[CW] collect: return: 252.20066, steps: 1000.00000, total_steps: 265000.00000
+[CW] train: qf1_loss: 2.94651, qf2_loss: 2.95649, policy_loss: -69.35881, policy_entropy: -6.14575, alpha: 0.01809, time: 69.35705
+[CW] ---------------------------
+[CW] ---- Iteration:   260 ----
+[CW] collect: return: 310.07303, steps: 1000.00000, total_steps: 266000.00000
+[CW] train: qf1_loss: 3.13455, qf2_loss: 3.15807, policy_loss: -70.27992, policy_entropy: -5.89882, alpha: 0.01811, time: 69.49417
+[CW] eval: return: 217.34555, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   261 ----
+[CW] collect: return: 143.33635, steps: 1000.00000, total_steps: 267000.00000
+[CW] train: qf1_loss: 3.36288, qf2_loss: 3.39650, policy_loss: -69.80639, policy_entropy: -5.92636, alpha: 0.01799, time: 69.35755
+[CW] ---------------------------
+[CW] ---- Iteration:   262 ----
+[CW] collect: return: 298.19724, steps: 1000.00000, total_steps: 268000.00000
+[CW] train: qf1_loss: 2.91151, qf2_loss: 2.92814, policy_loss: -70.01670, policy_entropy: -6.17486, alpha: 0.01806, time: 69.43896
+[CW] ---------------------------
+[CW] ---- Iteration:   263 ----
+[CW] collect: return: 216.70710, steps: 1000.00000, total_steps: 269000.00000
+[CW] train: qf1_loss: 5.07054, qf2_loss: 5.06050, policy_loss: -70.38138, policy_entropy: -6.00028, alpha: 0.01816, time: 69.45003
+[CW] ---------------------------
+[CW] ---- Iteration:   264 ----
+[CW] collect: return: 61.71240, steps: 1000.00000, total_steps: 270000.00000
+[CW] train: qf1_loss: 3.16234, qf2_loss: 3.20591, policy_loss: -70.30198, policy_entropy: -5.88599, alpha: 0.01808, time: 69.46021
+[CW] ---------------------------
+[CW] ---- Iteration:   265 ----
+[CW] collect: return: 157.64915, steps: 1000.00000, total_steps: 271000.00000
+[CW] train: qf1_loss: 3.60911, qf2_loss: 3.63163, policy_loss: -69.81982, policy_entropy: -5.96187, alpha: 0.01799, time: 69.74050
+[CW] ---------------------------
+[CW] ---- Iteration:   266 ----
+[CW] collect: return: 326.31736, steps: 1000.00000, total_steps: 272000.00000
+[CW] train: qf1_loss: 3.99325, qf2_loss: 4.01729, policy_loss: -70.87395, policy_entropy: -6.30304, alpha: 0.01811, time: 69.27496
+[CW] ---------------------------
+[CW] ---- Iteration:   267 ----
+[CW] collect: return: 120.30253, steps: 1000.00000, total_steps: 273000.00000
+[CW] train: qf1_loss: 4.06618, qf2_loss: 4.08053, policy_loss: -70.68871, policy_entropy: -6.24234, alpha: 0.01834, time: 69.26106
+[CW] ---------------------------
+[CW] ---- Iteration:   268 ----
+[CW] collect: return: 213.80352, steps: 1000.00000, total_steps: 274000.00000
+[CW] train: qf1_loss: 3.98688, qf2_loss: 4.02043, policy_loss: -71.08805, policy_entropy: -6.17545, alpha: 0.01859, time: 69.32992
+[CW] ---------------------------
+[CW] ---- Iteration:   269 ----
+[CW] collect: return: 341.93784, steps: 1000.00000, total_steps: 275000.00000
+[CW] train: qf1_loss: 4.53216, qf2_loss: 4.59075, policy_loss: -71.63430, policy_entropy: -6.27394, alpha: 0.01872, time: 69.32902
+[CW] ---------------------------
+[CW] ---- Iteration:   270 ----
+[CW] collect: return: 125.73946, steps: 1000.00000, total_steps: 276000.00000
+[CW] train: qf1_loss: 4.13998, qf2_loss: 4.14908, policy_loss: -71.46078, policy_entropy: -6.17886, alpha: 0.01892, time: 69.31378
+[CW] ---------------------------
+[CW] ---- Iteration:   271 ----
+[CW] collect: return: 87.54019, steps: 1000.00000, total_steps: 277000.00000
+[CW] train: qf1_loss: 3.39706, qf2_loss: 3.40479, policy_loss: -71.08452, policy_entropy: -5.84828, alpha: 0.01898, time: 69.32791
+[CW] ---------------------------
+[CW] ---- Iteration:   272 ----
+[CW] collect: return: 72.20417, steps: 1000.00000, total_steps: 278000.00000
+[CW] train: qf1_loss: 3.21574, qf2_loss: 3.25566, policy_loss: -70.76532, policy_entropy: -5.83912, alpha: 0.01883, time: 69.35487
+[CW] ---------------------------
+[CW] ---- Iteration:   273 ----
+[CW] collect: return: 153.37770, steps: 1000.00000, total_steps: 279000.00000
+[CW] train: qf1_loss: 4.57144, qf2_loss: 4.63122, policy_loss: -70.98865, policy_entropy: -6.28372, alpha: 0.01876, time: 69.27852
+[CW] ---------------------------
+[CW] ---- Iteration:   274 ----
+[CW] collect: return: 200.67754, steps: 1000.00000, total_steps: 280000.00000
+[CW] train: qf1_loss: 4.00020, qf2_loss: 4.00271, policy_loss: -71.90753, policy_entropy: -6.69486, alpha: 0.01921, time: 69.39196
+[CW] ---------------------------
+[CW] ---- Iteration:   275 ----
+[CW] collect: return: 340.69070, steps: 1000.00000, total_steps: 281000.00000
+[CW] train: qf1_loss: 3.90039, qf2_loss: 3.91545, policy_loss: -71.76874, policy_entropy: -6.50264, alpha: 0.01974, time: 69.33612
+[CW] ---------------------------
+[CW] ---- Iteration:   276 ----
+[CW] collect: return: 151.92057, steps: 1000.00000, total_steps: 282000.00000
+[CW] train: qf1_loss: 3.69659, qf2_loss: 3.72698, policy_loss: -72.66982, policy_entropy: -6.42185, alpha: 0.02022, time: 71.89959
+[CW] ---------------------------
+[CW] ---- Iteration:   277 ----
+[CW] collect: return: 137.17199, steps: 1000.00000, total_steps: 283000.00000
+[CW] train: qf1_loss: 5.09636, qf2_loss: 5.12585, policy_loss: -71.90452, policy_entropy: -6.20528, alpha: 0.02052, time: 69.41859
+[CW] ---------------------------
+[CW] ---- Iteration:   278 ----
+[CW] collect: return: 135.70172, steps: 1000.00000, total_steps: 284000.00000
+[CW] train: qf1_loss: 3.74742, qf2_loss: 3.76971, policy_loss: -71.43219, policy_entropy: -6.12543, alpha: 0.02067, time: 69.33616
+[CW] ---------------------------
+[CW] ---- Iteration:   279 ----
+[CW] collect: return: 146.79492, steps: 1000.00000, total_steps: 285000.00000
+[CW] train: qf1_loss: 3.47392, qf2_loss: 3.48341, policy_loss: -71.43813, policy_entropy: -5.90303, alpha: 0.02071, time: 69.30154
+[CW] ---------------------------
+[CW] ---- Iteration:   280 ----
+[CW] collect: return: 267.43208, steps: 1000.00000, total_steps: 286000.00000
+[CW] train: qf1_loss: 3.86933, qf2_loss: 3.89499, policy_loss: -72.27225, policy_entropy: -6.06769, alpha: 0.02065, time: 69.43041
+[CW] eval: return: 147.98248, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   281 ----
+[CW] collect: return: 325.31523, steps: 1000.00000, total_steps: 287000.00000
+[CW] train: qf1_loss: 3.86157, qf2_loss: 3.89425, policy_loss: -72.04464, policy_entropy: -6.17988, alpha: 0.02082, time: 69.34463
+[CW] ---------------------------
+[CW] ---- Iteration:   282 ----
+[CW] collect: return: 270.51779, steps: 1000.00000, total_steps: 288000.00000
+[CW] train: qf1_loss: 4.64600, qf2_loss: 4.66180, policy_loss: -73.28522, policy_entropy: -5.88040, alpha: 0.02094, time: 69.31341
+[CW] ---------------------------
+[CW] ---- Iteration:   283 ----
+[CW] collect: return: 335.62386, steps: 1000.00000, total_steps: 289000.00000
+[CW] train: qf1_loss: 4.31095, qf2_loss: 4.28626, policy_loss: -73.55537, policy_entropy: -5.69228, alpha: 0.02066, time: 69.29681
+[CW] ---------------------------
+[CW] ---- Iteration:   284 ----
+[CW] collect: return: 132.75127, steps: 1000.00000, total_steps: 290000.00000
+[CW] train: qf1_loss: 3.44088, qf2_loss: 3.47864, policy_loss: -72.50324, policy_entropy: -5.24672, alpha: 0.02022, time: 69.32424
+[CW] ---------------------------
+[CW] ---- Iteration:   285 ----
+[CW] collect: return: 336.23840, steps: 1000.00000, total_steps: 291000.00000
+[CW] train: qf1_loss: 3.58108, qf2_loss: 3.62774, policy_loss: -74.01966, policy_entropy: -5.92895, alpha: 0.01979, time: 69.43581
+[CW] ---------------------------
+[CW] ---- Iteration:   286 ----
+[CW] collect: return: 199.80389, steps: 1000.00000, total_steps: 292000.00000
+[CW] train: qf1_loss: 4.19916, qf2_loss: 4.17924, policy_loss: -73.57952, policy_entropy: -5.66446, alpha: 0.01963, time: 69.28167
+[CW] ---------------------------
+[CW] ---- Iteration:   287 ----
+[CW] collect: return: 229.06371, steps: 1000.00000, total_steps: 293000.00000
+[CW] train: qf1_loss: 9.27973, qf2_loss: 9.37464, policy_loss: -72.81770, policy_entropy: -6.06868, alpha: 0.01946, time: 69.33444
+[CW] ---------------------------
+[CW] ---- Iteration:   288 ----
+[CW] collect: return: 60.16059, steps: 1000.00000, total_steps: 294000.00000
+[CW] train: qf1_loss: 6.97227, qf2_loss: 7.04432, policy_loss: -73.48435, policy_entropy: -6.18663, alpha: 0.01959, time: 69.30989
+[CW] ---------------------------
+[CW] ---- Iteration:   289 ----
+[CW] collect: return: 301.02099, steps: 1000.00000, total_steps: 295000.00000
+[CW] train: qf1_loss: 3.81192, qf2_loss: 3.80047, policy_loss: -73.80074, policy_entropy: -6.21952, alpha: 0.01977, time: 69.44512
+[CW] ---------------------------
+[CW] ---- Iteration:   290 ----
+[CW] collect: return: 123.82643, steps: 1000.00000, total_steps: 296000.00000
+[CW] train: qf1_loss: 3.37909, qf2_loss: 3.39602, policy_loss: -73.10660, policy_entropy: -5.88244, alpha: 0.01985, time: 69.31835
+[CW] ---------------------------
+[CW] ---- Iteration:   291 ----
+[CW] collect: return: 248.13876, steps: 1000.00000, total_steps: 297000.00000
+[CW] train: qf1_loss: 3.48720, qf2_loss: 3.51065, policy_loss: -73.59957, policy_entropy: -5.89855, alpha: 0.01972, time: 69.80797
+[CW] ---------------------------
+[CW] ---- Iteration:   292 ----
+[CW] collect: return: 225.87976, steps: 1000.00000, total_steps: 298000.00000
+[CW] train: qf1_loss: 3.47747, qf2_loss: 3.50538, policy_loss: -73.66411, policy_entropy: -5.96642, alpha: 0.01963, time: 69.66611
+[CW] ---------------------------
+[CW] ---- Iteration:   293 ----
+[CW] collect: return: 146.13101, steps: 1000.00000, total_steps: 299000.00000
+[CW] train: qf1_loss: 3.71474, qf2_loss: 3.73160, policy_loss: -75.11658, policy_entropy: -6.09418, alpha: 0.01966, time: 69.59508
+[CW] ---------------------------
+[CW] ---- Iteration:   294 ----
+[CW] collect: return: 64.15838, steps: 1000.00000, total_steps: 300000.00000
+[CW] train: qf1_loss: 3.69313, qf2_loss: 3.69544, policy_loss: -74.61837, policy_entropy: -6.00797, alpha: 0.01976, time: 69.57978
+[CW] ---------------------------
+[CW] ---- Iteration:   295 ----
+[CW] collect: return: 282.14275, steps: 1000.00000, total_steps: 301000.00000
+[CW] train: qf1_loss: 3.61572, qf2_loss: 3.61255, policy_loss: -75.36458, policy_entropy: -5.97475, alpha: 0.01972, time: 69.50183
+[CW] ---------------------------
+[CW] ---- Iteration:   296 ----
+[CW] collect: return: 189.67176, steps: 1000.00000, total_steps: 302000.00000
+[CW] train: qf1_loss: 4.02277, qf2_loss: 4.04854, policy_loss: -74.11840, policy_entropy: -5.90367, alpha: 0.01969, time: 69.58328
+[CW] ---------------------------
+[CW] ---- Iteration:   297 ----
+[CW] collect: return: 54.71604, steps: 1000.00000, total_steps: 303000.00000
+[CW] train: qf1_loss: 7.67816, qf2_loss: 7.66085, policy_loss: -75.48132, policy_entropy: -6.19795, alpha: 0.01969, time: 69.50437
+[CW] ---------------------------
+[CW] ---- Iteration:   298 ----
+[CW] collect: return: 276.63363, steps: 1000.00000, total_steps: 304000.00000
+[CW] train: qf1_loss: 4.57034, qf2_loss: 4.57708, policy_loss: -74.79199, policy_entropy: -6.20634, alpha: 0.01989, time: 69.50035
+[CW] ---------------------------
+[CW] ---- Iteration:   299 ----
+[CW] collect: return: 63.98322, steps: 1000.00000, total_steps: 305000.00000
+[CW] train: qf1_loss: 4.05446, qf2_loss: 4.06336, policy_loss: -75.21577, policy_entropy: -6.09361, alpha: 0.02004, time: 69.48230
+[CW] ---------------------------
+[CW] ---- Iteration:   300 ----
+[CW] collect: return: 152.03909, steps: 1000.00000, total_steps: 306000.00000
+[CW] train: qf1_loss: 3.64361, qf2_loss: 3.67279, policy_loss: -75.31858, policy_entropy: -6.12968, alpha: 0.02007, time: 69.40941
+[CW] eval: return: 108.41664, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   301 ----
+[CW] collect: return: 47.97763, steps: 1000.00000, total_steps: 307000.00000
+[CW] train: qf1_loss: 3.84250, qf2_loss: 3.86688, policy_loss: -75.25914, policy_entropy: -6.64950, alpha: 0.02044, time: 69.63650
+[CW] ---------------------------
+[CW] ---- Iteration:   302 ----
+[CW] collect: return: 286.14140, steps: 1000.00000, total_steps: 308000.00000
+[CW] train: qf1_loss: 7.80795, qf2_loss: 7.85367, policy_loss: -74.84237, policy_entropy: -6.48418, alpha: 0.02095, time: 69.48179
+[CW] ---------------------------
+[CW] ---- Iteration:   303 ----
+[CW] collect: return: 226.86693, steps: 1000.00000, total_steps: 309000.00000
+[CW] train: qf1_loss: 5.32096, qf2_loss: 5.31427, policy_loss: -75.42000, policy_entropy: -6.46813, alpha: 0.02144, time: 71.90122
+[CW] ---------------------------
+[CW] ---- Iteration:   304 ----
+[CW] collect: return: 263.67228, steps: 1000.00000, total_steps: 310000.00000
+[CW] train: qf1_loss: 3.68945, qf2_loss: 3.73322, policy_loss: -75.89078, policy_entropy: -6.32282, alpha: 0.02185, time: 69.59842
+[CW] ---------------------------
+[CW] ---- Iteration:   305 ----
+[CW] collect: return: 280.90731, steps: 1000.00000, total_steps: 311000.00000
+[CW] train: qf1_loss: 3.87157, qf2_loss: 3.90060, policy_loss: -76.10079, policy_entropy: -5.95756, alpha: 0.02204, time: 69.38690
+[CW] ---------------------------
+[CW] ---- Iteration:   306 ----
+[CW] collect: return: 210.68943, steps: 1000.00000, total_steps: 312000.00000
+[CW] train: qf1_loss: 4.00134, qf2_loss: 4.05376, policy_loss: -75.32659, policy_entropy: -5.44017, alpha: 0.02174, time: 69.24657
+[CW] ---------------------------
+[CW] ---- Iteration:   307 ----
+[CW] collect: return: 171.47290, steps: 1000.00000, total_steps: 313000.00000
+[CW] train: qf1_loss: 4.09696, qf2_loss: 4.09648, policy_loss: -76.48890, policy_entropy: -5.87283, alpha: 0.02138, time: 69.23002
+[CW] ---------------------------
+[CW] ---- Iteration:   308 ----
+[CW] collect: return: 125.88565, steps: 1000.00000, total_steps: 314000.00000
+[CW] train: qf1_loss: 4.23957, qf2_loss: 4.27622, policy_loss: -75.94352, policy_entropy: -5.83135, alpha: 0.02124, time: 69.20675
+[CW] ---------------------------
+[CW] ---- Iteration:   309 ----
+[CW] collect: return: 206.27003, steps: 1000.00000, total_steps: 315000.00000
+[CW] train: qf1_loss: 5.30891, qf2_loss: 5.36521, policy_loss: -76.01922, policy_entropy: -6.00993, alpha: 0.02112, time: 69.21440
+[CW] ---------------------------
+[CW] ---- Iteration:   310 ----
+[CW] collect: return: 159.60872, steps: 1000.00000, total_steps: 316000.00000
+[CW] train: qf1_loss: 5.68502, qf2_loss: 5.71561, policy_loss: -76.06263, policy_entropy: -6.42857, alpha: 0.02135, time: 69.25772
+[CW] ---------------------------
+[CW] ---- Iteration:   311 ----
+[CW] collect: return: 129.83098, steps: 1000.00000, total_steps: 317000.00000
+[CW] train: qf1_loss: 4.59523, qf2_loss: 4.63955, policy_loss: -76.14363, policy_entropy: -6.29003, alpha: 0.02169, time: 69.28177
+[CW] ---------------------------
+[CW] ---- Iteration:   312 ----
+[CW] collect: return: 21.60232, steps: 1000.00000, total_steps: 318000.00000
+[CW] train: qf1_loss: 4.41655, qf2_loss: 4.44120, policy_loss: -76.55813, policy_entropy: -6.11324, alpha: 0.02187, time: 69.28004
+[CW] ---------------------------
+[CW] ---- Iteration:   313 ----
+[CW] collect: return: 349.64565, steps: 1000.00000, total_steps: 319000.00000
+[CW] train: qf1_loss: 4.74135, qf2_loss: 4.74138, policy_loss: -76.31976, policy_entropy: -5.51708, alpha: 0.02169, time: 69.31156
+[CW] ---------------------------
+[CW] ---- Iteration:   314 ----
+[CW] collect: return: 226.26947, steps: 1000.00000, total_steps: 320000.00000
+[CW] train: qf1_loss: 5.70586, qf2_loss: 5.70858, policy_loss: -76.25962, policy_entropy: -5.41441, alpha: 0.02122, time: 69.25364
+[CW] ---------------------------
+[CW] ---- Iteration:   315 ----
+[CW] collect: return: 64.31388, steps: 1000.00000, total_steps: 321000.00000
+[CW] train: qf1_loss: 6.38234, qf2_loss: 6.40594, policy_loss: -76.87697, policy_entropy: -5.79545, alpha: 0.02088, time: 69.21671
+[CW] ---------------------------
+[CW] ---- Iteration:   316 ----
+[CW] collect: return: 235.34968, steps: 1000.00000, total_steps: 322000.00000
+[CW] train: qf1_loss: 4.33359, qf2_loss: 4.37987, policy_loss: -77.49957, policy_entropy: -6.11619, alpha: 0.02080, time: 69.17572
+[CW] ---------------------------
+[CW] ---- Iteration:   317 ----
+[CW] collect: return: 342.15626, steps: 1000.00000, total_steps: 323000.00000
+[CW] train: qf1_loss: 5.87991, qf2_loss: 5.88225, policy_loss: -77.73634, policy_entropy: -6.19253, alpha: 0.02097, time: 69.22794
+[CW] ---------------------------
+[CW] ---- Iteration:   318 ----
+[CW] collect: return: 114.50217, steps: 1000.00000, total_steps: 324000.00000
+[CW] train: qf1_loss: 7.50373, qf2_loss: 7.50244, policy_loss: -77.79397, policy_entropy: -5.77586, alpha: 0.02094, time: 69.25331
+[CW] ---------------------------
+[CW] ---- Iteration:   319 ----
+[CW] collect: return: 117.55008, steps: 1000.00000, total_steps: 325000.00000
+[CW] train: qf1_loss: 4.71702, qf2_loss: 4.79343, policy_loss: -76.95100, policy_entropy: -5.84006, alpha: 0.02076, time: 69.25222
+[CW] ---------------------------
+[CW] ---- Iteration:   320 ----
+[CW] collect: return: 78.83236, steps: 1000.00000, total_steps: 326000.00000
+[CW] train: qf1_loss: 4.08724, qf2_loss: 4.11663, policy_loss: -77.89165, policy_entropy: -6.05337, alpha: 0.02072, time: 69.42929
+[CW] eval: return: 174.22878, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   321 ----
+[CW] collect: return: 281.65073, steps: 1000.00000, total_steps: 327000.00000
+[CW] train: qf1_loss: 4.64524, qf2_loss: 4.70400, policy_loss: -77.45156, policy_entropy: -5.88578, alpha: 0.02075, time: 69.29173
+[CW] ---------------------------
+[CW] ---- Iteration:   322 ----
+[CW] collect: return: 276.79182, steps: 1000.00000, total_steps: 328000.00000
+[CW] train: qf1_loss: 5.58525, qf2_loss: 5.57711, policy_loss: -77.35276, policy_entropy: -5.52856, alpha: 0.02051, time: 69.24287
+[CW] ---------------------------
+[CW] ---- Iteration:   323 ----
+[CW] collect: return: 86.46833, steps: 1000.00000, total_steps: 329000.00000
+[CW] train: qf1_loss: 5.30048, qf2_loss: 5.41948, policy_loss: -77.80384, policy_entropy: -5.73284, alpha: 0.02017, time: 69.22325
+[CW] ---------------------------
+[CW] ---- Iteration:   324 ----
+[CW] collect: return: 38.95583, steps: 1000.00000, total_steps: 330000.00000
+[CW] train: qf1_loss: 4.72779, qf2_loss: 4.77593, policy_loss: -77.60142, policy_entropy: -5.73873, alpha: 0.01994, time: 69.20377
+[CW] ---------------------------
+[CW] ---- Iteration:   325 ----
+[CW] collect: return: 306.60163, steps: 1000.00000, total_steps: 331000.00000
+[CW] train: qf1_loss: 4.09823, qf2_loss: 4.16917, policy_loss: -78.01554, policy_entropy: -5.74574, alpha: 0.01975, time: 69.22955
+[CW] ---------------------------
+[CW] ---- Iteration:   326 ----
+[CW] collect: return: 71.22303, steps: 1000.00000, total_steps: 332000.00000
+[CW] train: qf1_loss: 4.70663, qf2_loss: 4.74566, policy_loss: -77.34572, policy_entropy: -5.67089, alpha: 0.01952, time: 70.84022
+[CW] ---------------------------
+[CW] ---- Iteration:   327 ----
+[CW] collect: return: 45.19018, steps: 1000.00000, total_steps: 333000.00000
+[CW] train: qf1_loss: 5.28888, qf2_loss: 5.28970, policy_loss: -77.92160, policy_entropy: -5.72329, alpha: 0.01930, time: 69.26057
+[CW] ---------------------------
+[CW] ---- Iteration:   328 ----
+[CW] collect: return: 83.35864, steps: 1000.00000, total_steps: 334000.00000
+[CW] train: qf1_loss: 5.29407, qf2_loss: 5.30876, policy_loss: -78.08395, policy_entropy: -6.07702, alpha: 0.01914, time: 69.30347
+[CW] ---------------------------
+[CW] ---- Iteration:   329 ----
+[CW] collect: return: 46.34295, steps: 1000.00000, total_steps: 335000.00000
+[CW] train: qf1_loss: 8.11708, qf2_loss: 8.08890, policy_loss: -77.43851, policy_entropy: -6.04975, alpha: 0.01926, time: 69.23689
+[CW] ---------------------------
+[CW] ---- Iteration:   330 ----
+[CW] collect: return: 209.86866, steps: 1000.00000, total_steps: 336000.00000
+[CW] train: qf1_loss: 8.90306, qf2_loss: 8.87262, policy_loss: -77.18487, policy_entropy: -5.81911, alpha: 0.01918, time: 69.23751
+[CW] ---------------------------
+[CW] ---- Iteration:   331 ----
+[CW] collect: return: 267.38922, steps: 1000.00000, total_steps: 337000.00000
+[CW] train: qf1_loss: 8.32950, qf2_loss: 8.30308, policy_loss: -77.56486, policy_entropy: -5.96909, alpha: 0.01910, time: 69.60002
+[CW] ---------------------------
+[CW] ---- Iteration:   332 ----
+[CW] collect: return: 149.21593, steps: 1000.00000, total_steps: 338000.00000
+[CW] train: qf1_loss: 4.92868, qf2_loss: 4.95909, policy_loss: -78.39462, policy_entropy: -6.08695, alpha: 0.01915, time: 69.23169
+[CW] ---------------------------
+[CW] ---- Iteration:   333 ----
+[CW] collect: return: 129.21413, steps: 1000.00000, total_steps: 339000.00000
+[CW] train: qf1_loss: 4.36354, qf2_loss: 4.43019, policy_loss: -76.43205, policy_entropy: -5.79781, alpha: 0.01909, time: 69.32573
+[CW] ---------------------------
+[CW] ---- Iteration:   334 ----
+[CW] collect: return: 169.39008, steps: 1000.00000, total_steps: 340000.00000
+[CW] train: qf1_loss: 4.60829, qf2_loss: 4.62393, policy_loss: -78.77780, policy_entropy: -6.06079, alpha: 0.01902, time: 69.33493
+[CW] ---------------------------
+[CW] ---- Iteration:   335 ----
+[CW] collect: return: 131.34082, steps: 1000.00000, total_steps: 341000.00000
+[CW] train: qf1_loss: 4.85817, qf2_loss: 4.88149, policy_loss: -78.60345, policy_entropy: -6.25779, alpha: 0.01912, time: 69.33819
+[CW] ---------------------------
+[CW] ---- Iteration:   336 ----
+[CW] collect: return: 132.50608, steps: 1000.00000, total_steps: 342000.00000
+[CW] train: qf1_loss: 4.96580, qf2_loss: 4.98796, policy_loss: -79.30260, policy_entropy: -6.25800, alpha: 0.01937, time: 69.30028
+[CW] ---------------------------
+[CW] ---- Iteration:   337 ----
+[CW] collect: return: 251.92671, steps: 1000.00000, total_steps: 343000.00000
+[CW] train: qf1_loss: 5.33490, qf2_loss: 5.25033, policy_loss: -78.60704, policy_entropy: -5.81624, alpha: 0.01939, time: 69.25295
+[CW] ---------------------------
+[CW] ---- Iteration:   338 ----
+[CW] collect: return: 312.93561, steps: 1000.00000, total_steps: 344000.00000
+[CW] train: qf1_loss: 5.47821, qf2_loss: 5.44668, policy_loss: -78.20760, policy_entropy: -5.83495, alpha: 0.01923, time: 69.24801
+[CW] ---------------------------
+[CW] ---- Iteration:   339 ----
+[CW] collect: return: 127.75338, steps: 1000.00000, total_steps: 345000.00000
+[CW] train: qf1_loss: 5.72919, qf2_loss: 5.71895, policy_loss: -79.27952, policy_entropy: -6.04261, alpha: 0.01927, time: 69.33753
+[CW] ---------------------------
+[CW] ---- Iteration:   340 ----
+[CW] collect: return: 277.40769, steps: 1000.00000, total_steps: 346000.00000
+[CW] train: qf1_loss: 6.48155, qf2_loss: 6.48673, policy_loss: -78.10666, policy_entropy: -5.64864, alpha: 0.01908, time: 69.37648
+[CW] eval: return: 229.71296, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   341 ----
+[CW] collect: return: 282.91621, steps: 1000.00000, total_steps: 347000.00000
+[CW] train: qf1_loss: 4.99654, qf2_loss: 5.02451, policy_loss: -79.45228, policy_entropy: -5.93862, alpha: 0.01891, time: 69.33531
+[CW] ---------------------------
+[CW] ---- Iteration:   342 ----
+[CW] collect: return: 84.96905, steps: 1000.00000, total_steps: 348000.00000
+[CW] train: qf1_loss: 10.02439, qf2_loss: 9.86595, policy_loss: -79.51874, policy_entropy: -6.34917, alpha: 0.01899, time: 69.33823
+[CW] ---------------------------
+[CW] ---- Iteration:   343 ----
+[CW] collect: return: 161.13444, steps: 1000.00000, total_steps: 349000.00000
+[CW] train: qf1_loss: 7.20427, qf2_loss: 7.22081, policy_loss: -78.51656, policy_entropy: -5.94607, alpha: 0.01911, time: 69.34466
+[CW] ---------------------------
+[CW] ---- Iteration:   344 ----
+[CW] collect: return: 388.08115, steps: 1000.00000, total_steps: 350000.00000
+[CW] train: qf1_loss: 4.78610, qf2_loss: 4.77641, policy_loss: -79.71485, policy_entropy: -6.22790, alpha: 0.01918, time: 69.36736
+[CW] ---------------------------
+[CW] ---- Iteration:   345 ----
+[CW] collect: return: 188.63195, steps: 1000.00000, total_steps: 351000.00000
+[CW] train: qf1_loss: 4.63882, qf2_loss: 4.68591, policy_loss: -79.73606, policy_entropy: -6.13112, alpha: 0.01938, time: 69.25920
+[CW] ---------------------------
+[CW] ---- Iteration:   346 ----
+[CW] collect: return: 89.96160, steps: 1000.00000, total_steps: 352000.00000
+[CW] train: qf1_loss: 5.21029, qf2_loss: 5.20759, policy_loss: -80.42756, policy_entropy: -6.08901, alpha: 0.01942, time: 69.28297
+[CW] ---------------------------
+[CW] ---- Iteration:   347 ----
+[CW] collect: return: 208.03228, steps: 1000.00000, total_steps: 353000.00000
+[CW] train: qf1_loss: 4.91531, qf2_loss: 4.90282, policy_loss: -80.08885, policy_entropy: -5.97757, alpha: 0.01946, time: 69.28357
+[CW] ---------------------------
+[CW] ---- Iteration:   348 ----
+[CW] collect: return: 236.05739, steps: 1000.00000, total_steps: 354000.00000
+[CW] train: qf1_loss: 5.18717, qf2_loss: 5.15768, policy_loss: -79.15802, policy_entropy: -6.05962, alpha: 0.01950, time: 69.27462
+[CW] ---------------------------
+[CW] ---- Iteration:   349 ----
+[CW] collect: return: 163.95195, steps: 1000.00000, total_steps: 355000.00000
+[CW] train: qf1_loss: 5.94358, qf2_loss: 5.87134, policy_loss: -79.86638, policy_entropy: -5.94311, alpha: 0.01955, time: 69.27576
+[CW] ---------------------------
+[CW] ---- Iteration:   350 ----
+[CW] collect: return: 87.28596, steps: 1000.00000, total_steps: 356000.00000
+[CW] train: qf1_loss: 6.16760, qf2_loss: 6.16070, policy_loss: -80.60204, policy_entropy: -5.77139, alpha: 0.01939, time: 69.30955
+[CW] ---------------------------
+[CW] ---- Iteration:   351 ----
+[CW] collect: return: 160.74602, steps: 1000.00000, total_steps: 357000.00000
+[CW] train: qf1_loss: 6.23542, qf2_loss: 6.23546, policy_loss: -80.65247, policy_entropy: -5.95053, alpha: 0.01923, time: 69.35065
+[CW] ---------------------------
+[CW] ---- Iteration:   352 ----
+[CW] collect: return: 272.88563, steps: 1000.00000, total_steps: 358000.00000
+[CW] train: qf1_loss: 14.61997, qf2_loss: 14.44815, policy_loss: -79.80539, policy_entropy: -5.97404, alpha: 0.01911, time: 69.28353
+[CW] ---------------------------
+[CW] ---- Iteration:   353 ----
+[CW] collect: return: 65.82181, steps: 1000.00000, total_steps: 359000.00000
+[CW] train: qf1_loss: 6.51712, qf2_loss: 6.50316, policy_loss: -80.23432, policy_entropy: -6.25618, alpha: 0.01938, time: 69.28752
+[CW] ---------------------------
+[CW] ---- Iteration:   354 ----
+[CW] collect: return: 56.05777, steps: 1000.00000, total_steps: 360000.00000
+[CW] train: qf1_loss: 5.20715, qf2_loss: 5.19297, policy_loss: -80.23652, policy_entropy: -5.94016, alpha: 0.01937, time: 69.31075
+[CW] ---------------------------
+[CW] ---- Iteration:   355 ----
+[CW] collect: return: 54.58763, steps: 1000.00000, total_steps: 361000.00000
+[CW] train: qf1_loss: 5.05974, qf2_loss: 5.12301, policy_loss: -78.95447, policy_entropy: -5.93214, alpha: 0.01938, time: 69.34076
+[CW] ---------------------------
+[CW] ---- Iteration:   356 ----
+[CW] collect: return: 108.34735, steps: 1000.00000, total_steps: 362000.00000
+[CW] train: qf1_loss: 5.39640, qf2_loss: 5.28368, policy_loss: -80.09939, policy_entropy: -6.19321, alpha: 0.01941, time: 69.37759
+[CW] ---------------------------
+[CW] ---- Iteration:   357 ----
+[CW] collect: return: 282.29669, steps: 1000.00000, total_steps: 363000.00000
+[CW] train: qf1_loss: 5.24521, qf2_loss: 5.26298, policy_loss: -80.11073, policy_entropy: -6.11214, alpha: 0.01949, time: 70.44190
+[CW] ---------------------------
+[CW] ---- Iteration:   358 ----
+[CW] collect: return: 314.12902, steps: 1000.00000, total_steps: 364000.00000
+[CW] train: qf1_loss: 5.67268, qf2_loss: 5.70383, policy_loss: -81.11736, policy_entropy: -6.15866, alpha: 0.01964, time: 69.56535
+[CW] ---------------------------
+[CW] ---- Iteration:   359 ----
+[CW] collect: return: 321.46618, steps: 1000.00000, total_steps: 365000.00000
+[CW] train: qf1_loss: 5.01481, qf2_loss: 5.00705, policy_loss: -81.04612, policy_entropy: -6.08674, alpha: 0.01973, time: 69.38132
+[CW] ---------------------------
+[CW] ---- Iteration:   360 ----
+[CW] collect: return: 267.22833, steps: 1000.00000, total_steps: 366000.00000
+[CW] train: qf1_loss: 6.35126, qf2_loss: 6.22792, policy_loss: -81.29728, policy_entropy: -6.25978, alpha: 0.01991, time: 69.63365
+[CW] eval: return: 177.32071, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   361 ----
+[CW] collect: return: 271.36711, steps: 1000.00000, total_steps: 367000.00000
+[CW] train: qf1_loss: 6.70106, qf2_loss: 6.60075, policy_loss: -80.74753, policy_entropy: -6.22022, alpha: 0.02012, time: 69.69569
+[CW] ---------------------------
+[CW] ---- Iteration:   362 ----
+[CW] collect: return: 114.27909, steps: 1000.00000, total_steps: 368000.00000
+[CW] train: qf1_loss: 9.44618, qf2_loss: 9.31568, policy_loss: -80.85098, policy_entropy: -5.94725, alpha: 0.02023, time: 69.44024
+[CW] ---------------------------
+[CW] ---- Iteration:   363 ----
+[CW] collect: return: 347.85649, steps: 1000.00000, total_steps: 369000.00000
+[CW] train: qf1_loss: 5.45331, qf2_loss: 5.45410, policy_loss: -79.98312, policy_entropy: -6.27986, alpha: 0.02027, time: 69.50457
+[CW] ---------------------------
+[CW] ---- Iteration:   364 ----
+[CW] collect: return: 327.88615, steps: 1000.00000, total_steps: 370000.00000
+[CW] train: qf1_loss: 8.13229, qf2_loss: 8.01214, policy_loss: -80.71187, policy_entropy: -6.13513, alpha: 0.02046, time: 69.43264
+[CW] ---------------------------
+[CW] ---- Iteration:   365 ----
+[CW] collect: return: 36.39744, steps: 1000.00000, total_steps: 371000.00000
+[CW] train: qf1_loss: 7.23215, qf2_loss: 7.16561, policy_loss: -81.47179, policy_entropy: -6.65761, alpha: 0.02086, time: 69.34742
+[CW] ---------------------------
+[CW] ---- Iteration:   366 ----
+[CW] collect: return: 312.93792, steps: 1000.00000, total_steps: 372000.00000
+[CW] train: qf1_loss: 9.30102, qf2_loss: 9.23955, policy_loss: -80.51958, policy_entropy: -6.10083, alpha: 0.02125, time: 69.39319
+[CW] ---------------------------
+[CW] ---- Iteration:   367 ----
+[CW] collect: return: 182.53240, steps: 1000.00000, total_steps: 373000.00000
+[CW] train: qf1_loss: 6.90979, qf2_loss: 6.84085, policy_loss: -80.84777, policy_entropy: -6.09243, alpha: 0.02136, time: 69.40214
+[CW] ---------------------------
+[CW] ---- Iteration:   368 ----
+[CW] collect: return: 197.06246, steps: 1000.00000, total_steps: 374000.00000
+[CW] train: qf1_loss: 5.57263, qf2_loss: 5.51996, policy_loss: -80.87324, policy_entropy: -6.18187, alpha: 0.02152, time: 69.49417
+[CW] ---------------------------
+[CW] ---- Iteration:   369 ----
+[CW] collect: return: 257.46738, steps: 1000.00000, total_steps: 375000.00000
+[CW] train: qf1_loss: 8.13535, qf2_loss: 8.14164, policy_loss: -81.60107, policy_entropy: -6.11979, alpha: 0.02165, time: 69.73616
+[CW] ---------------------------
+[CW] ---- Iteration:   370 ----
+[CW] collect: return: 192.49238, steps: 1000.00000, total_steps: 376000.00000
+[CW] train: qf1_loss: 7.45941, qf2_loss: 7.46331, policy_loss: -81.83692, policy_entropy: -6.59413, alpha: 0.02194, time: 69.56159
+[CW] ---------------------------
+[CW] ---- Iteration:   371 ----
+[CW] collect: return: 197.45865, steps: 1000.00000, total_steps: 377000.00000
+[CW] train: qf1_loss: 5.84087, qf2_loss: 5.86587, policy_loss: -82.22062, policy_entropy: -6.07503, alpha: 0.02235, time: 69.51644
+[CW] ---------------------------
+[CW] ---- Iteration:   372 ----
+[CW] collect: return: 69.10227, steps: 1000.00000, total_steps: 378000.00000
+[CW] train: qf1_loss: 6.19262, qf2_loss: 6.10578, policy_loss: -81.89781, policy_entropy: -6.05083, alpha: 0.02235, time: 69.40999
+[CW] ---------------------------
+[CW] ---- Iteration:   373 ----
+[CW] collect: return: 222.38120, steps: 1000.00000, total_steps: 379000.00000
+[CW] train: qf1_loss: 8.09369, qf2_loss: 8.07965, policy_loss: -82.71418, policy_entropy: -6.20809, alpha: 0.02248, time: 69.37169
+[CW] ---------------------------
+[CW] ---- Iteration:   374 ----
+[CW] collect: return: 302.98082, steps: 1000.00000, total_steps: 380000.00000
+[CW] train: qf1_loss: 5.68193, qf2_loss: 5.62821, policy_loss: -81.97690, policy_entropy: -5.98135, alpha: 0.02261, time: 69.40194
+[CW] ---------------------------
+[CW] ---- Iteration:   375 ----
+[CW] collect: return: 298.93262, steps: 1000.00000, total_steps: 381000.00000
+[CW] train: qf1_loss: 5.94286, qf2_loss: 5.89484, policy_loss: -82.99479, policy_entropy: -6.18734, alpha: 0.02268, time: 69.50435
+[CW] ---------------------------
+[CW] ---- Iteration:   376 ----
+[CW] collect: return: 297.25159, steps: 1000.00000, total_steps: 382000.00000
+[CW] train: qf1_loss: 6.39378, qf2_loss: 6.31258, policy_loss: -83.24005, policy_entropy: -6.18934, alpha: 0.02290, time: 70.35610
+[CW] ---------------------------
+[CW] ---- Iteration:   377 ----
+[CW] collect: return: 284.31425, steps: 1000.00000, total_steps: 383000.00000
+[CW] train: qf1_loss: 7.12161, qf2_loss: 7.15990, policy_loss: -83.14703, policy_entropy: -6.11956, alpha: 0.02305, time: 69.45608
+[CW] ---------------------------
+[CW] ---- Iteration:   378 ----
+[CW] collect: return: 246.09255, steps: 1000.00000, total_steps: 384000.00000
+[CW] train: qf1_loss: 6.14963, qf2_loss: 6.22494, policy_loss: -82.76151, policy_entropy: -6.14247, alpha: 0.02320, time: 69.39862
+[CW] ---------------------------
+[CW] ---- Iteration:   379 ----
+[CW] collect: return: 331.12300, steps: 1000.00000, total_steps: 385000.00000
+[CW] train: qf1_loss: 6.47006, qf2_loss: 6.40510, policy_loss: -83.63153, policy_entropy: -6.20640, alpha: 0.02341, time: 69.40433
+[CW] ---------------------------
+[CW] ---- Iteration:   380 ----
+[CW] collect: return: 200.38205, steps: 1000.00000, total_steps: 386000.00000
+[CW] train: qf1_loss: 6.12516, qf2_loss: 6.12590, policy_loss: -84.74001, policy_entropy: -6.12781, alpha: 0.02361, time: 70.12321
+[CW] eval: return: 202.05855, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   381 ----
+[CW] collect: return: 104.65935, steps: 1000.00000, total_steps: 387000.00000
+[CW] train: qf1_loss: 5.89616, qf2_loss: 5.90776, policy_loss: -83.45267, policy_entropy: -6.00422, alpha: 0.02367, time: 69.52666
+[CW] ---------------------------
+[CW] ---- Iteration:   382 ----
+[CW] collect: return: 228.15224, steps: 1000.00000, total_steps: 388000.00000
+[CW] train: qf1_loss: 7.13107, qf2_loss: 7.30524, policy_loss: -82.45699, policy_entropy: -5.97577, alpha: 0.02365, time: 69.44515
+[CW] ---------------------------
+[CW] ---- Iteration:   383 ----
+[CW] collect: return: 232.79912, steps: 1000.00000, total_steps: 389000.00000
+[CW] train: qf1_loss: 9.12401, qf2_loss: 9.11051, policy_loss: -83.72862, policy_entropy: -6.05694, alpha: 0.02376, time: 69.46491
+[CW] ---------------------------
+[CW] ---- Iteration:   384 ----
+[CW] collect: return: 213.26636, steps: 1000.00000, total_steps: 390000.00000
+[CW] train: qf1_loss: 8.51595, qf2_loss: 8.42131, policy_loss: -83.96063, policy_entropy: -6.13070, alpha: 0.02389, time: 69.39512
+[CW] ---------------------------
+[CW] ---- Iteration:   385 ----
+[CW] collect: return: 268.01895, steps: 1000.00000, total_steps: 391000.00000
+[CW] train: qf1_loss: 8.11491, qf2_loss: 8.06308, policy_loss: -83.36105, policy_entropy: -5.88457, alpha: 0.02383, time: 69.45680
+[CW] ---------------------------
+[CW] ---- Iteration:   386 ----
+[CW] collect: return: 248.33116, steps: 1000.00000, total_steps: 392000.00000
+[CW] train: qf1_loss: 6.88525, qf2_loss: 6.91725, policy_loss: -83.01033, policy_entropy: -5.98129, alpha: 0.02376, time: 69.46377
+[CW] ---------------------------
+[CW] ---- Iteration:   387 ----
+[CW] collect: return: 92.68597, steps: 1000.00000, total_steps: 393000.00000
+[CW] train: qf1_loss: 6.25117, qf2_loss: 6.30424, policy_loss: -82.93208, policy_entropy: -5.89955, alpha: 0.02373, time: 69.54028
+[CW] ---------------------------
+[CW] ---- Iteration:   388 ----
+[CW] collect: return: 208.53993, steps: 1000.00000, total_steps: 394000.00000
+[CW] train: qf1_loss: 6.61257, qf2_loss: 6.73488, policy_loss: -84.89925, policy_entropy: -5.96647, alpha: 0.02357, time: 69.50465
+[CW] ---------------------------
+[CW] ---- Iteration:   389 ----
+[CW] collect: return: 367.96626, steps: 1000.00000, total_steps: 395000.00000
+[CW] train: qf1_loss: 6.67544, qf2_loss: 6.55343, policy_loss: -83.09014, policy_entropy: -5.67756, alpha: 0.02347, time: 69.52668
+[CW] ---------------------------
+[CW] ---- Iteration:   390 ----
+[CW] collect: return: 179.67710, steps: 1000.00000, total_steps: 396000.00000
+[CW] train: qf1_loss: 6.72795, qf2_loss: 6.74210, policy_loss: -84.49187, policy_entropy: -5.70853, alpha: 0.02308, time: 69.44485
+[CW] ---------------------------
+[CW] ---- Iteration:   391 ----
+[CW] collect: return: 357.53678, steps: 1000.00000, total_steps: 397000.00000
+[CW] train: qf1_loss: 14.47088, qf2_loss: 14.49036, policy_loss: -84.57057, policy_entropy: -6.07996, alpha: 0.02300, time: 69.48091
+[CW] ---------------------------
+[CW] ---- Iteration:   392 ----
+[CW] collect: return: 106.81210, steps: 1000.00000, total_steps: 398000.00000
+[CW] train: qf1_loss: 7.40634, qf2_loss: 7.45337, policy_loss: -84.24722, policy_entropy: -6.18407, alpha: 0.02318, time: 69.42638
+[CW] ---------------------------
+[CW] ---- Iteration:   393 ----
+[CW] collect: return: 207.67008, steps: 1000.00000, total_steps: 399000.00000
+[CW] train: qf1_loss: 6.53916, qf2_loss: 6.56819, policy_loss: -83.79809, policy_entropy: -5.81020, alpha: 0.02317, time: 69.47557
+[CW] ---------------------------
+[CW] ---- Iteration:   394 ----
+[CW] collect: return: 265.59180, steps: 1000.00000, total_steps: 400000.00000
+[CW] train: qf1_loss: 6.42862, qf2_loss: 6.33936, policy_loss: -85.15172, policy_entropy: -5.86553, alpha: 0.02298, time: 69.45944
+[CW] ---------------------------
+[CW] ---- Iteration:   395 ----
+[CW] collect: return: 176.90471, steps: 1000.00000, total_steps: 401000.00000
+[CW] train: qf1_loss: 5.38054, qf2_loss: 5.44371, policy_loss: -84.74173, policy_entropy: -5.96001, alpha: 0.02290, time: 69.44261
+[CW] ---------------------------
+[CW] ---- Iteration:   396 ----
+[CW] collect: return: 363.97116, steps: 1000.00000, total_steps: 402000.00000
+[CW] train: qf1_loss: 5.53506, qf2_loss: 5.61232, policy_loss: -86.27862, policy_entropy: -6.35570, alpha: 0.02304, time: 69.40114
+[CW] ---------------------------
+[CW] ---- Iteration:   397 ----
+[CW] collect: return: 134.88186, steps: 1000.00000, total_steps: 403000.00000
+[CW] train: qf1_loss: 6.93582, qf2_loss: 7.02072, policy_loss: -84.05398, policy_entropy: -5.94234, alpha: 0.02316, time: 69.42856
+[CW] ---------------------------
+[CW] ---- Iteration:   398 ----
+[CW] collect: return: 314.48614, steps: 1000.00000, total_steps: 404000.00000
+[CW] train: qf1_loss: 7.63758, qf2_loss: 7.64874, policy_loss: -86.03167, policy_entropy: -5.94030, alpha: 0.02315, time: 69.46842
+[CW] ---------------------------
+[CW] ---- Iteration:   399 ----
+[CW] collect: return: 308.81700, steps: 1000.00000, total_steps: 405000.00000
+[CW] train: qf1_loss: 6.49776, qf2_loss: 6.53892, policy_loss: -84.32673, policy_entropy: -5.77545, alpha: 0.02298, time: 69.48056
+[CW] ---------------------------
+[CW] ---- Iteration:   400 ----
+[CW] collect: return: 239.04355, steps: 1000.00000, total_steps: 406000.00000
+[CW] train: qf1_loss: 6.30736, qf2_loss: 6.42467, policy_loss: -84.99525, policy_entropy: -6.19929, alpha: 0.02294, time: 69.47921
+[CW] eval: return: 198.73744, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   401 ----
+[CW] collect: return: 236.38342, steps: 1000.00000, total_steps: 407000.00000
+[CW] train: qf1_loss: 6.47957, qf2_loss: 6.42612, policy_loss: -86.09490, policy_entropy: -6.32903, alpha: 0.02325, time: 71.36314
+[CW] ---------------------------
+[CW] ---- Iteration:   402 ----
+[CW] collect: return: 309.48842, steps: 1000.00000, total_steps: 408000.00000
+[CW] train: qf1_loss: 7.28055, qf2_loss: 7.33165, policy_loss: -85.16099, policy_entropy: -6.24366, alpha: 0.02349, time: 69.52509
+[CW] ---------------------------
+[CW] ---- Iteration:   403 ----
+[CW] collect: return: 286.87883, steps: 1000.00000, total_steps: 409000.00000
+[CW] train: qf1_loss: 7.86581, qf2_loss: 7.78218, policy_loss: -84.95281, policy_entropy: -6.07249, alpha: 0.02362, time: 69.53986
+[CW] ---------------------------
+[CW] ---- Iteration:   404 ----
+[CW] collect: return: 26.39605, steps: 1000.00000, total_steps: 410000.00000
+[CW] train: qf1_loss: 10.39710, qf2_loss: 10.34000, policy_loss: -85.60272, policy_entropy: -6.09516, alpha: 0.02368, time: 69.53210
+[CW] ---------------------------
+[CW] ---- Iteration:   405 ----
+[CW] collect: return: 387.99353, steps: 1000.00000, total_steps: 411000.00000
+[CW] train: qf1_loss: 6.56037, qf2_loss: 6.59936, policy_loss: -86.22237, policy_entropy: -6.11801, alpha: 0.02387, time: 69.44016
+[CW] ---------------------------
+[CW] ---- Iteration:   406 ----
+[CW] collect: return: 71.21332, steps: 1000.00000, total_steps: 412000.00000
+[CW] train: qf1_loss: 5.93431, qf2_loss: 5.96205, policy_loss: -85.23695, policy_entropy: -6.10651, alpha: 0.02397, time: 69.52970
+[CW] ---------------------------
+[CW] ---- Iteration:   407 ----
+[CW] collect: return: 209.65585, steps: 1000.00000, total_steps: 413000.00000
+[CW] train: qf1_loss: 6.21850, qf2_loss: 6.15072, policy_loss: -86.63310, policy_entropy: -6.08470, alpha: 0.02406, time: 69.52578
+[CW] ---------------------------
+[CW] ---- Iteration:   408 ----
+[CW] collect: return: 31.05713, steps: 1000.00000, total_steps: 414000.00000
+[CW] train: qf1_loss: 7.20758, qf2_loss: 7.19002, policy_loss: -84.73242, policy_entropy: -5.74671, alpha: 0.02399, time: 69.54120
+[CW] ---------------------------
+[CW] ---- Iteration:   409 ----
+[CW] collect: return: 191.62559, steps: 1000.00000, total_steps: 415000.00000
+[CW] train: qf1_loss: 9.18622, qf2_loss: 9.29036, policy_loss: -85.32291, policy_entropy: -5.74985, alpha: 0.02373, time: 69.50679
+[CW] ---------------------------
+[CW] ---- Iteration:   410 ----
+[CW] collect: return: 47.06925, steps: 1000.00000, total_steps: 416000.00000
+[CW] train: qf1_loss: 7.86745, qf2_loss: 7.72934, policy_loss: -85.04764, policy_entropy: -5.77500, alpha: 0.02347, time: 69.45357
+[CW] ---------------------------
+[CW] ---- Iteration:   411 ----
+[CW] collect: return: 406.96944, steps: 1000.00000, total_steps: 417000.00000
+[CW] train: qf1_loss: 8.48941, qf2_loss: 8.54192, policy_loss: -85.73810, policy_entropy: -5.94436, alpha: 0.02330, time: 69.43367
+[CW] ---------------------------
+[CW] ---- Iteration:   412 ----
+[CW] collect: return: 377.80396, steps: 1000.00000, total_steps: 418000.00000
+[CW] train: qf1_loss: 10.88354, qf2_loss: 10.71091, policy_loss: -84.91425, policy_entropy: -5.77518, alpha: 0.02318, time: 69.54835
+[CW] ---------------------------
+[CW] ---- Iteration:   413 ----
+[CW] collect: return: 42.13472, steps: 1000.00000, total_steps: 419000.00000
+[CW] train: qf1_loss: 8.27207, qf2_loss: 8.16830, policy_loss: -86.54001, policy_entropy: -6.18663, alpha: 0.02311, time: 69.42640
+[CW] ---------------------------
+[CW] ---- Iteration:   414 ----
+[CW] collect: return: 25.29266, steps: 1000.00000, total_steps: 420000.00000
+[CW] train: qf1_loss: 6.58948, qf2_loss: 6.62251, policy_loss: -86.73661, policy_entropy: -6.28937, alpha: 0.02345, time: 69.47759
+[CW] ---------------------------
+[CW] ---- Iteration:   415 ----
+[CW] collect: return: 286.59944, steps: 1000.00000, total_steps: 421000.00000
+[CW] train: qf1_loss: 5.56720, qf2_loss: 5.55866, policy_loss: -87.45197, policy_entropy: -5.91257, alpha: 0.02358, time: 69.42462
+[CW] ---------------------------
+[CW] ---- Iteration:   416 ----
+[CW] collect: return: 417.71207, steps: 1000.00000, total_steps: 422000.00000
+[CW] train: qf1_loss: 7.54216, qf2_loss: 7.46041, policy_loss: -88.42966, policy_entropy: -5.72238, alpha: 0.02338, time: 69.40278
+[CW] ---------------------------
+[CW] ---- Iteration:   417 ----
+[CW] collect: return: 150.47778, steps: 1000.00000, total_steps: 423000.00000
+[CW] train: qf1_loss: 15.64331, qf2_loss: 15.47002, policy_loss: -86.47548, policy_entropy: -5.64100, alpha: 0.02297, time: 69.39671
+[CW] ---------------------------
+[CW] ---- Iteration:   418 ----
+[CW] collect: return: 129.95126, steps: 1000.00000, total_steps: 424000.00000
+[CW] train: qf1_loss: 6.98899, qf2_loss: 6.96971, policy_loss: -86.96338, policy_entropy: -5.83566, alpha: 0.02283, time: 69.42073
+[CW] ---------------------------
+[CW] ---- Iteration:   419 ----
+[CW] collect: return: 327.00894, steps: 1000.00000, total_steps: 425000.00000
+[CW] train: qf1_loss: 6.28875, qf2_loss: 6.36715, policy_loss: -86.13179, policy_entropy: -5.44283, alpha: 0.02250, time: 69.45301
+[CW] ---------------------------
+[CW] ---- Iteration:   420 ----
+[CW] collect: return: 383.11077, steps: 1000.00000, total_steps: 426000.00000
+[CW] train: qf1_loss: 7.16162, qf2_loss: 7.10531, policy_loss: -87.13370, policy_entropy: -5.55509, alpha: 0.02203, time: 69.48232
+[CW] eval: return: 246.57155, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   421 ----
+[CW] collect: return: 312.73053, steps: 1000.00000, total_steps: 427000.00000
+[CW] train: qf1_loss: 6.07742, qf2_loss: 6.17769, policy_loss: -88.04558, policy_entropy: -5.83487, alpha: 0.02177, time: 69.44157
+[CW] ---------------------------
+[CW] ---- Iteration:   422 ----
+[CW] collect: return: 245.91988, steps: 1000.00000, total_steps: 428000.00000
+[CW] train: qf1_loss: 6.60210, qf2_loss: 6.62097, policy_loss: -86.70986, policy_entropy: -5.68253, alpha: 0.02152, time: 69.39985
+[CW] ---------------------------
+[CW] ---- Iteration:   423 ----
+[CW] collect: return: 419.71373, steps: 1000.00000, total_steps: 429000.00000
+[CW] train: qf1_loss: 6.45613, qf2_loss: 6.51225, policy_loss: -88.38021, policy_entropy: -5.98198, alpha: 0.02142, time: 69.53240
+[CW] ---------------------------
+[CW] ---- Iteration:   424 ----
+[CW] collect: return: 44.35077, steps: 1000.00000, total_steps: 430000.00000
+[CW] train: qf1_loss: 7.95465, qf2_loss: 7.73045, policy_loss: -88.46661, policy_entropy: -5.94844, alpha: 0.02140, time: 69.41951
+[CW] ---------------------------
+[CW] ---- Iteration:   425 ----
+[CW] collect: return: 183.18656, steps: 1000.00000, total_steps: 431000.00000
+[CW] train: qf1_loss: 6.94483, qf2_loss: 6.92245, policy_loss: -87.43414, policy_entropy: -5.78933, alpha: 0.02125, time: 69.44024
+[CW] ---------------------------
+[CW] ---- Iteration:   426 ----
+[CW] collect: return: 146.98514, steps: 1000.00000, total_steps: 432000.00000
+[CW] train: qf1_loss: 6.33775, qf2_loss: 6.35472, policy_loss: -87.46259, policy_entropy: -5.78187, alpha: 0.02112, time: 69.45969
+[CW] ---------------------------
+[CW] ---- Iteration:   427 ----
+[CW] collect: return: 80.23373, steps: 1000.00000, total_steps: 433000.00000
+[CW] train: qf1_loss: 5.79526, qf2_loss: 5.76476, policy_loss: -88.26239, policy_entropy: -5.78037, alpha: 0.02098, time: 69.45165
+[CW] ---------------------------
+[CW] ---- Iteration:   428 ----
+[CW] collect: return: 448.01012, steps: 1000.00000, total_steps: 434000.00000
+[CW] train: qf1_loss: 8.01152, qf2_loss: 7.96644, policy_loss: -86.86443, policy_entropy: -5.72311, alpha: 0.02078, time: 69.47886
+[CW] ---------------------------
+[CW] ---- Iteration:   429 ----
+[CW] collect: return: 413.94774, steps: 1000.00000, total_steps: 435000.00000
+[CW] train: qf1_loss: 8.85320, qf2_loss: 8.71033, policy_loss: -87.46210, policy_entropy: -5.85924, alpha: 0.02061, time: 69.51788
+[CW] ---------------------------
+[CW] ---- Iteration:   430 ----
+[CW] collect: return: 90.32237, steps: 1000.00000, total_steps: 436000.00000
+[CW] train: qf1_loss: 7.45386, qf2_loss: 7.36754, policy_loss: -86.48953, policy_entropy: -5.81416, alpha: 0.02047, time: 71.53872
+[CW] ---------------------------
+[CW] ---- Iteration:   431 ----
+[CW] collect: return: 126.55337, steps: 1000.00000, total_steps: 437000.00000
+[CW] train: qf1_loss: 6.93978, qf2_loss: 6.92539, policy_loss: -88.83997, policy_entropy: -6.03581, alpha: 0.02041, time: 69.36709
+[CW] ---------------------------
+[CW] ---- Iteration:   432 ----
+[CW] collect: return: 64.81656, steps: 1000.00000, total_steps: 438000.00000
+[CW] train: qf1_loss: 7.41970, qf2_loss: 7.39490, policy_loss: -88.12547, policy_entropy: -6.16037, alpha: 0.02045, time: 69.51186
+[CW] ---------------------------
+[CW] ---- Iteration:   433 ----
+[CW] collect: return: 340.20961, steps: 1000.00000, total_steps: 439000.00000
+[CW] train: qf1_loss: 7.64836, qf2_loss: 7.61580, policy_loss: -87.27940, policy_entropy: -6.47666, alpha: 0.02071, time: 69.44505
+[CW] ---------------------------
+[CW] ---- Iteration:   434 ----
+[CW] collect: return: 148.35545, steps: 1000.00000, total_steps: 440000.00000
+[CW] train: qf1_loss: 7.23558, qf2_loss: 7.11699, policy_loss: -88.86800, policy_entropy: -6.34295, alpha: 0.02106, time: 69.38206
+[CW] ---------------------------
+[CW] ---- Iteration:   435 ----
+[CW] collect: return: 432.51486, steps: 1000.00000, total_steps: 441000.00000
+[CW] train: qf1_loss: 10.84099, qf2_loss: 10.85099, policy_loss: -88.47963, policy_entropy: -5.89853, alpha: 0.02120, time: 69.44566
+[CW] ---------------------------
+[CW] ---- Iteration:   436 ----
+[CW] collect: return: 325.91971, steps: 1000.00000, total_steps: 442000.00000
+[CW] train: qf1_loss: 9.74434, qf2_loss: 9.48633, policy_loss: -87.19216, policy_entropy: -5.80990, alpha: 0.02101, time: 69.45164
+[CW] ---------------------------
+[CW] ---- Iteration:   437 ----
+[CW] collect: return: 444.80329, steps: 1000.00000, total_steps: 443000.00000
+[CW] train: qf1_loss: 6.51440, qf2_loss: 6.51831, policy_loss: -90.36247, policy_entropy: -6.14601, alpha: 0.02104, time: 69.39503
+[CW] ---------------------------
+[CW] ---- Iteration:   438 ----
+[CW] collect: return: 439.45777, steps: 1000.00000, total_steps: 444000.00000
+[CW] train: qf1_loss: 6.37851, qf2_loss: 6.41018, policy_loss: -89.64648, policy_entropy: -5.77343, alpha: 0.02103, time: 70.11119
+[CW] ---------------------------
+[CW] ---- Iteration:   439 ----
+[CW] collect: return: 397.77606, steps: 1000.00000, total_steps: 445000.00000
+[CW] train: qf1_loss: 6.77327, qf2_loss: 6.75157, policy_loss: -88.21622, policy_entropy: -5.73387, alpha: 0.02081, time: 69.42699
+[CW] ---------------------------
+[CW] ---- Iteration:   440 ----
+[CW] collect: return: 393.87210, steps: 1000.00000, total_steps: 446000.00000
+[CW] train: qf1_loss: 8.80849, qf2_loss: 8.69324, policy_loss: -88.98456, policy_entropy: -5.93565, alpha: 0.02062, time: 69.42127
+[CW] eval: return: 257.09217, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   441 ----
+[CW] collect: return: 318.05854, steps: 1000.00000, total_steps: 447000.00000
+[CW] train: qf1_loss: 9.75785, qf2_loss: 9.63054, policy_loss: -88.12439, policy_entropy: -6.04740, alpha: 0.02064, time: 69.45470
+[CW] ---------------------------
+[CW] ---- Iteration:   442 ----
+[CW] collect: return: 437.10912, steps: 1000.00000, total_steps: 448000.00000
+[CW] train: qf1_loss: 6.82554, qf2_loss: 6.74775, policy_loss: -88.43561, policy_entropy: -6.07267, alpha: 0.02067, time: 69.41402
+[CW] ---------------------------
+[CW] ---- Iteration:   443 ----
+[CW] collect: return: 18.68204, steps: 1000.00000, total_steps: 449000.00000
+[CW] train: qf1_loss: 6.20691, qf2_loss: 6.14999, policy_loss: -89.66202, policy_entropy: -6.21653, alpha: 0.02085, time: 69.38731
+[CW] ---------------------------
+[CW] ---- Iteration:   444 ----
+[CW] collect: return: 417.58673, steps: 1000.00000, total_steps: 450000.00000
+[CW] train: qf1_loss: 7.06127, qf2_loss: 6.99427, policy_loss: -90.28907, policy_entropy: -6.13108, alpha: 0.02096, time: 69.42844
+[CW] ---------------------------
+[CW] ---- Iteration:   445 ----
+[CW] collect: return: 295.31387, steps: 1000.00000, total_steps: 451000.00000
+[CW] train: qf1_loss: 6.27381, qf2_loss: 6.12412, policy_loss: -89.38445, policy_entropy: -5.98928, alpha: 0.02100, time: 69.38441
+[CW] ---------------------------
+[CW] ---- Iteration:   446 ----
+[CW] collect: return: 328.25139, steps: 1000.00000, total_steps: 452000.00000
+[CW] train: qf1_loss: 6.26022, qf2_loss: 6.26562, policy_loss: -89.90501, policy_entropy: -5.87950, alpha: 0.02105, time: 69.45361
+[CW] ---------------------------
+[CW] ---- Iteration:   447 ----
+[CW] collect: return: 80.86839, steps: 1000.00000, total_steps: 453000.00000
+[CW] train: qf1_loss: 7.04302, qf2_loss: 6.97815, policy_loss: -88.99016, policy_entropy: -5.81279, alpha: 0.02082, time: 69.41720
+[CW] ---------------------------
+[CW] ---- Iteration:   448 ----
+[CW] collect: return: 439.97688, steps: 1000.00000, total_steps: 454000.00000
+[CW] train: qf1_loss: 8.80474, qf2_loss: 8.70617, policy_loss: -89.37977, policy_entropy: -6.10530, alpha: 0.02077, time: 69.45699
+[CW] ---------------------------
+[CW] ---- Iteration:   449 ----
+[CW] collect: return: 438.27498, steps: 1000.00000, total_steps: 455000.00000
+[CW] train: qf1_loss: 8.15526, qf2_loss: 8.08752, policy_loss: -89.30719, policy_entropy: -6.11774, alpha: 0.02085, time: 69.45706
+[CW] ---------------------------
+[CW] ---- Iteration:   450 ----
+[CW] collect: return: 70.82360, steps: 1000.00000, total_steps: 456000.00000
+[CW] train: qf1_loss: 6.54325, qf2_loss: 6.58200, policy_loss: -90.74447, policy_entropy: -6.01174, alpha: 0.02098, time: 69.44961
+[CW] ---------------------------
+[CW] ---- Iteration:   451 ----
+[CW] collect: return: 316.37823, steps: 1000.00000, total_steps: 457000.00000
+[CW] train: qf1_loss: 7.45056, qf2_loss: 7.28507, policy_loss: -90.19071, policy_entropy: -5.91337, alpha: 0.02091, time: 69.45280
+[CW] ---------------------------
+[CW] ---- Iteration:   452 ----
+[CW] collect: return: 284.51807, steps: 1000.00000, total_steps: 458000.00000
+[CW] train: qf1_loss: 7.51958, qf2_loss: 7.51641, policy_loss: -88.70321, policy_entropy: -5.67691, alpha: 0.02077, time: 69.42900
+[CW] ---------------------------
+[CW] ---- Iteration:   453 ----
+[CW] collect: return: 410.15174, steps: 1000.00000, total_steps: 459000.00000
+[CW] train: qf1_loss: 6.77794, qf2_loss: 6.78961, policy_loss: -90.30424, policy_entropy: -5.89785, alpha: 0.02057, time: 69.42702
+[CW] ---------------------------
+[CW] ---- Iteration:   454 ----
+[CW] collect: return: 408.46122, steps: 1000.00000, total_steps: 460000.00000
+[CW] train: qf1_loss: 6.86997, qf2_loss: 6.75507, policy_loss: -91.78084, policy_entropy: -6.30328, alpha: 0.02059, time: 69.86981
+[CW] ---------------------------
+[CW] ---- Iteration:   455 ----
+[CW] collect: return: 491.27033, steps: 1000.00000, total_steps: 461000.00000
+[CW] train: qf1_loss: 6.96520, qf2_loss: 6.92981, policy_loss: -90.61864, policy_entropy: -6.44856, alpha: 0.02101, time: 70.73682
+[CW] ---------------------------
+[CW] ---- Iteration:   456 ----
+[CW] collect: return: 175.13842, steps: 1000.00000, total_steps: 462000.00000
+[CW] train: qf1_loss: 7.02366, qf2_loss: 6.97933, policy_loss: -90.63850, policy_entropy: -5.97529, alpha: 0.02113, time: 69.45983
+[CW] ---------------------------
+[CW] ---- Iteration:   457 ----
+[CW] collect: return: 482.71877, steps: 1000.00000, total_steps: 463000.00000
+[CW] train: qf1_loss: 7.36159, qf2_loss: 7.19580, policy_loss: -91.20731, policy_entropy: -6.07626, alpha: 0.02117, time: 69.38913
+[CW] ---------------------------
+[CW] ---- Iteration:   458 ----
+[CW] collect: return: 483.17336, steps: 1000.00000, total_steps: 464000.00000
+[CW] train: qf1_loss: 10.01996, qf2_loss: 9.85342, policy_loss: -90.77491, policy_entropy: -6.26060, alpha: 0.02127, time: 69.83984
+[CW] ---------------------------
+[CW] ---- Iteration:   459 ----
+[CW] collect: return: 408.95099, steps: 1000.00000, total_steps: 465000.00000
+[CW] train: qf1_loss: 14.16401, qf2_loss: 14.07208, policy_loss: -90.31616, policy_entropy: -6.04947, alpha: 0.02153, time: 69.42462
+[CW] ---------------------------
+[CW] ---- Iteration:   460 ----
+[CW] collect: return: 73.64408, steps: 1000.00000, total_steps: 466000.00000
+[CW] train: qf1_loss: 10.24770, qf2_loss: 10.24688, policy_loss: -91.97857, policy_entropy: -5.97443, alpha: 0.02149, time: 69.39670
+[CW] eval: return: 383.21194, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   461 ----
+[CW] collect: return: 159.19570, steps: 1000.00000, total_steps: 467000.00000
+[CW] train: qf1_loss: 6.77631, qf2_loss: 6.68804, policy_loss: -92.20073, policy_entropy: -6.19703, alpha: 0.02151, time: 69.43489
+[CW] ---------------------------
+[CW] ---- Iteration:   462 ----
+[CW] collect: return: 464.68049, steps: 1000.00000, total_steps: 468000.00000
+[CW] train: qf1_loss: 6.76858, qf2_loss: 6.68937, policy_loss: -91.93564, policy_entropy: -6.24357, alpha: 0.02178, time: 69.52611
+[CW] ---------------------------
+[CW] ---- Iteration:   463 ----
+[CW] collect: return: 332.81100, steps: 1000.00000, total_steps: 469000.00000
+[CW] train: qf1_loss: 6.75184, qf2_loss: 6.59933, policy_loss: -92.51296, policy_entropy: -6.07937, alpha: 0.02193, time: 69.47014
+[CW] ---------------------------
+[CW] ---- Iteration:   464 ----
+[CW] collect: return: 131.21730, steps: 1000.00000, total_steps: 470000.00000
+[CW] train: qf1_loss: 7.00578, qf2_loss: 6.80493, policy_loss: -92.58780, policy_entropy: -6.22960, alpha: 0.02200, time: 69.40988
+[CW] ---------------------------
+[CW] ---- Iteration:   465 ----
+[CW] collect: return: 492.09514, steps: 1000.00000, total_steps: 471000.00000
+[CW] train: qf1_loss: 6.50133, qf2_loss: 6.48112, policy_loss: -92.16310, policy_entropy: -6.18665, alpha: 0.02225, time: 69.37573
+[CW] ---------------------------
+[CW] ---- Iteration:   466 ----
+[CW] collect: return: 219.52551, steps: 1000.00000, total_steps: 472000.00000
+[CW] train: qf1_loss: 6.88344, qf2_loss: 6.71248, policy_loss: -92.07119, policy_entropy: -6.14639, alpha: 0.02239, time: 69.48540
+[CW] ---------------------------
+[CW] ---- Iteration:   467 ----
+[CW] collect: return: 498.76739, steps: 1000.00000, total_steps: 473000.00000
+[CW] train: qf1_loss: 7.44622, qf2_loss: 7.32202, policy_loss: -90.82676, policy_entropy: -5.86044, alpha: 0.02245, time: 69.51441
+[CW] ---------------------------
+[CW] ---- Iteration:   468 ----
+[CW] collect: return: 415.17661, steps: 1000.00000, total_steps: 474000.00000
+[CW] train: qf1_loss: 9.05116, qf2_loss: 8.89197, policy_loss: -93.08148, policy_entropy: -6.09879, alpha: 0.02239, time: 69.50407
+[CW] ---------------------------
+[CW] ---- Iteration:   469 ----
+[CW] collect: return: 201.25812, steps: 1000.00000, total_steps: 475000.00000
+[CW] train: qf1_loss: 8.70902, qf2_loss: 8.44825, policy_loss: -91.95332, policy_entropy: -6.20282, alpha: 0.02259, time: 69.47483
+[CW] ---------------------------
+[CW] ---- Iteration:   470 ----
+[CW] collect: return: 469.96474, steps: 1000.00000, total_steps: 476000.00000
+[CW] train: qf1_loss: 8.04729, qf2_loss: 8.04465, policy_loss: -91.70194, policy_entropy: -5.70161, alpha: 0.02249, time: 69.77243
+[CW] ---------------------------
+[CW] ---- Iteration:   471 ----
+[CW] collect: return: 527.85878, steps: 1000.00000, total_steps: 477000.00000
+[CW] train: qf1_loss: 8.54790, qf2_loss: 8.35846, policy_loss: -91.17342, policy_entropy: -5.71745, alpha: 0.02223, time: 69.54792
+[CW] ---------------------------
+[CW] ---- Iteration:   472 ----
+[CW] collect: return: 462.85837, steps: 1000.00000, total_steps: 478000.00000
+[CW] train: qf1_loss: 15.86443, qf2_loss: 15.40816, policy_loss: -93.54976, policy_entropy: -6.16523, alpha: 0.02207, time: 69.39983
+[CW] ---------------------------
+[CW] ---- Iteration:   473 ----
+[CW] collect: return: 244.47271, steps: 1000.00000, total_steps: 479000.00000
+[CW] train: qf1_loss: 10.13797, qf2_loss: 9.98046, policy_loss: -93.21065, policy_entropy: -6.23546, alpha: 0.02231, time: 69.40047
+[CW] ---------------------------
+[CW] ---- Iteration:   474 ----
+[CW] collect: return: 413.36910, steps: 1000.00000, total_steps: 480000.00000
+[CW] train: qf1_loss: 7.53212, qf2_loss: 7.43694, policy_loss: -93.79864, policy_entropy: -6.20735, alpha: 0.02253, time: 69.46003
+[CW] ---------------------------
+[CW] ---- Iteration:   475 ----
+[CW] collect: return: 99.70007, steps: 1000.00000, total_steps: 481000.00000
+[CW] train: qf1_loss: 8.97580, qf2_loss: 8.84464, policy_loss: -94.34575, policy_entropy: -5.88941, alpha: 0.02267, time: 69.43956
+[CW] ---------------------------
+[CW] ---- Iteration:   476 ----
+[CW] collect: return: 459.00094, steps: 1000.00000, total_steps: 482000.00000
+[CW] train: qf1_loss: 7.98202, qf2_loss: 7.90926, policy_loss: -93.51953, policy_entropy: -5.78877, alpha: 0.02249, time: 69.48370
+[CW] ---------------------------
+[CW] ---- Iteration:   477 ----
+[CW] collect: return: 132.25142, steps: 1000.00000, total_steps: 483000.00000
+[CW] train: qf1_loss: 8.69360, qf2_loss: 8.48830, policy_loss: -93.99923, policy_entropy: -5.86117, alpha: 0.02225, time: 69.49605
+[CW] ---------------------------
+[CW] ---- Iteration:   478 ----
+[CW] collect: return: 487.28763, steps: 1000.00000, total_steps: 484000.00000
+[CW] train: qf1_loss: 7.29517, qf2_loss: 7.28668, policy_loss: -92.18019, policy_entropy: -6.06058, alpha: 0.02228, time: 69.53409
+[CW] ---------------------------
+[CW] ---- Iteration:   479 ----
+[CW] collect: return: 312.62042, steps: 1000.00000, total_steps: 485000.00000
+[CW] train: qf1_loss: 7.59612, qf2_loss: 7.37110, policy_loss: -94.83133, policy_entropy: -5.96592, alpha: 0.02227, time: 69.40370
+[CW] ---------------------------
+[CW] ---- Iteration:   480 ----
+[CW] collect: return: 505.29266, steps: 1000.00000, total_steps: 486000.00000
+[CW] train: qf1_loss: 8.38729, qf2_loss: 8.28296, policy_loss: -94.22118, policy_entropy: -5.81143, alpha: 0.02216, time: 69.40208
+[CW] eval: return: 381.63669, steps: 1000.00000
+[CW] ---------------------------
+[CW] ---- Iteration:   481 ----
+[CW] collect: return: 46.79568, steps: 1000.00000, total_steps: 487000.00000
+[CW] train: qf1_loss: 8.61596, qf2_loss: 8.35336, policy_loss: -94.21541, policy_entropy: -5.96238, alpha: 0.02206, time: 69.59097
+[CW] ---------------------------
+[CW] ---- Iteration:   482 ----
+[CW] collect: return: 517.84338, steps: 1000.00000, total_steps: 488000.00000
+[CW] train: qf1_loss: 7.35283, qf2_loss: 7.29895, policy_loss: -94.29887, policy_entropy: -5.91368, alpha: 0.02200, time: 69.44536
+[CW] ---------------------------
+[CW] ---- Iteration:   483 ----
+[CW] collect: return: 259.28680, steps: 1000.00000, total_steps: 489000.00000
+[CW] train: qf1_loss: 8.13909, qf2_loss: 8.13444, policy_loss: -94.56486, policy_entropy: -6.08141, alpha: 0.02208, time: 69.46246
+[CW] ---------------------------
+[CW] ---- Iteration:   484 ----
+[CW] collect: return: 460.98989, steps: 1000.00000, total_steps: 490000.00000
+[CW] train: qf1_loss: 7.51562, qf2_loss: 7.47686, policy_loss: -94.58380, policy_entropy: -6.05168, alpha: 0.02209, time: 70.42891
+[CW] ---------------------------
+[CW] ---- Iteration:   485 ----
+[CW] collect: return: 314.01454, steps: 1000.00000, total_steps: 491000.00000
+[CW] train: qf1_loss: 7.59007, qf2_loss: 7.51048, policy_loss: -94.19542, policy_entropy: -5.92793, alpha: 0.02205, time: 69.78201
+[CW] ---------------------------
+[CW] ---- Iteration:   486 ----
+[CW] collect: return: 490.01375, steps: 1000.00000, total_steps: 492000.00000
+[CW] train: qf1_loss: 7.80623, qf2_loss: 7.71399, policy_loss: -95.28226, policy_entropy: -6.08820, alpha: 0.02209, time: 69.49294
+[CW] ---------------------------
+[CW] ---- Iteration:   487 ----
+[CW] collect: return: 496.82753, steps: 1000.00000, total_steps: 493000.00000
+[CW] train: qf1_loss: 9.45772, qf2_loss: 9.39166, policy_loss: -95.61539, policy_entropy: -6.38633, alpha: 0.02223, time: 69.42540
+[CW] ---------------------------
+[CW] ---- Iteration:   488 ----
+[CW] collect: return: 289.86190, steps: 1000.00000, total_steps: 494000.00000
+[CW] train: qf1_loss: 15.49511, qf2_loss: 15.15965, policy_loss: -94.51974, policy_entropy: -6.02430, alpha: 0.02243, time: 69.44175
+[CW] ---------------------------
+[CW] ---- Iteration:   489 ----
+[CW] collect: return: 502.18814, steps: 1000.00000, total_steps: 495000.00000
+[CW] train: qf1_loss: 12.88522, qf2_loss: 12.72504, policy_loss: -95.51959, policy_entropy: -6.18228, alpha: 0.02251, time: 69.45330
+[CW] ---------------------------
+[CW] ---- Iteration:   490 ----
+[CW] collect: return: 507.68626, steps: 1000.00000, total_steps: 496000.00000
+[CW] train: qf1_loss: 8.48694, qf2_loss: 8.24852, policy_loss: -96.78387, policy_entropy: -6.38498, alpha: 0.02280, time: 69.43822
+[CW] ---------------------------
+[CW] ---- Iteration:   491 ----
+[CW] collect: return: 282.33297, steps: 1000.00000, total_steps: 497000.00000
+[CW] train: qf1_loss: 7.94508, qf2_loss: 7.85208, policy_loss: -96.07200, policy_entropy: -6.38918, alpha: 0.02317, time: 69.47385
+[CW] ---------------------------
+[CW] ---- Iteration:   492 ----
+[CW] collect: return: 505.92842, steps: 1000.00000, total_steps: 498000.00000
+[CW] train: qf1_loss: 8.67485, qf2_loss: 8.58841, policy_loss: -95.78448, policy_entropy: -6.23627, alpha: 0.02347, time: 69.42583
+[CW] ---------------------------
+[CW] ---- Iteration:   493 ----
+[CW] collect: return: 485.52405, steps: 1000.00000, total_steps: 499000.00000
+[CW] train: qf1_loss: 7.12681, qf2_loss: 7.06777, policy_loss: -95.45407, policy_entropy: -6.42569, alpha: 0.02381, time: 69.41315
+[CW] ---------------------------
+[CW] ---- Iteration:   494 ----
+[CW] collect: return: 515.42485, steps: 1000.00000, total_steps: 500000.00000
+[CW] train: qf1_loss: 7.22742, qf2_loss: 7.24453, policy_loss: -97.45050, policy_entropy: -6.68185, alpha: 0.02436, time: 69.43975
+[CW] ---------------------------
+[CW] ---- Iteration:   495 ----
+[CW] collect: return: 496.17493, steps: 1000.00000, total_steps: 501000.00000
+[CW] train: qf1_loss: 7.54196, qf2_loss: 7.29708, policy_loss: -97.54625, policy_entropy: -6.49265, alpha: 0.02508, time: 69.49717
+[CW] ---------------------------
+[CW] ---- Iteration:   496 ----
+[CW] collect: return: 316.35071, steps: 1000.00000, total_steps: 502000.00000
+[CW] train: qf1_loss: 11.21684, qf2_loss: 11.06982, policy_loss: -95.68113, policy_entropy: -6.16617, alpha: 0.02542, time: 70.22638
+[CW] ---------------------------
+[CW] ---- Iteration:   497 ----
+[CW] collect: return: 521.89996, steps: 1000.00000, total_steps: 503000.00000
+[CW] train: qf1_loss: 8.49042, qf2_loss: 8.39312, policy_loss: -96.31281, policy_entropy: -6.18666, alpha: 0.02561, time: 69.41343
+[CW] ---------------------------

@@ -16,7 +16,7 @@ from cw2.cw_error import ExperimentSurrender
 from typing import Optional
 from experiments.exp_util.config_dict import ConfigDict
 from experiments.exp_util.cw2_util.print_logger import PrintLogger
-
+from pomdp_baselines.utils import augmentation
 
 
 class Cw2Experiment(AbstractIterativeExperiment):
@@ -51,12 +51,18 @@ class Cw2Experiment(AbstractIterativeExperiment):
         self._log_path = config["_rep_log_path"]
 
         params = config.get("params", None)
-
+        additionalvars = config.get("additionalvars", None)
+        
         self._experiment_cls = self.setup_experiment(seed=rep,
                                                      save_path=self._log_path)
 
         conf_dict = self._experiment_cls.get_default_config()
+
+        print(additionalvars["agent"]["image_augmentation_actor_critic_same_aug"])
+        additionalvars["agent"]["image_augmentation_type"] = augmentation.AugmentationType[additionalvars["agent"]["image_augmentation_type"]]
         self.check_and_update(params, conf_dict)
+        self.check_and_update(additionalvars, conf_dict)
+
 
         for l in logger:
             if isinstance(l, PrintLogger):
@@ -64,8 +70,11 @@ class Cw2Experiment(AbstractIterativeExperiment):
             if isinstance(l, WandBLogger):
                 if l.run is not None:
                     l.run.config.update(conf_dict.get_raw_dict(), allow_val_change=True)
+
         print("params: \n", params, "\n")
-        # print("conf_dict: ", conf_dict)
+        print("additionalVars: \n", additionalvars)
+        print("conf_dict: \n",conf_dict)
+
         self._experiment = self._experiment_cls(conf_dict)
 
     def iterate(self, config: dict, rep: int, n: int) -> dict:

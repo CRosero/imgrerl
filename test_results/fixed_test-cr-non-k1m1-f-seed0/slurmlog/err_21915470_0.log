@@ -1,0 +1,1336 @@
+wandb: Currently logged in as: uprnr (joncar). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.11 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.9
+wandb: Run data is saved locally in /home/kit/stud/uprnr/imgrerl/test_results/fixed_test-cr-non-k1m1-f-seed0/fixed_test-cr-non-k1m1-f-seed0/fixed_test-cr-non-k1m1-f-seed0__env.echeetah-run/log/rep_00/wandb/run-20230313_154142-fx1tkpi6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fixed_test-cr-non-k1m1-f-seed0_env.echeetah-run_rep_00
+wandb: ⭐️ View project at https://wandb.ai/joncar/rec_sac
+wandb: 🚀 View run at https://wandb.ai/joncar/rec_sac/runs/fx1tkpi6
+/pfs/data5/home/kit/stud/uprnr/imgrerl/pomdp_baselines/torchkit/pytorch_utils.py:114: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525552843/work/torch/csrc/utils/tensor_new.cpp:230.)
+  return torch.FloatTensor(*args, **kwargs).to(device)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+/home/kit/stud/uprnr/.conda/envs/rl/lib/python3.10/site-packages/cw2/cw_data/cw_pd_logger.py:30: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  self.df = self.df.append(data, ignore_index=True)
+slurmstepd: error: *** JOB 21915470 ON uc2n511 CANCELLED AT 2023-03-14T01:39:48 DUE TO TIME LIMIT ***

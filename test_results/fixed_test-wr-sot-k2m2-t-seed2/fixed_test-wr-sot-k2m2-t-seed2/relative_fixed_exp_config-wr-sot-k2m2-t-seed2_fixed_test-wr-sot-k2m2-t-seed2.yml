@@ -1,0 +1,36 @@
+cpus-per-task: 4
+job-name: fixed_test-wr-sot-k2m2-t-seed2
+mem-per-cpu: 15000
+name: SLURM
+ntasks: 1
+num_parallel_jobs: 0
+partition: gpu_8
+sbatch_args:
+  gres: gpu:1
+time: 720
+---
+_basic_path: ./.
+_experiment_name: fixed_test-wr-sot-k2m2-t-seed2__env.ewalker-run
+_nested_dir: fixed_test-wr-sot-k2m2-t-seed2
+_rep_idx: 0
+_rep_log_path: ./fixed_test-wr-sot-k2m2-t-seed2/fixed_test-wr-sot-k2m2-t-seed2__env.ewalker-run/log/rep_00
+additionalvars:
+  agent:
+    image_augmentation_K: 2
+    image_augmentation_M: 2
+    image_augmentation_actor_critic_same_aug: true
+    image_augmentation_type: SAME_OVER_TIME
+  seed: 2
+iterations: 1001
+log_path: ./fixed_test-wr-sot-k2m2-t-seed2/fixed_test-wr-sot-k2m2-t-seed2__env.ewalker-run/log
+name: fixed_test-wr-sot-k2m2-t-seed2
+params:
+  env:
+    env: walker-run
+path: ./fixed_test-wr-sot-k2m2-t-seed2/fixed_test-wr-sot-k2m2-t-seed2__env.ewalker-run
+repetitions: 1
+reps_in_parallel: 1
+reps_per_job: 1
+wandb:
+  group: wr
+  project: rec_sac

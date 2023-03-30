@@ -21,9 +21,12 @@ from exp_util.cw2_util.cw2_experiment import Cw2Experiment
 from exp_util.cw2_util.print_logger import PrintLogger
 from exp_util.experiment import Experiment
 from pomdp_baselines.utils import augmentation
+import datetime
+
 
 
 class _Cw2Experiment(Cw2Experiment):
+
 
     @staticmethod
     def setup_experiment(seed: int = 0,
@@ -33,9 +36,8 @@ class _Cw2Experiment(Cw2Experiment):
             @staticmethod
             def get_default_config():
                 config = Experiment.get_default_config()
-                config.env.env = "cartpole-swingup"
-                config.seed = seed
-
+                config.env.env = "walker-run"
+                config.seed = 0
 
                 use_image = True;
 
@@ -45,20 +47,22 @@ class _Cw2Experiment(Cw2Experiment):
                     config.rl.buffer_size = 1e6 # 1e6
                     config.rl.batch_size = 32 # 32
                     config.rl.sampled_seq_len = 64 # 64
-                    
-                    config.agent.image_augmentation_type = augmentation.AugmentationType.SAME_OVER_TIME;
+                    """
+                    config.agent.image_augmentation_type = augmentation.AugmentationType.DIFFERENT_OVER_TIME;
                     config.agent.image_augmentation_K = 2;
                     config.agent.image_augmentation_M = 2;
-                    config.agent.image_augmentation_actor_critic_same_aug = True;
-
+                    config.agent.image_augmentation_actor_critic_same_aug = False;
+                    """
                 return config
 
         return _Experiment
 
 
     if not any([".yml" in arg for arg in sys.argv]):
-        sys.argv.append("/home/kit/stud/uprnr/imgrerl/experiments/configs/exp_config.yml")
+        time = datetime.datetime.now()
+        sys.argv.append("/home/kit/stud/uprnr/imgrerl/experiments/our_configs/fixed_exp_config-wr-dot-k1m1-t-seed2.yml")
         sys.argv.append("-s")
+
 
 
 if __name__ == "__main__":

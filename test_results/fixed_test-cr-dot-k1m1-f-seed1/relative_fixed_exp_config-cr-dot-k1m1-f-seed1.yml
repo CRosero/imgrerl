@@ -1,0 +1,36 @@
+cpus-per-task: 4
+job-name: fixed_test-cr-dot-k1m1-f-seed1
+mem-per-cpu: 15000
+name: SLURM
+ntasks: 1
+num_parallel_jobs: 0
+partition: gpu_8
+sbatch_args:
+  gres: gpu:1
+time: 600
+---
+_basic_path: ./.
+_experiment_name: fixed_test-cr-dot-k1m1-f-seed1__env.echeetah-run
+_nested_dir: fixed_test-cr-dot-k1m1-f-seed1
+_rep_idx: 0
+_rep_log_path: ./fixed_test-cr-dot-k1m1-f-seed1/fixed_test-cr-dot-k1m1-f-seed1__env.echeetah-run/log/rep_00
+additionalvars:
+  agent:
+    image_augmentation_K: 1
+    image_augmentation_M: 1
+    image_augmentation_actor_critic_same_aug: false
+    image_augmentation_type: DIFFERENT_OVER_TIME
+  seed: 1
+iterations: 1001
+log_path: ./fixed_test-cr-dot-k1m1-f-seed1/fixed_test-cr-dot-k1m1-f-seed1__env.echeetah-run/log
+name: fixed_test-cr-dot-k1m1-f-seed1
+params:
+  env:
+    env: cheetah-run
+path: ./fixed_test-cr-dot-k1m1-f-seed1/fixed_test-cr-dot-k1m1-f-seed1__env.echeetah-run
+repetitions: 1
+reps_in_parallel: 1
+reps_per_job: 1
+wandb:
+  group: cr
+  project: rec_sac

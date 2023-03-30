@@ -1,0 +1,21 @@
+Hostname: uc2n511.localdomain
+Found slurm config: SLURM
+Seeting default slurm config
+/home/kit/stud/uprnr/imgrerl/test_results/fixed_test-cr-dot-k1m1-t-seed0/fixed_test-cr-dot-k1m1-t-seed0/fixed_test-cr-dot-k1m1-t-seed0__env.echeetah-run/log/rep_00
+[cw2] [WARNING] Skipping run, as /home/kit/stud/uprnr/imgrerl/test_results/fixed_test-cr-dot-k1m1-t-seed0/fixed_test-cr-dot-k1m1-t-seed0/fixed_test-cr-dot-k1m1-t-seed0__env.echeetah-run/log/rep_00 is not empty. Use -o to overwrite.
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n511
+Job ID: 21913168
+Array Job ID: 21913168_0
+Cluster: uc2
+User/Group: uprnr/stud
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:06
+CPU Efficiency: 1.27% of 00:07:52 core-walltime
+Job Wall-clock time: 00:01:58
+Memory Utilized: 325.09 MB
+Memory Efficiency: 0.54% of 58.59 GB

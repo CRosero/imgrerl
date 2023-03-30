@@ -1,0 +1,35 @@
+---
+# Slurm configs bwuni gpu
+name: "SLURM"   # MUST BE "SLURM"
+partition: "gpu_4"  # gpu_4_a100 gpu_4 gpu_8          "single" for cpu, "gpu_4" or gpu_8" for gpu
+job-name: "fixed_test-cs-sot-k2m2-f-seed2" # this will be the experiment's name in slurm
+num_parallel_jobs: 0  # max number of jobs executed in parallel
+ntasks: 1   #  leave that like it is
+cpus-per-task: 4   # there are 10 cores for each GPU
+mem-per-cpu: 15000  # in MB
+time: 480   # in minutes
+sbatch_args:
+ gres: "gpu:1"
+
+---
+# Experiment 1
+name: "fixed_test-cs-sot-k2m2-f-seed2"
+# Required: Can also be set in DEFAULT
+path: "/home/kit/stud/uprnr/imgrerl/test_results/fixed_test-cs-sot-k2m2-f-seed2"   # location to save results in
+repetitions: 1 # 3  # number of times one set of parameters is run
+iterations: 1001 #1000 # number of iterations per repetition
+reps_per_job: 1
+reps_in_parallel: 1
+list:
+  env:
+    env: ["cartpole-swingup"]
+wandb:
+  project: "rec_sac"
+  group: "cs"
+additionalvars:
+  seed: 2
+  agent:
+    image_augmentation_K: 2
+    image_augmentation_M: 2
+    image_augmentation_type: "SAME_OVER_TIME" # "DIFFERENT_OVER_TIME" "SAME_OVER_TIME" "NONE"
+    image_augmentation_actor_critic_same_aug: False
